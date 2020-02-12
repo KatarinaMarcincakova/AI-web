@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <title>Umelá inteligencia</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="style.css" rel="stylesheet">
+  <script src="script.js"></script>
+
+  <body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar bgcol-0 w3-card" id="myNavbar">
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-hide-small">
+        <a href="index.html#home" class="w3-bar-item w3-button"><i class="fa fa-home"></i> DOMOV</a>
+        <div class="w3-dropdown-hover w3-mobile">
+          <button class="w3-button">UMELÁ INTELIGENCIA <i class="fa fa-caret-down"></i></button>
+          <div class="w3-dropdown-content w3-bar-block scbr">
+            <a href="uvod.html" class="w3-bar-item w3-button w3-mobile">Úvod</a>
+            <a href="uav.html" class="w3-bar-item w3-button w3-mobile">Úlohy a výzvy</a>
+            <a href="sh.html" class="w3-bar-item w3-button w3-mobile">Stručná história</a>
+            <a href="nv.html" class="w3-bar-item w3-button w3-mobile">Nástroje - Vyhľadávanie</a>
+            <a href="ns.html" class="w3-bar-item w3-button w3-mobile">Nástroje - Strojové učenie a UNS</a>
+            <a href="nl.html" class="w3-bar-item w3-button w3-mobile">Nástroje - Logika</a>
+            <a href="in.html" class="w3-bar-item w3-button w3-mobile">Iné nástroje UI</a>
+          </div>
+        </div>
+          <a href="index.html#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> O PROJEKTE</a>
+          <a href="index.html#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> O NÁS</a>
+          <a href="index.html#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> KONTAKT</a>
+        </div>
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+      <a href="index.html#home" onclick="w3_close()" class="w3-bar-item w3-button">DOMOV</a>
+      <div class="w3-dropdown-hover w3-mobile">
+        <button class="w3-button">UMELÁ INTELIGENCIA <i class="fa fa-caret-down"></i></button>
+        <div class="w3-dropdown-content w3-bar-block scbr">
+          <a href="uvod.html" class="w3-bar-item w3-button w3-mobile">Úvod</a>
+          <a href="uav.html" class="w3-bar-item w3-button w3-mobile">Úlohy a výzvy</a>
+          <a href="sh.html" class="w3-bar-item w3-button w3-mobile">Stručná história</a>
+          <a href="nv.html" class="w3-bar-item w3-button w3-mobile">Nástroje - Vyhľadávanie</a>
+          <a href="ns.html" class="w3-bar-item w3-button w3-mobile">Nástroje - Strojové učenie a UNS</a>
+          <a href="nl.html" class="w3-bar-item w3-button w3-mobile">Nástroje - Logika</a>
+          <a href="in.html" class="w3-bar-item w3-button w3-mobile">Iné nástroje UI</a>
+        </div>
+      </div>
+      <a href="index.html#work" onclick="w3_close()" class="w3-bar-item w3-button">O PROJEKTE</a>
+      <a href="index.html#team" onclick="w3_close()" class="w3-bar-item w3-button">O NÁS</a>
+      <a href="index.html#contact" onclick="w3_close()" class="w3-bar-item w3-button">KONTAKT</a>
+    </nav>
+
+
+    <div class="bgcol-2" id="home">
+        <h2 class="w3-center">STRUČNÁ HISTÓRIA</h2> <br>
+
+        <h3>17. storočie - Predzvesti UI</h3>
+        <p>
+          Predstavivosť ľudí bola vždy priťahovaná umelo vytvorenými bytosťami, zahrávajúcimi si s naším strachom, ako napríklad Golem v židovskych bájach alebo Frankenstein. V 17. storočí boli z hodinových strojčekov vyrábané rôzne mechanické zvieratká a bábiky. Tieto prístroje síce zďaleka neboli schopné myslenia, ale dodali určitú dôveryhodnosť idei mechanického napodobňovania ľudského správania a neškodnosti takýchto napodobením.
+        </p> <br>
+
+        <h3>18. a 19. storočie - Šachové automaty</h3>
+        <p>
+          Mechanizáciou priemyslu sa stroje stávali sofistikovanejšími a bežnejšími. Šachové hracie automaty 18. a 19. storočia, najmä „ the Turk“, boli označované za inteligentné stroje a niektorých ľudí dokonca presvedčili, že naozaj dokážu hrať autonómne. Šach sa v prvých desaťročiach práce na UI často používal ako prostriedok na štúdium mechanizmov dedukcie a reprezentácie.
+        </p> <br>
+
+        <h3>2. svetová vojna - Technologický pokrok</h3>
+        <p>
+          Nové možnosti priniesol vzostup moderných počítačov po 2. svetovej vojne. Počítače v 40. rokoch boli v dôsledku ich úžasného výpočtového výkonu často označované ako „giant brains“ (z angličtiny „obrovské mozgy“). Napriek tomu boli počiatočné programy obmedzené rozsahom a rýchlosťou pamäte aj procesorov a nešikovnosťou skorých operačných systémov a jazykov. Aj prvé snahy o robotiku preto súviseli skôr so strojárstvom ako s inteligentnými riadiacimi systémami.
+        </p> <br>
+
+        <h3>Polovica 20. storočia - Počiatky UI</h3>
+        <p>
+          Hlavným zlomom v histórii UI bola Turingova seminárna práca z roku 1950 publikovaná v časopise filozofie Mind. Príspevok vykresluje myšlienky o možnosti programovania počítača tak, aby sa choval inteligentne, vrátane opisu “imitačnej hry”, ktorú poznáme ako Turingov test. <br>
+          V polovici 20. storočia poskytli programátorom novú silu systémy zdieľania času a tiež jazyky manipulácie so symbolmi ako Lisp, IPL a POP. Vzniklo tak množstvo pôsobivých programov, skutočne riešiacich problémy, ktoré predtým dokázali vyriešiť iba inteligentní ľudia. A. Newell, J. C. Shaw, a H. Simon písali v 50. rokoch programy, ktoré predbehli svoju dobu. Ich program LT dokázal vymyslieť dôkazy logických viet, čo bezpochyby vyžaduje kreativitu aj inteligenciu. Bol prezentovaný v 1956 na konferencii v Dartmouth, ktorá dala UI jej meno. Práce z tohto obdobia ustanovili základný princíp UI, ktorý H. Simon pomenoval „uspokojivosť“: Ak neexistuje účinná metóda zaručujúca riešenie problému v primeranom čase, môže heuristika viesť tvorcu rozhodnutí k veľmi uspokojivému, ak nie optimálnemu riešeniu. Pričom heuristikou v informatike rozumieme postup, ktorý nedáva vždy presné riešenie problému, ale zvyčajne dáva dostatočne správne riešenie v prijateľnom čase.
+        </p> <br>
+
+        <h3>Prelomový rok 1962</h3>
+        <p>
+          Pred rokom 1962 sa rozvoj UI zameriaval na nájdenie heuristických zariadení na kontrolu šírky trial-and-error (pokus a omyl) vyhľadávania a efektívnych metód učenia. Po tomto roku klesol záujem o samotné učenie a stúpol záujem  o problém reprezentácie znalostí (akokoľvek získaných) a prelomenia formálnosti a obmedzenosti starších systémov. Reprezentácia znalostí sa stala základným kameňom každého programu UI. Práca M. Minskyho, J. McCarthyho a mnohých iných vedcov z tohto obdobia uvádza dôležité postrehy o tom, čo je potrebné pre inteligentné konanie, a vymedzuje väčšinu formálnej teórie UI. <br>
+          Prvou zbierkou programov UI bola kniha “Computers and Thought” z roku 1963 od E. Feigenbauma a J. Feldmana. Opisovala napríklad A. Samuelov priekopnícky program na hranie dámy vyvinutý v 1950. Tento program bol veľkým úspechom na poli UI, keďže dámu je síce ľahké pochopiť, no naozaj ju ovládnuť vyžaduje značnú inteligencie. O to pôsobivejšie je, že program sa prostredníctvom hrania proti ľudským oponentom i proti iným počítačom naučil zlepšovať svoje vlastné schopnosti.
+        </p> <br>
+
+        <h3>60. a začiatok 70. rokov 20. storočia -  Rozmach UI a vznik organizácií</h3>
+        <p>
+          GPS (General Problem Solver) od Newella, Shawa a Simona a aj ďalšie ranné práce UI boli motivované otázkami a experimentálnymi metódami psychológov. Napríklad Feigenbaumov EPAM (Elementary Perceiver and Memorizer) skúmal asociatívnu pamäť a zabúdanie v programe, ktorý replikoval správanie subjektov psychologických experimentov.  Iné skoré programy na Carnegie Mellon University sa zámerne pokúsili replikovať kroky, vrátane chýb, ktoré pri riešení problémov spravili ľudia.  Aj výrobné systémy boli pôvodne koncipované ako simulácie ľudskej manipulácie so symbolmi v dlhodobej a krátkodobej pamäti. Dizertačná práca D. Watermana z roku 1970 použila výrobný systém na hranie pokeru a ďalší program k zlepšovaniu jeho hráčskych schopností. Dizertačný program J. Slagleho využíval heuristiku na vyriešenie problémov so symbolickou integráciou. Ďalšie pôsobivé dizertačné práce zo začiatku 60. rokov sú popísané v Minskyho zbierke.<br>
+          Porozumenie jazykom a preklad sa spočiatku považovali za jednoduché úlohy, keďže počítače dokázali ukladať a načítavať slová z rozsiahlych slovníkov. Niektoré komické príklady zlyhania pri preklade však poskytli kritikom dostatok munície na zastavenie financovania strojového prekladu na mnoho rokov. Až práca D. Bobrowa ukázala, že počítače dokážu s pomocou obmedzeného počtu kontextov porozumieť slovným problémom dostatočne na to, aby zvádli vyiešiť aj problémy, ktoré by boli obtiažne i pre dospelého človeka. Následne práce R. F. Simmonsa, R. Lindsaya, R. Schanka a ďalších podobne ukázali, že porozumenie či dokonca preklad boli v určitej miere dosiahnuteľné. Nedávny pokrok v porozumení jazyka nás značne priblížil k nehumánnym asistentom schopným konverzácie. Komerčné systémy pre preklad, porozumenie textu a reči teraz čerpajú zo značných znalostí sémantiky a kontextu, ako aj syntaxe. <br>
+          Ďalší zlom v histórii UI nastal s vývojom systémov založených na vedomostiach v 60. a začiatkom 70. rokov. Mycín a tisíce systémov, ktoré ho nasledovali, sa stali viditeľnými ukážkami sily malého množstva vedomostí, ktoré umožňujú inteligentným programom rozhodovanie v mnohých dôležitých oblastiach. Hoci je ich rozsah obmedzený, ich úspech v poskytovaní pomoci na úrovni expertov potvrdzuje staré príslovie, že vedomosti sú silou.<br>
+          60. roky boli tiež formatívnym časom pre organizácie podporujúce rozvoj UI. Počiatočné akademické laboratóriá vznikli na MIT (Massachusetts Institute of Technology) a o niečo neskôr aj na CMU (Carnegie Mellon University). Mnoho ďalších krajín následne založilo vlastné organizácie. V Edinburghu v roku 1965 zorganizoval D. Michie, ktorý spolupracoval s Turingom, jednu z prvých výročných serií konferencií venovaných UI, the Machine Intelligence workshops.
+        </p> <br>
+
+        <h3>Nedávny vývoj UI</h3>
+        <p>
+          Až v poslednom polstoročí sú naše zariadenia a programovacie jazyky dosť silné na to, aby sme otestovali naše idei o tom, čo je inteligencia. Prostriedkami na testovanie našich nápadov sa stali napríklad aj roboty. Avšak poskytnúť robotom dostatok vedomostí k pohybu v ľudskom prostredí sa ukázalo ako veľmi ťažká úloha. Niektoré z najvýraznejších úspechov metód vnímania UI sa využívajú v autonómnych vozidlách NASA.  <br>
+          V desaťročiach po 60. rokoch bol dosiahnutý značný pokrok v porozumení bežných spôsobov uvažovania, ktoré nie sú striktne deduktívne, ako napríklad analógia či indukcia. Veľkým úspechom bol program Deep Blue, ktorý v roku 1997 porazil majstra sveta v šachu Garyho Kasparova. Stále je však čo objavovať. Reprezentácia znalostí a vyvodzovanie záverov z existujúcich faktov zostávajú dvoma hlavnými problémami. Prebiehajúci výskum v oblasti učenia, uvažovania pomocou diagramov a integrácie rôznych metód a systémov bude pravdepodobne viesť k ďalšej generácii UI.
+        </p> <br>
+
+        <h3>UI vo filozofii a beletrii</h3>
+        <p>
+          Predstava inteligentných mechanických asistentov je súčasťou našej kultúry už od čias Homéra. Dávni filozofi využili možnosť existencie inteligentných strojov ako pomoc pri určovaní čo to znamená byť človekom. Napríklad Descartesov “mechanický muž”, ktorý bol skôr metaforou ako reálnou možnosťou. Naproti tomu G. W. Leibniz videl v logicky uvažujúcich strojoch cestu ako rozhodovať spory. Leibniz spoločne s B. Pascalom tiež navrhli počítacie stroje mechanizujúce aritmetiku (ktorá bola dovtedy úlohou učených mužov nazývaných “calculators”), nikdy však netvrdili, že by tieto zariadenia dokázali myslieť. E. Bonnot a A. de Condillac použili metaforu sochy, ktorej do hlavy lejeme vedomosti, pýtajúc sa, v akom okamihu bude vedieť dosť, aby sa zdala inteligentná. Spisovatelia sci-fi zas využili predstavu inteligentných strojov na zdokonalenie svojich fantázií o inteligentných “neľuďoch” a tiež na to, aby ľudí primäli premýšľať o našich vlastných ľudských vlastnostiach. Asi najznámejšími boli J. Verne v 19. a I. Asimov v 20. storočí, ale i mnoho ďalších vrátane L. F. Bauma, autora Čarodejníka z krajiny Oz či mechanického muža Tiktoka. Títo spisovatelia inšpirovali mnohých vývojárov UI.
+        </p> <br>
+
+        <h3>UI a iné vedné odbory</h3>
+        <p>
+          UI nie je len o robotoch, ale i o pochopenie podstaty inteligentného myslenia a konania pomocou počítačov ako experimentálnych zariadení. Napríklad roku 1944 položil H. Simon základy teórie spracovania informácií a manipulácie so symbolmi z oblasti psychológie. UI bola vo svojich formatívnych rokoch ovplyvnená myšlienkami mnohých iných vedných disciplín ako inžinierstvo, biológia, experimentálna psychológia, teória hier, matematika a štatistika, logika a filozofia alebo lingvistika.
+        </p> <br>
+
+        <h3>Zdroje, užitočné odkazy, literatúra</h3>
+        <p>
+          BUCHANAN, B. G.: A (Very) Brief History of Artificial Intelligence. In: AI Magazine, roč. 26, č. 4, 2005, s. 53-60.<br>
+          RUSSELL, S. J. – NORVIG, P.: Artificial Intelligence: A Modern Approach (3nd ed.). Upper Saddle River, USA: Prentice Hall, 2003. ISBN 0-13-790395-2
+        </p>
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="w3-center bgcol-1 w3-padding-32">
+      <a href="#home" class="w3-button button"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <!--
+        <div class="w3-xlarge w3-section">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+      </div> -->
+    </footer>
+
+  </body>
+</html>

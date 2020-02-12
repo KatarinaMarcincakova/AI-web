@@ -1,0 +1,103 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+  color: White;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+footer {
+  background-color: transparent;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/ai-bg.jpg");
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bgcol-0 {
+  background-color: #044758;
+}
+
+.bgcol-1 {
+  background-color: #076579;
+}
+
+.bgcol-2 {
+  background-color: white;
+  color: #044758;
+  padding: 52px;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+.buttons {
+  background-color: #39bfc8
+}
+
+.n3 {
+  display: block;
+  font-size: 1.17em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+h2 {
+  color: #043d49;
+}
+
+h3 {
+  color: white;
+  border-radius: 25px;
+  background: #1e9eaf;
+  padding: 20px;
+}
+
+p {
+  font-size: 1em;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#sideNav {
+  background-color: #118594;
+  padding-top: 20px;
+  border-radius: 10px;
+}
+
+#main {
+  padding-top: 65px;
+  padding-bottom: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.arrow {
+  background-color: transparent;
+  opacity: 0.7;
+  color: #044758;
+}
+
+.arrow:hover {
+  background-color: transparent;
+  color: #044758;
+  opacity: 1;
+}
+
+span {
+  padding-top: 45px;
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <title>Umelá inteligencia</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="style.css" rel="stylesheet">
+  <script src="script.js"></script>
+
+  <body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar bgcol-0 w3-card" id="myNavbar">
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-hide-small">
+        <a href="index.html#home" class="w3-bar-item w3-button"><i class="fa fa-home"></i> DOMOV</a>
+        <div class="w3-dropdown-hover w3-mobile">
+          <button class="w3-button">UMELÁ INTELIGENCIA <i class="fa fa-caret-down"></i></button>
+          <div class="w3-dropdown-content w3-bar-block scbr">
+            <a href="uvod.html" class="w3-bar-item w3-button w3-mobile">Úvod</a>
+            <a href="uav.html" class="w3-bar-item w3-button w3-mobile">Úlohy a výzvy</a>
+            <a href="sh.html" class="w3-bar-item w3-button w3-mobile">Stručná história</a>
+            <a href="nv.html" class="w3-bar-item w3-button w3-mobile">Nástroje - Vyhľadávanie</a>
+            <a href="ns.html" class="w3-bar-item w3-button w3-mobile">Nástroje - Strojové učenie a UNS</a>
+            <a href="nl.html" class="w3-bar-item w3-button w3-mobile">Nástroje - Logika</a>
+            <a href="in.html" class="w3-bar-item w3-button w3-mobile">Iné nástroje UI</a>
+          </div>
+        </div>
+          <a href="index.html#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> O PROJEKTE</a>
+          <a href="index.html#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> O NÁS</a>
+          <a href="index.html#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> KONTAKT</a>
+        </div>
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+      <a href="index.html#home" onclick="w3_close()" class="w3-bar-item w3-button">DOMOV</a>
+      <div class="w3-dropdown-hover w3-mobile">
+        <button class="w3-button">UMELÁ INTELIGENCIA <i class="fa fa-caret-down"></i></button>
+        <div class="w3-dropdown-content w3-bar-block scbr">
+          <a href="uvod.html" class="w3-bar-item w3-button w3-mobile">Úvod</a>
+          <a href="uav.html" class="w3-bar-item w3-button w3-mobile">Úlohy a výzvy</a>
+          <a href="sh.html" class="w3-bar-item w3-button w3-mobile">Stručná história</a>
+          <a href="nv.html" class="w3-bar-item w3-button w3-mobile">Nástroje - Vyhľadávanie</a>
+          <a href="ns.html" class="w3-bar-item w3-button w3-mobile">Nástroje - Strojové učenie a UNS</a>
+          <a href="nl.html" class="w3-bar-item w3-button w3-mobile">Nástroje - Logika</a>
+          <a href="in.html" class="w3-bar-item w3-button w3-mobile">Iné nástroje UI</a>
+        </div>
+      </div>
+      <a href="index.html#work" onclick="w3_close()" class="w3-bar-item w3-button">O PROJEKTE</a>
+      <a href="index.html#team" onclick="w3_close()" class="w3-bar-item w3-button">O NÁS</a>
+      <a href="index.html#contact" onclick="w3_close()" class="w3-bar-item w3-button">KONTAKT</a>
+    </nav>
+
+
+    <div class="bgcol-2" id="home">
+        <h2 class="w3-center">NÁSTROJE - VYHĽADÁVANIE</h2> <br>
+        <h6 class="w3-center"><i>(angl. “searching algorithms”)</i></h6> <br>
+
+        <p>
+          Riešenie problému môžeme definovať ako nejakú postupnosť akcií, ktoré je potrebné vyknať k dosiahnutiu nášho cieľa. Vyhľadávacie algoritmy fungujú tak, že zvažujú rôzne možné sekvencie akcií, aby tak našli riešenie na zadaný problém. Všetky sekvencie pritom začínajú v počiatočnom stave, teda v koreni a vytvárajú vyhľadávací strom (viz. Diagram A), kde akcie predstavujú vetvy (hrany) a uzly zodpovedajú možným stavom. Postupnosť uzlov vedúcich od koreňa k nejakému konkrétnemu uzlu nazývame cesta. Dĺžkou cesty rozumieme počet hrán, ktoré cesta obsahuje, teda počet jej uzlov mínus 1. Dĺžku cesty od koreňa k danému uzlu nazývame aj hĺbka uzlu. O uzloch s rovnakou hĺbkou hovoríme, že sú na rovnakej úrovni. <br>
+          Prvým krokom algoritmu je otestovať, či počiatočný stav náhodou nie je aj stavom cieľovým. Ak nie, potom musíme zvážiť možné akcie a súčasný stav rozšíriť. To spravíme tak, že vybrané akcie uplatníme na súčasný stav, čím sa vytvorí nový set možných stavov. Uplatnenie rôznych akcií môže mať v niektorých prípadoch rôznu cenu (ako napr. rôzna dĺžka cesty z mesta do iných miest).  <br>
+          Rozšírením vyvedieme z pôvodného rodičovského uzlu niekoľko vetiev do nových, čiže detských uzlov. Uzol, ktorý zatiaľ nemá žiadne deti nazývame listový a súbor všetkých listových uzlov sa nazýva hranica. Teraz si musíme zvoliť, ktorý z listových uzlov rozšíriť ako ďalší. Proces rozširovania hraníc pokračuje, až kým sa nenájde cieľový stav alebo kým nedôjdu uzly, ktoré by bolo možné rozšíriť. Všetky algoritmy vyhľadávania zdieľajú túto štruktúru, líšia sa len stratégiou vyhľadávania, teda spôsobom výberu uzla na rozšírenie. Cieľom vyhľadávania je nájsť ideálne riešenie problému, teda riešenie, ktoré si vyžaduje najmenej akcií, resp. riešenie, ktorého celková cena všetkých nutných akcií je najmenšia. <br>
+          Vyhľadávacie algoritmy môžeme rozdeliť na neinformované (slepé) a informované (heuristické). Neinformované stratégie nemajú žiadne ďalšie informácie o stavoch nad rámec informácií uvedených v definícii problému. Jediné, čo môžu urobiť, je generovať nové stavy a odlíšiť cieľový stav od iných. Informované stratégie sú také, ktoré vedia, či je jeden necieľový stav „sľubnejší“ ako iný.
+        </p> <br>
+
+        <h3>Základné neinformované vyhľadávacie algoritmy</h3>
+        <div class="w3-row-padding">
+          <div class="w3-col m6 l6">
+            <h5>Prehľadávanie do šírky</h5>
+            <p>
+              Táto metóda nám umožňuje nájsť ideálne riešenie, ak sú ceny všetkých akcií rovnaké. Jednoducho vždy rozširuje uzol najbližší ku koreňu: Najskôr sa rozšíri koreňový uzol, potom sa rozšíria všetky jeho deti, potom ich deti atď. Za každým sa najprv rozšíria všetky uzly na danej úrovni, než sa začnú rozširovať uzly na ďalšej úrovni (viz. Ukážka A). Prvé nájdené riešenie bude určite ideálne.
+            </p> <br>
+          </div>
+          <div class="w3-col m6 l6">
+             <img src="gif1.gif"alt=" animacia prehladavania do sirky">
+          </div>
+        </div>
+        <div class="w3-row-padding">
+          <div class="w3-col m6 l6">
+            <h5>Prehľadávanie podľa ceny</h5>
+            <p>
+              V prípade, že ceny jednotlivých akcií nie sú rovnaké, tak ideálnym riešením je postupnosť akcií s najnižšou možnou celkovou cenou. Takže pri prehľadávaní podľa ceny vždy využívame k rozšíreniu stromu akciu s aktuálne najnižšou cenou, teda rozširujeme uzol s najnižšími nákladmi na rozšírenie (viz. Ukážka B). Prvé nájdené riešenie bude určite ideálne.
+            </p> <br>
+          </div>
+          <div class="w3-col m6 l6">
+             <img src="gif1.gif"alt=" animacia prehladavania do sirky">
+          </div>
+        </div>
+        <div class="w3-row-padding">
+          <div class="w3-col m6 l6">
+            <h5>Prehľadávanie do hĺbky</h5>
+            <p>
+              Pri tejto metóde sa rozširuje vždy najhlbší uzol na aktuálnej hranici, teda uzol vzdialený o najviac vetiev od koreňa. Vyhľadávanie smeruje rovno do najhlbšej úrovne stromu a potom sa presunie na najhlbší uzol, ktorý ešte možno rozšíriť, atď (viz. Ukážka C). <br>
+              Tento spôsob sa môže oproti predchádzajúcim dvom zdať zbytočne zdĺhavý. Hľadáme predsa riešenie s čo najmenšou hĺbkou (resp. najlacnejšie riešenie), a takto budeme musieť prehľadať celý strom, aby sme mali istotu, že sme našli ideálne riešenie. Výhodou je však nízka pamäťová zložitosť. Pri prehľadávaní stromu si tento strom musíme nejako uchovávať v pamäti. Predchádzajúce riešenia nemajú veľmi na výber a musia si pamätať celkovú podobu stromu. Avšak prehľadávanie do hĺbky naraz preskúmava len jednu nerozvetvenú cestu, ktorá môže byť po jej plnom preskúmaní z pamäte odstránená.
+            </p> <br>
+          </div>
+          <div class="w3-col m6 l6">
+             <img src="gif1.gif"alt=" animacia prehladavania do sirky">
+          </div>
+        </div>
+        <div class="w3-row-padding">
+          <div class="w3-col m4 l4">
+            <h5>Prehľadávanie do hĺbky s obmedzením</h5>
+            <p>
+              Pri prehľadávaní do hĺbky môže nastať problém, ak z nejakého uzla vedie hrana späť do uzla v niektorej z predchádzajúcich úrovní (do uzla s menšou hĺbkou). Program by sa nám z tohto dôvodu mohol zacykliť (viz. Ukážka D). Zacykleniu sa môžeme vyhnúť napr. obmedzením hĺbky, do ktorej sa má strom prehľadávať. Takto sa bude vždy rozširovať najhlbší uzol, ktorého hĺbka však neprekračuje určitý stanovený limit (viz. Ukážka E). V ideálnom prípade poznáme hĺbku stromu, čiže hĺbku najhlbšieho uzla stromu, ktorú môžeme použiť ako náš limit.
+            </p> <br>
+          </div>
+          <div class="w3-col m4 l4">
+             <img src="gif1.gif"alt=" animacia prehladavania do sirky">
+          </div>
+          <div class="w3-col m4 l4">
+             <img src="gif1.gif"alt=" animacia prehladavania do sirky">
+          </div>
+        </div>
+        <div class="w3-row-padding">
+          <div class="w3-col m6 l6">
+            <h5>Iteratívne prehľadávanie do hĺbky</h5>
+            <p>
+              Ak chceme prehľadávať do hĺbky bez hrozby zacyklenia, ale nepoznáme hĺbku stromu, môžeme hľadať najlepšie obmedzenie pre hĺbku napr. postupným zvyšovaním limitu od 0. Najprv prehľadáme celý strom do hĺbky 0, potom do hĺbky 1, potom 2, atď (viz. Ukážka F). Môžeme si všimnúť určitú podobnosť s Prehľadávaním do šírky. Už prvé nájdené riešenie bude určite ideálne. Tento spôsob je pomalší, ale má len skromnú pamäťovú zložitosť.
+            </p> <br>
+          </div>
+          <div class="w3-col m6 l6">
+             <img src="gif1.gif"alt=" animacia prehladavania do sirky">
+          </div>
+        </div>
+        <div class="w3-row-padding">
+          <div class="w3-col m6 l6">
+            <h5>  Obojsmerné vyhľadávania</h5>
+            <p>
+              Myšlienkou Obojsmerného vyhľadávania je spustiť jedno vyhľadávanie od pôvodného stavu a druhé od cieľového stavu v nádeji, že sa obe vyhľadávania stretnú v strede. Výhodou tohto spôsobu je nízka časová zložitosť. Prvé nájdené riešenie však nemusí byť nutne ideálne, takže je potrebné implementovať na koniec ešte dodatočnú kontrolu.
+            </p> <br>
+          </div>
+          <div class="w3-col m6 l6">
+             <img src="gif1.gif"alt=" animacia prehladavania do sirky">
+          </div>
+        </div>
+
+        <h3>Základné informované vyhľadávacie algoritmy</h3>
+        <div>
+          <h5>Usporiadané prehľadávanie</h5>
+          <p>
+            Ide o stratégiu využívajúcu istú hodnotiacu funkciu, ktorá priradí každému uzlu hodnotu na základe našich znalostí o strome vyhľadávania. Následne sa vždy rozširuje uzol s najmenšou hodnotou. Patrí sem napr.:<br>
+            <ul>
+              <li>Pažravé prehľadávanie =  Rozširuje sa vždy uzol, ktorý je najbližšie k cieľu. Predpoklad znie, že to rýchlo povedie k riešeniu. Takéto riešenie ale vôbec nemusí byť optimálne.</li>
+              <li>algoritmus A* = Usporiadané prehľadávanie, ktoré využíva ako hodnotiacu funkciu uzlov kombináciu ceny cesty do daného uzla z počiatku a odhadovanej ceny najlacnejšej cesty z daného uzla do cieľa. Nájdené riešenie je optimálne.</li>
+            </ul>
+          </p> <br>
+          <h5>Lokálne prehľadávanie</h5>
+          <p>
+            Niektoré algoritmy sú stavané len pre problémy, pri ktorých nie je dôležitá cena cesty do cieľa. Fungujú tak, že sledujú vždy len jeden aktuálny uzol a vo všeobecnosti sa pohybujú iba k jeho susedom. Využívajú veľmi malú pamäť a často nájdu rozumné riešenia aj vo veľkých / nekonečných stavových priestoroch, pre ktoré sú systematické algoritmy nevhodné. Takéto algoritmi prideľujú každému z uzlov hodnotu podľa nejakej hodnotiacej funkcie a snažia sa nájsť globálne minimum / maximum. Patrí sem napr.: <br>
+            <ul>
+              <li>Horolezecký algoritmus = Rozširovanie prebieha v smere zvyšujúcej / znižujúcej sa priradenej hodnoty uzla a končí, keď už žiadny sused nemá väčšiu / menšiu hodnotu. Tento algoritmus však môže namiesto globálneho objaviť len lokálny extrém.</li>
+              <li>Simulované žíhanie = Smer rozširovania je vybraný náhodne, pričom ak vybraný krok zlepší situáciu, je vždy prijatý. Inak ho algoritmus akceptuje len s pravdepodobnosťou menšou ako 1. Pravdepodobnosť vykonania daného kroku klesá aj s tým o koľko daný krok zhorší aktuálnu hodnotu uzla a tiež so znižujúcou sa “teplotou” T. T je nejaká predom stanovená hodnota, ktorá je na začiatku vysoká a behom programu sa znižuje. Ak je znižovaná dosť pomaly, algoritmus takmer určite nájde globálne minimum / maximum.</li>
+            </ul>
+          </p>
+        </div>
+
+        <h3>Zdroje, užitočné odkazy, literatúra</h3>
+        <p>
+          RUSSELL, S. J. – NORVIG, P.: Artificial Intelligence: A Modern Approach (3nd ed.). Upper Saddle River, USA: Prentice Hall, 2003, s. 64-93. ISBN 0-13-790395-2
+        </p>
+
+
+
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="w3-center bgcol-1 w3-padding-32">
+      <a href="#home" class="w3-button button"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <!--
+        <div class="w3-xlarge w3-section">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+      </div> -->
+    </footer>
+
+  </body>
+</html>

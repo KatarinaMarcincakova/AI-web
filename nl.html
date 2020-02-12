@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <title>Umelá inteligencia</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="style.css" rel="stylesheet">
+  <script src="script.js"></script>
+
+  <body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar bgcol-0 w3-card" id="myNavbar">
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-hide-small">
+        <a href="index.html#home" class="w3-bar-item w3-button"><i class="fa fa-home"></i> DOMOV</a>
+        <div class="w3-dropdown-hover w3-mobile">
+          <button class="w3-button">UMELÁ INTELIGENCIA <i class="fa fa-caret-down"></i></button>
+          <div class="w3-dropdown-content w3-bar-block scbr">
+            <a href="uvod.html" class="w3-bar-item w3-button w3-mobile">Úvod</a>
+            <a href="uav.html" class="w3-bar-item w3-button w3-mobile">Úlohy a výzvy</a>
+            <a href="sh.html" class="w3-bar-item w3-button w3-mobile">Stručná história</a>
+            <a href="nv.html" class="w3-bar-item w3-button w3-mobile">Nástroje - Vyhľadávanie</a>
+            <a href="ns.html" class="w3-bar-item w3-button w3-mobile">Nástroje - Strojové učenie a UNS</a>
+            <a href="nl.html" class="w3-bar-item w3-button w3-mobile">Nástroje - Logika</a>
+            <a href="in.html" class="w3-bar-item w3-button w3-mobile">Iné nástroje UI</a>
+          </div>
+        </div>
+          <a href="index.html#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> O PROJEKTE</a>
+          <a href="index.html#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> O NÁS</a>
+          <a href="index.html#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> KONTAKT</a>
+        </div>
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+      <a href="index.html#home" onclick="w3_close()" class="w3-bar-item w3-button">DOMOV</a>
+      <div class="w3-dropdown-hover w3-mobile">
+        <button class="w3-button">UMELÁ INTELIGENCIA <i class="fa fa-caret-down"></i></button>
+        <div class="w3-dropdown-content w3-bar-block scbr">
+          <a href="uvod.html" class="w3-bar-item w3-button w3-mobile">Úvod</a>
+          <a href="uav.html" class="w3-bar-item w3-button w3-mobile">Úlohy a výzvy</a>
+          <a href="sh.html" class="w3-bar-item w3-button w3-mobile">Stručná história</a>
+          <a href="nv.html" class="w3-bar-item w3-button w3-mobile">Nástroje - Vyhľadávanie</a>
+          <a href="ns.html" class="w3-bar-item w3-button w3-mobile">Nástroje - Strojové učenie a UNS</a>
+          <a href="nl.html" class="w3-bar-item w3-button w3-mobile">Nástroje - Logika</a>
+          <a href="in.html" class="w3-bar-item w3-button w3-mobile">Iné nástroje UI</a>
+        </div>
+      </div>
+      <a href="index.html#work" onclick="w3_close()" class="w3-bar-item w3-button">O PROJEKTE</a>
+      <a href="index.html#team" onclick="w3_close()" class="w3-bar-item w3-button">O NÁS</a>
+      <a href="index.html#contact" onclick="w3_close()" class="w3-bar-item w3-button">KONTAKT</a>
+    </nav>
+
+
+    <div class="bgcol-2" id="home">
+        <h2 class="w3-center">NÁSTROJE - LOGIKA</h2> <br>
+
+        <p>
+          Pre UI je veľmi dôležité vedieť operovať s nadobudnutými vedomosťami. Tieto vedomosti pozostávajú z výrokov v jazyku reprezentácie znalostí. Ten má svoju syntax a sémantiku, ktorá definuje pravdivosť každého výroku v každom možnom svete. Možným svetom rozumieme matematickú abstrakciu, model, ktorý určuje pravdivosť alebo nepravdivosť každého výroku v danej situácii. Ak nejaký výrok platí v určitom modeli, hovoríme, že model mu vyhovuje. Pri riešení problému môžeme pomocou logiky nájsť model odpovedajúci nášmu cieľu. Z tohto modelu potom extrahujeme tie premenné, ktoré predstavujú akcie a sú označené ako pravdivé. Spoločne tvoria plán na dosiahnutie cieľa.
+        </p>
+
+        <h3>Výroková logika</h3>
+        <p>
+          Asi tou najjednoduchšou logikou je výroková logika. Rozlišujeme v nej: <br>
+          <ul>
+            <li>atomické výroky, pozostávajúce z 1 tvrdenia, logickej premennej, ktorá môže byť pravdivá / nepravdivá</li>
+            <li>zložené výroky, ktoré sú zostavené z jednoduchších výrokov pomocou zátvoriek a logických spojok: konjunkcia, disjunkcia, implikácia, ekvivalencia, negácia, atď.</li>
+          </ul>
+          Každý model potom určuje pravdivostnú hodnotu pre každú zložku výroku, čo môžeme zapísať do pravdivostnej tabuľky (viz. Tabuľka A). Dva výroky sú logicky rovnocenné, ak sú pravdivé v rovnakom súbore modelov. <br>
+
+          <div class="w3-row-padding">
+            <div class="w3-col m3 l3">
+              <p> </p>
+            </div>
+            <div class="w3-col m6 l6">
+              <img src="images/table1.png" alt="tabulka 1" width="100%" height="auto">
+            </div>
+            <div class="w3-col m3 l3">
+              <p> </p>
+            </div>
+          </div> <br>
+
+          Logickú premennú a jej negáciu nazývame aj literály logickej premennej (pozitívny a negatívny literál). Ďalej hovoríme, že výrok je validný, ak je pravdivý vo všetkých modeloch. Tieto výroky sa nazývajú aj tautológie. Výroky, ktoré naopak nie sú pravdivé nikdy nazývame kontradikcie alebo nesplniteľné a výroky, ktoré nie sú kontradikciami nazývame splniteľné. <br> <br>
+          Niekedy sa tiež zíde výrok nahradiť nejakým ekvivalentným výrokom (viz. Tabuľka B).
+          <div class="w3-row-padding">
+            <div class="w3-col m4 l4">
+              <p> </p>
+            </div>
+            <div class="w3-col m4 l4">
+              <img src="images/table2.png" alt="tabulka 2" width="100%" height="auto">
+            </div>
+            <div class="w3-col m4 l4">
+              <p> </p>
+            </div>
+          </div> <br> <br>
+
+          S využitím vhodných ekvivalencií je možné prepísať výrok do tzv. normálnej formy, čiže tak, aby obsahoval len spojky ∧,∨ a ¬. Napr. výrok A ⇒ (B ∨ ¬C) je logicky rovnocenný výroku ¬A ∨ B ∨ ¬C. Špeciálnymi prípadomi sú:
+          <ul>
+            <li>
+              <b>Disjunktívna normálna forma (DNF)</b> = Výrok je v tejto forme, ak má tvar disjunkcie niekoľkých  literálov / konjunkcií literálov, pričom v jednom disjunktante sa literál každej premennej nachádza najviac raz. Napr. (B ∧ C) ∨ (A ∧ B ∧ ¬C). <br>
+              <b>Úplná disjunktívna normálna forma (ÚDNF)</b> výroku má tvar disjunkcie konjunkcií, pre ktoré platí, že obsahujú literál každej premennej výroku práve raz. Napr. (B ∨ ¬C) ⇒ (A ∧ ¬B) je logicky rovnocenné (¬A ∧ ¬B ∧ C) ∨ (A ∧ ¬B ∧ C) ∨ (A ∧ ¬B ∧ ¬C). <br>
+              Previesť výrok do jeho ÚDNF môžeme jednoducho tak, že sa pozrieme na všetky hodnoty jeho premenných, pri ktorých je pravdivý. Následne z každej takejto kombinácie hodnôt vytvoríme konjunkciu a tieto konjunkcie spojíme do disjunkcie.
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <b>Konjunktívna normálna forma (KNF)</b>   = Výrok je v tejto forme, ak má tvar konjunkcie niekoľkých literálov / disjunkcií literálov, pričom v jednom konjunktante sa literál každej premennej nachádza najviac raz. Napr. (A ∨ C) ∧ (A ∨ B ∨ ¬C). <br>
+              <b>Úplná konjunktívna normálna forma (ÚKNF)</b> má tvar konjunkcie disjunkcií, pre ktoré platí, že obsahujú literál každej premennej výroku práve raz. Napr. (¬A ⇒ C) ⇒ [B ∨ (¬C ⇒ A)] je logicky rovnocenné (¬A ∨ ¬B ∨ C) ∧ (A ∨ ¬B ∨ C) ∧ (A ∨ ¬B ∨ ¬C). <br>
+              Previesť výrok do jeho ÚKNF môžeme tak, že sa pozrieme na všetky hodnoty jeho premenných, pri ktorých je nepravdivý. Následne z každej takejto kombinácie hodnôt vytvoríme disjunkciu, tieto disjunkcie znegujeme a spojíme do konjunkcie.
+            </li>
+          </ul>
+
+        </p>
+
+        <h3>Zdroje, užitočné odkazy, literatúra</h3>
+        <p>
+          <ul>
+            <li>RUSSELL, S. J. – NORVIG, P.: Artificial Intelligence: A Modern Approach (3nd ed.). Upper Saddle River, USA: Prentice Hall, 2003. ISBN 0-13-790395-2</li>
+            <li>Diplomová práca o Logickej dedukcii (Libuše Pavlisková, 2003): https://www1.osu.cz/home/habibal/dedukce/</li>
+            <li>Online materiály z prednášok o Logike:</li>
+            <li>http://www2.fiit.stuba.sk/~kvasnicka/Logika/ </li>
+            <li>https://www.esf.kfi.zcu.cz/logika/</li>
+            <li>Niečo viac o stromovej štruktúre: https://cs.wikipedia.org/wiki/Strom_(datov%C3%A1_struktura)#Hloubka,_v%C3%BD%C5%A1ka,_%C5%A1%C3%AD%C5%99ka,_%C3%BArove%C5%88_a_cesta</li>
+            <li>DNF a KNF: https://is.mendelu.cz/eknihovna/opory/zobraz_cast.pl?cast=65564</li>
+          </ul>
+
+        </p>
+
+
+
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="w3-center bgcol-1 w3-padding-32">
+      <a href="#home" class="w3-button button"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <!--
+        <div class="w3-xlarge w3-section">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+      </div> -->
+    </footer>
+
+  </body>
+</html>
