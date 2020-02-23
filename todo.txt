@@ -1,0 +1,67 @@
+ČO EŠTE TREBA UROBIŤ
+
+VŠEOBECNE
+
+# Medzeri medzi odsekmi
+Dala by som medzi jednotlivé odseky medzeru, nech tam nie sú také súvislé bloky textu.
+
+# Upraviť odkazy
+Mýslím, že užitočné odkazy môžu byť aj menším písmom a možno aj s odrážkami by mohli byť, ale neviem, ako chceš.
+
+# Pridať názvy diagramom, tabuľkám, grafom,...
+Tak ako to mám v texte by malo byť jasné, čo sa ako volá, keby dačo nie, tak mi napíš. 
+Resp. ak by to bolo veľmi pracné alebo nemáš na to čas, tak stačí z textu poodstraňovať zátvorky typu (viz. Graf A).
+To môžem kľudne spraviť aj sama, len daj vedieť.
+
+# Zmeniť font
+v prezentácii mám Space Mono, neviem či to sadne aj na stránku, ale môžeš skúsiť. 
+Inak ale kľudne daj aj dačo iné, len nech tam nie sú také retardované čirako-bodky :D
+
+DOMOV
+
+# Zmeniť O projekte
+Tie 3 veci čo tam máme by som zmenila. V prezentácii tam mám pri cieloch tak pekne, že propagovať, informovať a vysvetľovať. 
+Príde mi to také "údernejšie" :D Pod to by som napísala niečo ako:
+Propagovať - Zvýšovanie verejného povedomia o UI a jej stále väčšom význame pre spoločnosť
+Informovať - Vytvorenie webu, ktorý by bol kvalitným a ľahko dostupným zdrojom informácií o UI v slovenskom jazyku
+Vysvetľovať - Objasňovanie základných princípov fungovania UI s pomocov názorných ukážok a príkladov
+
+# Viac O nás
+Je tam trocha málo, čiže by som pridala aspoň nejakú jednu vetu, že prečo sme toto robili.
+Niečo ako: Sme dve študentky z G. Alejová 1 v Košiciach. Obe sa dlhodobo zaujímame o informatiku a oblasť UI.
+Bohužiaľ sme si však všimli, že nájsť niečo viac o tejto téme v slovenskom jazyku je problém... 
+(No neviem, to si teraz cucám z prsta, tak to skús dokončiť :D)
+
+ÚLOHY A VÝZVY
+
+# "Pohyb, manipulácia s predmetmi, vnímanie" zmeniť na nadpis
+
+NÁSTROJE - VYHĽADÁVANIE
+
+# Pridať diagram vyhľadávacieho stromu
+V docu je obrázok, len na stránke nejak nie :D
+
+# Pridať gif pre zacyklenie
+Keď ho máme, tak by som ho tam dala. Patrí k "Prehľadávanie do hĺbky s obmedzením"
+
+# Upraviť gify
+"Iteratívne prehľadávanie do hĺbky" a "Obojsmerné vyhľadávanie" by som trocha zmenšila, aby boli približne také veľké krúžky ako ostatné.
++ "Obojsmerné vyhľadávanie" je aj retardovane otočené :D Dala by som ho pod ten text, namiesto vedľa, keďže je to skôr našírku.
+
+NÁSTROJE - STROJOVÉ UČENIE A UNS
+
+# Indexy pre w0, w1
+V časti Regresia sú tam také premenné, že w0 a w1. Tá 0 a 1 by mali byť dolné indexy.
+
+# Obrázky ku klasifikácii
+Toto ti ešte dodám, lebo ten jeden čo tam je nie je úplne dobrý...
+
+NÁSTROJE - LOGIKA
+
+# Presunúť tabuĺku s Ekvivalentnými výrokmi nabok
+Nie je taká podstatná, podľa mňa nepotrebuje toľko priestoru, ale opäť, ako chceš.
+
+# Opraviť zarovnanie Metód hľadania pravdivostných hodnôt výroku
+Je to tam nejak divne. Ten odsek so Stromom patrí pod Quineou algoritmus, takže nevidím dôvod, aby bol posunutý oproti tomu viac doprava.
+Tablová metóda nie je pri svojom čísle (3.) a je tam taká strašná medzera pred vetou "Vždy keď z uzlu vyvádzame..."
+Toto všetko, čo je od "3." po Príklad A patrí k Tablovej metóde, čiže by to malo byť na 1 úrovni.
