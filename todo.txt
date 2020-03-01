@@ -7,17 +7,6 @@ Tak ako to mám v texte by malo byť jasné, čo sa ako volá, keby dačo nie, t
 Resp. ak by to bolo veľmi pracné alebo nemáš na to čas, tak stačí z textu poodstraňovať zátvorky typu (viz. Graf A).
 To môžem kľudne spraviť aj sama, len daj vedieť.
 
-
-DOMOV
-
-# Zmeniť O projekte
-Tie 3 veci čo tam máme by som zmenila. V prezentácii tam mám pri cieloch tak pekne, že propagovať, informovať a vysvetľovať. 
-Príde mi to také "údernejšie" :D Pod to by som napísala niečo ako:
-Propagovať - Zvýšovanie verejného povedomia o UI a jej stále väčšom význame pre spoločnosť
-Informovať - Vytvorenie webu, ktorý by bol kvalitným a ľahko dostupným zdrojom informácií o UI v slovenskom jazyku
-Vysvetľovať - Objasňovanie základných princípov fungovania UI s pomocov názorných ukážok a príkladov
-
-
 NÁSTROJE - VYHĽADÁVANIE
 
 # Pridať diagram vyhľadávacieho stromu
