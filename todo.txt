@@ -13,15 +13,15 @@ To môžem kľudne spraviť aj sama, len daj vedieť.
 
 NÁSTROJE - VYHĽADÁVANIE
 
-# Pridať diagram vyhľadávacieho stromu
+# Pridať diagram vyhľadávacieho stromu - Z DOCU NEVIEM BRAT OBRAZKY - HODIS MI TO EXTRA?
 V docu je obrázok, len na stránke nejak nie :D
 
-# Pridať gif pre zacyklenie
+# Pridať gif pre zacyklenie - TO JE KTORY?
 Keď ho máme, tak by som ho tam dala. Patrí k "Prehľadávanie do hĺbky s obmedzením"
 
 # Upraviť gify
 "Iteratívne prehľadávanie do hĺbky" a "Obojsmerné vyhľadávanie" by som trocha zmenšila, aby boli približne také veľké krúžky ako ostatné.
-+ "Obojsmerné vyhľadávanie" je aj retardovane otočené :D Dala by som ho pod ten text, namiesto vedľa, keďže je to skôr našírku.
+"Obojsmerné vyhľadávanie" je aj retardovane otočené :D Dala by som ho pod ten text, namiesto vedľa, keďže je to skôr našírku.
 
 NÁSTROJE - STROJOVÉ UČENIE A UNS
 
