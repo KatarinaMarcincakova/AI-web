@@ -45,7 +45,7 @@ NÁSTROJE - LOGIKA
 # Presunúť tabuĺku s Ekvivalentnými výrokmi nabok
 Nie je taká podstatná, podľa mňa nepotrebuje toľko priestoru, ale opäť, ako chceš.
 
-# Opraviť zarovnanie Metód hľadania pravdivostných hodnôt výroku
+# Opraviť zarovnanie Metód hľadania pravdivostných hodnôt výroku - Z TOHTO SOM MAGOR :D - POTOM OSOBNE SI TO PREJDEME 
 Je to tam nejak divne. Ten odsek so Stromom patrí pod Quineou algoritmus, takže nevidím dôvod, aby bol posunutý oproti tomu viac doprava.
 Tablová metóda nie je pri svojom čísle (3.) a je tam taká strašná medzera pred vetou "Vždy keď z uzlu vyvádzame..."
 Toto všetko, čo je od "3." po Príklad A patrí k Tablovej metóde, čiže by to malo byť na 1 úrovni.
