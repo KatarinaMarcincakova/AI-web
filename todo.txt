@@ -1,5 +1,9 @@
 ČO EŠTE TREBA UROBIŤ
 
+MOBILNU VERZIU
+#upravit v CSS veci aby to na mobile dobre ukazovalo
+#doplnit vytvorenie app do mobilu (ako sjl web)
+
 VŠEOBECNE
 
 # Pridať názvy diagramom, tabuľkám, grafom,...
@@ -26,7 +30,7 @@ Toto ti ešte dodám, lebo ten jeden čo tam je nie je úplne dobrý...
 
 NÁSTROJE - LOGIKA
 
-# Presunúť tabuĺku s Ekvivalentnými výrokmi nabok
+# Presunúť tabuĺku s Ekvivalentnými výrokmi nabok - TOTO NECHAM TAK LEBO NA BOKU TO NEBUDE EXTRA LEPSIE
 Nie je taká podstatná, podľa mňa nepotrebuje toľko priestoru, ale opäť, ako chceš.
 
 # Opraviť zarovnanie Metód hľadania pravdivostných hodnôt výroku - Z TOHTO SOM MAGOR :D - POTOM OSOBNE SI TO PREJDEME 
