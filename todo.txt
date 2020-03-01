@@ -1,10 +1,6 @@
 ČO EŠTE TREBA UROBIŤ
 
 VŠEOBECNE
-
-# Medzeri medzi odsekmi
-Dala by som medzi jednotlivé odseky medzeru, nech tam nie sú také súvislé bloky textu.
-
 # Upraviť odkazy
 Mýslím, že užitočné odkazy môžu byť aj menším písmom a možno aj s odrážkami by mohli byť, ale neviem, ako chceš.
 
@@ -49,9 +45,6 @@ Keď ho máme, tak by som ho tam dala. Patrí k "Prehľadávanie do hĺbky s obm
 + "Obojsmerné vyhľadávanie" je aj retardovane otočené :D Dala by som ho pod ten text, namiesto vedľa, keďže je to skôr našírku.
 
 NÁSTROJE - STROJOVÉ UČENIE A UNS
-
-# Indexy pre w0, w1
-V časti Regresia sú tam také premenné, že w0 a w1. Tá 0 a 1 by mali byť dolné indexy.
 
 # Obrázky ku klasifikácii
 Toto ti ešte dodám, lebo ten jeden čo tam je nie je úplne dobrý...
