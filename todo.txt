@@ -17,11 +17,6 @@ Propagovať - Zvýšovanie verejného povedomia o UI a jej stále väčšom výz
 Informovať - Vytvorenie webu, ktorý by bol kvalitným a ľahko dostupným zdrojom informácií o UI v slovenskom jazyku
 Vysvetľovať - Objasňovanie základných princípov fungovania UI s pomocov názorných ukážok a príkladov
 
-# Viac O nás
-Je tam trocha málo, čiže by som pridala aspoň nejakú jednu vetu, že prečo sme toto robili.
-Niečo ako: Sme dve študentky z G. Alejová 1 v Košiciach. Obe sa dlhodobo zaujímame o informatiku a oblasť UI.
-Bohužiaľ sme si však všimli, že nájsť niečo viac o tejto téme v slovenskom jazyku je problém... 
-(No neviem, to si teraz cucám z prsta, tak to skús dokončiť :D)
 
 NÁSTROJE - VYHĽADÁVANIE
 
