@@ -1,8 +1,6 @@
 ČO EŠTE TREBA UROBIŤ
 
 VŠEOBECNE
-# Upraviť odkazy
-Mýslím, že užitočné odkazy môžu byť aj menším písmom a možno aj s odrážkami by mohli byť, ale neviem, ako chceš.
 
 # Pridať názvy diagramom, tabuľkám, grafom,...
 Tak ako to mám v texte by malo byť jasné, čo sa ako volá, keby dačo nie, tak mi napíš. 
@@ -24,10 +22,6 @@ Je tam trocha málo, čiže by som pridala aspoň nejakú jednu vetu, že prečo
 Niečo ako: Sme dve študentky z G. Alejová 1 v Košiciach. Obe sa dlhodobo zaujímame o informatiku a oblasť UI.
 Bohužiaľ sme si však všimli, že nájsť niečo viac o tejto téme v slovenskom jazyku je problém... 
 (No neviem, to si teraz cucám z prsta, tak to skús dokončiť :D)
-
-ÚLOHY A VÝZVY
-
-# "Pohyb, manipulácia s predmetmi, vnímanie" zmeniť na nadpis
 
 NÁSTROJE - VYHĽADÁVANIE
 
