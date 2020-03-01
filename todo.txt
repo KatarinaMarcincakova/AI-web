@@ -9,9 +9,6 @@ Tak ako to mám v texte by malo byť jasné, čo sa ako volá, keby dačo nie, t
 Resp. ak by to bolo veľmi pracné alebo nemáš na to čas, tak stačí z textu poodstraňovať zátvorky typu (viz. Graf A).
 To môžem kľudne spraviť aj sama, len daj vedieť.
 
-# Zmeniť font
-v prezentácii mám Space Mono, neviem či to sadne aj na stránku, ale môžeš skúsiť. 
-Inak ale kľudne daj aj dačo iné, len nech tam nie sú také retardované čirako-bodky :D
 
 DOMOV
 
