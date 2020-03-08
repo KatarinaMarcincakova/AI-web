@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
-  <title>Umelá inteligencia</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="style.css" rel="stylesheet">
-  <script src="script.js"></script>
+  <head>
+    <title>Umelá inteligencia</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  </head>
 
   <body>
 
@@ -64,9 +67,9 @@
 
 
     <!-- content -->
-         <div class="w3-row-padding" id="main">
+         <div id="main">
 
-           <div class="w3-col m2 l2 w3-sidebar w3-bar-block">
+           <div class="w3-sidebar w3-bar-block" id="nav">
              <div id="sideNav">
                <!-- Navbar (ntb/pc screen) -->
                <div class="w3-hide-small">
@@ -75,7 +78,7 @@
                  <a href="#reg" class="w3-bar-item w3-button">Regresia</a>
                  <a href="#klasif" class="w3-bar-item w3-button">Klasifikácia</a>
                  <a href="#uns" class="w3-bar-item w3-button">Umelé neurónové siete</a>
-                 <a href="#zao" class="w3-bar-item w3-button">Zdroje, užitočné odkazy, literatúra</a>
+                 <a href="#zao" class="w3-bar-item w3-button">Zdroje, užitočné odkazy, literatúra</a> <br>
                </div>
                <!-- Hide right-floated links on small screens and replace them with a menu icon -->
                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
@@ -85,25 +88,26 @@
            </div>
 
            <!-- text -->
-           <div class="bgcol-2 w3-col m10 l10 w3-right">
+           <div class="bgcol-2 w3-right" id="content">
                <h2 class="w3-center">NÁSTROJE - STROJOVÉ UČENIE A UNS</h2>
                <h6 class="w3-center">(angl. “machine learning”, “artificial neural networks”)</h6> <br>
 
-               <span id="su"><h3>Strojové učenie</h3></span>
+               <span id="su"></span>
+               <h3>Strojové učenie</h3>
                <p>
                  Jednou z najdôležitejších schopností inteligentných agentov je schopnosť učiť sa. Poznáme rôzne spôsoby učenia. Ak z už známeho pravidla logicky vyvodzujeme nové pravidlo (napr. aby sme zvýšili efektivitu procesu) hovoríme o analytickom alebo deduktívnom učení. Učenie sa všeobecnej funkcie / pravidla zo špecifických párov vstup-výstup sa nazýva induktívne učenie. Podľa charakteru spätnej väzby, ktorú stroj dostáva možno učenie rozdeliť nasledovne: <br>
                  <ul>
                    <li>
                      <h4>Učenie s učiteľom (angl. “supervised learning”)</h4>
                      <p>
-                       Agent pozoruje niekoľko vzorových párov vstup-výstup a podľa nich sa naučí ako k vstupu vytvoriť adekvátny výstup. Spoľahlivosť takto vytrénovaného algoritmu silne závisí od veľkosti a kvality tréningového setu dát.<br>
+                       Agent pozoruje niekoľko vzorových párov vstup-výstup a podľa nich sa naučí ako k vstupu vytvoriť adekvátny výstup. Spoľahlivosť takto vytrénovaného algoritmu silne závisí od veľkosti a kvality tréningového setu dát.<br> <br>
                        Tento proces môžeme prirovnať k spôsobu akým rodičia učia malé deti rozoznávať rôzne veci. Napr. im ukážu obrázkovú knižku o zvieratách, kde na obrázok každého zvieraťa ukážu a správne ho označia (“pes”, “mačka”, “kôň”, atď.). Takto sa dieťa naučí jednotlivé zvieratá rozoznať aj keď ich uvidí na inom obrázku alebo naživo.
                      </p>
                    </li>
                    <li>
                      <h4>Učenie bez učiteľa (angl. “unsupervised learning”)</h4>
                      <p>
-                       Agent sa snaží objaviť nejaké vzory vo vstupných dátach, pričom nemá žiadnu explicitnú spätnú väzbu (nepozná “správne odpovede”). Podstatné je zoskupovanie takých vstupov, ktoré sú si v niečom podobné (angl. “clustering”) a tiež vymýšľanie asociačných pravidiel, ktoré opisujú jednotlivé skupiny dát a vzťahy medzi nimi. <br>
+                       Agent sa snaží objaviť nejaké vzory vo vstupných dátach, pričom nemá žiadnu explicitnú spätnú väzbu (nepozná “správne odpovede”). Podstatné je zoskupovanie takých vstupov, ktoré sú si v niečom podobné (angl. “clustering”) a tiež vymýšľanie asociačných pravidiel, ktoré opisujú jednotlivé skupiny dát a vzťahy medzi nimi. <br><br>
                        Ak takémuto algoritmu ukážeme napr. niekoľko rôznych obrázkov psov, tak bude schopný povedať, že sú si všetky istým spôsobom podobné (dve oči, štyri nohy, chvost, atď.) a zaradí ich do jednej skupiny, hoci ich nebude vedieť označiť ako psov.
                      </p>
                    </li>
@@ -122,26 +126,28 @@
                  </ul>
                </p> <br>
 
-               <span id="irs"><h3>Indukcia rozhodovacieho stromu</h3></span>
+               <span id="irs"></span>
+               <h3>Indukcia rozhodovacieho stromu</h3>
                <p>
                  Jednou z najjednoduchších a najúspešnejších foriem strojového učenia je indukcia rozhodovacieho stromu. Ide o funkciu, ktorá berie ako vstup vektor hodnôt, atribútov, a vráti rozhodnutie, jedinú výstupnú hodnotu. Toto rozhodnutie dosiahneme vykonaním postupnosti testov. Každý uzol v strome zodpovedá testu hodnoty jedného zo vstupných atribútov, pričom vetvy z uzla sú označené možnými hodnotami tohto atribútu. Vstupy sa spracúvajú od koreňa stromu cez príslušné vetvy až po listový uzol určujúci hodnotu, ktorú má funkcia vrátiť.
                </p> <br>
 
-               <span id="reg"><h3>Regresia</h3></span>
+               <span id="reg"></span>
+               <h3>Regresia</h3>
                <p>
-                 Ďalšou formou induktívneho učenia je regresia. Ide o hľadanie funkcie najlepšie vystihujúcej vzťah medzi vstupmi a výstupmi, teda fitovanie ich grafu závislosti. <br>
-                 Najjednoduchším príkladom je lineárna regresia, ktorá hľadá funkciu v tvare f(x) = w0x + w1. V grafe závislosti vstupu s výstupom má podobu regresnej priamky. Koeficienty w0 a w1 nazývame tiež hmotnosti. Pri lineárnej regresii hľadá algoritmus také hodntoty hmotností, aby bol súčet chýb na druhú, čo najmenší. Chybou rozumieme rozdiel medzi skutočnou hodnotou výstupu a hodnotou predpovedanou pre daný vstup regresnou priamkou. Pre jeden vstup môžeme druhú mocninu chyby vypočítať ako (y - w0x - w1)2, kde x je hodnota vstupu a y je skutočný výstup (nie ten predpovedaný). Súčet druhých mocnín chýb pre všetky vstupy sa zvykne označovať aj R2. <br>
+                 Ďalšou formou induktívneho učenia je regresia. Ide o hľadanie funkcie najlepšie vystihujúcej vzťah medzi vstupmi a výstupmi, teda fitovanie ich grafu závislosti. <br> <br>
+                 Najjednoduchším príkladom je lineárna regresia, ktorá hľadá funkciu v tvare f(x) = w<sub>0</sub>x + w<sub>1</sub>. V grafe závislosti vstupu s výstupom má podobu regresnej priamky. Koeficienty w<sub>0</sub> a w<sub>1</sub> nazývame tiež hmotnosti. Pri lineárnej regresii hľadá algoritmus také hodntoty hmotností, aby bol súčet chýb na druhú, čo najmenší. Chybou rozumieme rozdiel medzi skutočnou hodnotou výstupu a hodnotou predpovedanou pre daný vstup regresnou priamkou. Pre jeden vstup môžeme druhú mocninu chyby vypočítať ako (y - w<sub>0</sub>x - w<sub>1</sub>)<sup>2</sup>, kde x je hodnota vstupu a y je skutočný výstup (nie ten predpovedaný). Súčet druhých mocnín chýb pre všetky vstupy sa zvykne označovať aj R<sup>2</sup>. <br> <br>
                  Funkcia opisujúca vzťah medzi vstupmi a výstupmi môže byť napr. lineárna exponenciálna, polynomická a pod.
                </p>
                <div class="w3-row-padding">
                  <div class="w3-col m4 l4">
-                   <h5 class="w3-center">Príklad lineárnej regresie: f(x) = 0.872x + 10, R2 = 0.666</h5>
+                   <h5 class="w3-center">Príklad lineárnej regresie: <br> f(x) = 0.872x + 10, R<sup>2</sup> = 0.666</h5>
                  </div>
                  <div class="w3-col m4 l4">
-                   <h5 class="w3-center">Príklad exponenciálnej regresie: f(x) = 23 * e0.0161x, R2 = 0.667</h5>
+                   <h5 class="w3-center">Príklad exponenciálnej regresie: <br> f(x) = 23 * e<sup>0.0161x</sup>, R<sup>2</sup> = 0.667</h5>
                  </div>
                  <div class="w3-col m4 l4">
-                   <h5 class="w3-center">Príklad polynomickej regresie 2. stupňa: f(x) = 17.8 +​ 0.364​x + ​0.0053​x2, R2 = 0.684</h5>
+                   <h5 class="w3-center">Príklad polynomickej regresie 2. stupňa: <br> f(x) = 17.8 +​ 0.364​x + ​0.0053​x<sup>2</sup>, R<sup>2</sup> = 0.684</h5>
                  </div>
                </div>
                <div class="w3-row-padding">
@@ -161,13 +167,13 @@
                    <p> </p>
                  </div>
                  <div class="w3-col m4 l4">
-                   <h5 class="w3-center">Príklad polynomickej regresie 3. stupňa: f(x) = 19.8 + ​0.084x + ​0.0126​x​2 - ​0.0000497x​3, R2 = 0.685</h5>
+                   <h5 class="w3-center">Príklad polynomickej regresie 3. stupňa: <br> f(x) = 19.8 + ​0.084x + ​0.0126​x<sup>2</sup> - ​0.0000497x​<sup>3</sup>, R<sup>2</sup> = 0.685</h5>
                  </div>
                  <div class="w3-col m2 l2">
                    <p> </p>
                  </div>
                  <div class="w3-col m4 l4">
-                   <h5 class="w3-center">Príklad polynomickej regresie 4. stupňa: f(x) = 16.6 + ​0.744x - ​0.0167​x​2 + ​0.000403x​3 - 0.00000226x4, R2 = 0.687</h5>
+                   <h5 class="w3-center">Príklad polynomickej regresie 4. stupňa: <br> f(x) = 16.6 + ​0.744x - ​0.0167​x​<sup>2</sup> + ​0.000403x​<sup>3</sup> - 0.00000226x<sup>4</sup>, R<sup>2</sup> = 0.687</h5>
                  </div>
                  <div class="w3-col m1 l1">
                    <p> </p>
@@ -191,7 +197,8 @@
                  </div>
                </div> <br>
 
-               <span id="klasif"><h3>Klasifikácia</h3></span>
+               <span id="klasif"></span>
+               <h3>Klasifikácia</h3>
                <p>
                  Fitovanie môže byť použité aj na klasifikáciu, čiže rozdelenie vstupov do tried (skupín vstupov s podobnými vlastnosťami). Čiara, ktorá v grafe oddeľuje triedy sa nazýva hranica rozhodnutia. <br>
                  <div class="w3-row-padding">
@@ -205,18 +212,20 @@
                      <p> </p>
                    </div>
                  </div> <br>
-                 Ak je hranicou rozhodnutia priamka, hovoríme jej lineárny separátor. Klasifikátor využívajúcí lineárny separátor názývame aj lineárny klasifikátor a údaje, ktoré pripúšťajú takýto separátor zas nazývame lineárne oddeliteľné. Tento typ klasifikátoru môže byť vytrénovaný jednoduchým pravidlom aktualizácie koeficientov definujúcich jeho hranicu rozhodnutia, k fitovaniu lineárne oddeliteľných údajov. Medzi iné prístupy patrí napr. logistická regresia, ktorá využíva separátor definovaným logistickou funkciou a funguje aj pre lineárne neoddeliteľné údaje. <br>
+                 Ak je hranicou rozhodnutia priamka, hovoríme jej lineárny separátor. Klasifikátor využívajúcí lineárny separátor názývame aj lineárny klasifikátor a údaje, ktoré pripúšťajú takýto separátor zas nazývame lineárne oddeliteľné. Tento typ klasifikátoru môže byť vytrénovaný jednoduchým pravidlom aktualizácie koeficientov definujúcich jeho hranicu rozhodnutia, k fitovaniu lineárne oddeliteľných údajov. Medzi iné prístupy patrí napr. logistická regresia, ktorá využíva separátor definovaným logistickou funkciou a funguje aj pre lineárne neoddeliteľné údaje. <br> <br>
                  Spôsobilosť výučbového algoritmu vyjadruje výučbová krivka znázorňujúca presnosť predpovedí vytrénovaného programu ako funkciu veľkosti tréningového setu. Pritom výpočtová teória učenia hovorí, že je nepravdepodobné, aby hypotéza vytvorená programom, ktorá je v súlade s dostatočne veľkým setom, bola príliš nesprávna.
                </p> <br>
 
-               <span id="uns"><h3>Umelé neurónové siete</h3></span>
+               <span id="uns"></span>
+               <h3>Umelé neurónové siete</h3>
                <p>
-                 V súčasnosti je veľmi populárny pomerne nový koncept, umelé neurónové siete. Ide o zjednodušené modely sietí neurónov v mozgoch živočíchov. Najjednoduchším umelým neurónom je prahová logická jednotka. Jeho základnou operáciou je vypočítať vážený súčet jeho vstupov a potom vrátiť 1, ak tento súčet prekročí prahovú hodnotu, inak vrátiť 0. Používané váhy sa aktualizujú počas procesu učenia, ktorý môže prebiehať s aj bez učiteľa. <br>
+                 V súčasnosti je veľmi populárny pomerne nový koncept, umelé neurónové siete. Ide o zjednodušené modely sietí neurónov v mozgoch živočíchov. Najjednoduchším umelým neurónom je prahová logická jednotka. Jeho základnou operáciou je vypočítať vážený súčet jeho vstupov a potom vrátiť 1, ak tento súčet prekročí prahovú hodnotu, inak vrátiť 0. Používané váhy sa aktualizujú počas procesu učenia, ktorý môže prebiehať s aj bez učiteľa. <br> <br>
                  Častou technikov učenia neurónových sietí je hlboké učenie, ktoré využíva mnoho vrstiev nelineárneho spracovania informácií na extrakciu a transformáciu vlastností a na analýzu a klasifikáciu vzorov. K trénovaniu neurónový sietí sa využíva aj tzv. dolovanie dát, teda automatizované (pohodlné) získavanie vzorov predstavujúcich vedomosti implicitne uložených vo veľkých databázach  alebo iných rozsiahlych archívoch informácií.
                </p><br>
 
-               <span id="zao"><h3>Zdroje, užitočné odkazy, literatúra</h3></span>
-               <p>
+               <span id="zao"></span>
+               <h3>Zdroje, užitočné odkazy, literatúra</h3>
+               <p id="links">
                  <b> <i>Doplnit</i> </b>
                </p>
 

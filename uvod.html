@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
-  <title>Umelá inteligencia</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="style.css" rel="stylesheet">
-  <script src="script.js"></script>
+  <head>
+    <title>Umelá inteligencia</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  </head>
 
   <body>
 
@@ -62,15 +65,15 @@
     </nav>
 
 <!-- content -->
-     <div class="w3-row-padding" id="main">
+     <div id="main">
 
-       <div class="w3-col m2 l2 w3-sidebar w3-bar-block">
+       <div class="w3-sidebar w3-bar-block" id="nav">
          <div id="sideNav">
            <!-- Navbar (ntb/pc screen) -->
            <div class="w3-hide-small">
-             <a href="#ctj" class="w3-bar-item w3-button">Čo to je?</a> <br>
-             <a href="#iaia" class="w3-bar-item w3-button">Inteligencia a inteligentný agent</a> <br>
-             <a href="#zao" class="w3-bar-item w3-button">Zdroje, užitočné odkazy, literatúra</a>
+             <a href="#ctj" class="w3-bar-item w3-button">Čo to je?</a>
+             <a href="#iaia" class="w3-bar-item w3-button">Inteligencia a inteligentný agent</a>
+             <a href="#zao" class="w3-bar-item w3-button">Zdroje, užitočné odkazy, literatúra</a> <br>
            </div>
            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
@@ -79,30 +82,23 @@
          </div>
        </div>
 
-       <!-- Sidebar on small screens when clicking the menu icon -->
-       <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-         <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-         <a href="#ctj" onclick="w3_close()" class="w3-bar-item w3-button">Čo to je?</a> <br>
-         <a href="#iaia" onclick="w3_close()" class="w3-bar-item w3-button">Inteligencia a inteligentný agent</a> <br>
-         <a href="#zao" onclick="w3_close()" class="w3-bar-item w3-button">Zdroje, užitočné odkazy, literatúra</a>
-       </nav>
-
-
        <!-- text -->
-       <div class="bgcol-2 w3-col m10 l10 w3-right">
+       <div id="content">
            <h2 class="w3-center">UMELÁ INTELIGENCIA (UI)</h2>
            <h6 class="w3-center"><i>„Technika je spôsob, ako meniť zázraky na samozrejmosti.“ - Miroslav Holub, český básnik</i></h6> <br>
 
-           <span id="ctj"><h3>Čo to je?</h3></span>
+           <span id="ctj"></span>
+           <h3>Čo to je?</h3>
            <p>
-             Ako odbor informatiky sa UI zaoberá tvorbou inteligentných agentov. Hlavným cieľom je pritom porozumieť princípom umožňujúcim inteligentné správanie organických i umelých systémov a stanoviť metódy tvorby inteligentných strojov riešiacich komplexné problémy. <br>
-             Podľa inej definície ide o schopnosť systému správne interpretovať externé údaje, poučiť sa z nich a pomocou týchto poznatkov sa prispôsobiť k dosiahnutiu určitých cieľov alebo splneniu určitých úloh. <br>
+             Ako odbor informatiky sa UI zaoberá tvorbou inteligentných agentov. Hlavným cieľom je pritom porozumieť princípom umožňujúcim inteligentné správanie organických i umelých systémov a stanoviť metódy tvorby inteligentných strojov riešiacich komplexné problémy. <br> <br>
+             Podľa inej definície ide o schopnosť systému správne interpretovať externé údaje, poučiť sa z nich a pomocou týchto poznatkov sa prispôsobiť k dosiahnutiu určitých cieľov alebo splneniu určitých úloh. <br> <br>
              Názov pochádza z anglického “artificial intelligence”. UI sa však niekedy nazýva aj strojová inteligencia (angl. “machine learning”), výpočtová inteligencia (angl. “computational intelligence”) alebo syntetická inteligencia (angl .“synthetic intelligence”). <br>
            </p> <br>
 
-           <span id="iaia"><h3>Inteligencia a inteligentný agent</h3></span>
+           <span id="iaia"></span>
+           <h3>Inteligencia a inteligentný agent</h3>
            <p>
-             Pod pojmom agent rozumieme niečo, čo nejak pôsobí v prostredí. Inteligentný agent je systém, ktorý pracuje inteligentne. A čo je v tom prípade inteligencia? <br>
+             Pod pojmom agent rozumieme niečo, čo nejak pôsobí v prostredí. Inteligentný agent je systém, ktorý pracuje inteligentne. A čo je v tom prípade inteligencia? <br> <br>
              Všeobecná definícia inteligencie je predmetom mnohých sporov. Väčšina uznávaných definícií sa však zhoduje v tom, že inteligencia: <br>
              <ul>
                <li>je vlastnosť, ktorá podmieňuje interakciu jednotlivca s prostredím</li>
@@ -111,8 +107,9 @@
              </ul>
            </p> <br>
 
-           <span id="zao"><h3>Zdroje, užitočné odkazy, literatúra</h3></span>
-           <p>
+           <span id="zao"></span>
+           <h3>Zdroje, užitočné odkazy, literatúra</h3>
+           <p id="links">
              LEGG, S. – HUTTER, M.: A Collection of Definitions of Intelligence. In: Frontiers in Artificial Intelligence and Applications, roč. 157, 2007, s. 17-24. <br>
              POOLE, D. – MACKWORTH, A. – GOEBEL, R.: Computational Intelligence: A Logical Approach. New York: Oxford University Press, 1998. ISBN 978-0-19-510270-3 <br>
            </p>
