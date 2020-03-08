@@ -65,6 +65,7 @@ h3 {
   border-radius: 25px;
   background: #1e9eaf;
   padding: 20px;
+  margin-top: 80px;
 }
 
 p {
@@ -111,7 +112,7 @@ p {
 }
 
 span {
-  padding-top: 15%;
+  border-bottom: 65px !important;
 }
 
 .gif {
