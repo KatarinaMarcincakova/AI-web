@@ -74,7 +74,7 @@ p {
   font-size: 1em;
   padding-left: 20px;
   padding-right: 20px;
-  color: #043d49; 
+  color: #043d49;
 }
 
 #sideNav {
@@ -158,4 +158,8 @@ span {
   text-align: center;
   background-color: red;
   padding-left: 20px;
+}
+
+.hltext {
+  color: white;
 }
