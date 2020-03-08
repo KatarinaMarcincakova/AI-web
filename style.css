@@ -1,4 +1,6 @@
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body,h1,h2,h3,h4,h5,h6 {
+  font-family: 'Montserrat' ;
+}
 
 body, html {
   height: 100%;
@@ -122,4 +124,41 @@ span {
 
 .podtema {
   font-size: 0.8em;
+}
+
+#links {
+  font-size: 0.8em;
+}
+
+#web {
+  text-decoration: none;
+}
+
+#web:hover {
+  cursor: pointer;
+}
+
+#nav {
+  width: 15%;
+  float: left;
+}
+
+#content {
+  width: 84%;
+  float: right;
+}
+
+#quote {
+  width: 30%;
+  height: 100%;
+  float: left;
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+  background-color: red;
+  padding-left: 20px;
+}
+
+#text {
+  padding-top: 20%
 }
