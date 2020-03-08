@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Umelá inteligencia</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="style.css" rel="stylesheet">
-    <script src="script.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-  </head>
+  <title>Umelá inteligencia</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="style.css" rel="stylesheet">
+  <script src="script.js"></script>
 
   <body>
 
@@ -67,16 +64,16 @@
 
 
     <!-- content -->
-         <div id="main">
+         <div class="w3-row-padding" id="main">
 
-           <div class="w3-sidebar w3-bar-block" id="nav">
+           <div class="w3-col m2 l2 w3-sidebar w3-bar-block">
              <div id="sideNav">
                <!-- Navbar (ntb/pc screen) -->
                <div class="w3-hide-small">
                  <a href="#ga" class="w3-bar-item w3-button">Genetické algoritmy</a>
                  <a href="#es" class="w3-bar-item w3-button">Expertné systémy</a>
                  <a href="#pr" class="w3-bar-item w3-button">Pravdepodobnosť</a>
-                 <a href="#zao" class="w3-bar-item w3-button">Zdroje, užitočné odkazy, literatúra</a> <br>
+                 <a href="#zao" class="w3-bar-item w3-button">Zdroje, užitočné odkazy, literatúra</a>
                </div>
                <!-- Hide right-floated links on small screens and replace them with a menu icon -->
                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
@@ -86,14 +83,13 @@
            </div>
 
            <!-- text -->
-           <div class="bgcol-2 w3-right" id="content">
+           <div class="bgcol-2 w3-col m10 l10 w3-right">
                <h2 class="w3-center">INÉ NÁSTROJE UI</h2>
                <p>
                  Na našej stránke sa bližšie venujeme tým najdôležitejším oblastiam UI. UI sa však ako odbor zaoberá veľkým množstvom rôznych problémov, ich možných riešení a implementácií. Spomeňme si ďalšie známe metódy a algoritmy.
                </p> <br>
 
-               <span id="ga"></span>
-               <h3>Genetické algoritmy</h3>
+               <span id="ga"><h3>Genetické algoritmy</h3></span>
                <p>
                  Tieto algoritmy v podstate aplikujú princípy správania živých organizmov na nájdenie riešenia zadaného problému. Všetky potenciálne riešenia (správne aj nesprávne) reprezentujú ako populáciu organizmov, ktorá žije v nejakom umelom prostredí. Aplikovaním evolučných mechanizmov (napr. prirodzený výber) simulujú ich “vývin” (prežívanie, rozmnožovanie a pod.). Dobré riešenia majú tendenciu sa z generácie na generáciu ešte zlepšovať, krížiť a prosperovať. Zlé riešenia naopak postupne vymierajú. <br> <br>
                  Na začiatku takéhoto algoritmu máme populáciu nejakých (väčšinou náhodne vybraných) potenciálnych riešení. Tie sú zvyčajne kódované ako reťazce / polia hodnôt, najčastejšie ako binárne reťazce (reťazec si môžeme predstaviť ako chromozóm a jednotlivé hodnoty na určitých pozíciach binárneho reťazca ako alely v génoch tvoriacich chromozóm). Počiatočná populácia môže vyzerať napr. takto:<br>
@@ -101,40 +97,36 @@
                  B:    100101110 <br>
                  C:    001100111 <br>
                  D:    011000001 <br> <br>
-                 Z populácie sú následne vybraný niektorý jedinci, ktorý budú využitý k vzniku novej generácie. Výber býva náhodný s ohľadom na potenciál jednotlivých riešení, teda na nejaké hodnoty priradené jedincom predom, podľa toho aký je náš cieľ. V prípade našej populácie povedzme, že je hodnota jedinca rovná počtu 0 v jeho reťazci. Takže A, B, C a D majú postupne hodnotenie 5, 4, 4 a 6. K tvorbe novej generácie môžu byť náhodne vybraný napr. jedinci A, C a D. <br> <br>
+                 Z populácie sú následne vybraný niektorý jedinci, ktorý budú využitý k vzniku novej generácie. Výber býva náhodný s ohľadom na potenciál jednotlivých riešení, teda na nejaké hodnoty priradené jedincom predom, podľa toho aký je náš cieľ. V prípade našej populácie povedzme, že je hodnota jedinca rovná počtu 0 v jeho reťazci. Takže A, B, C a D majú postupne hodnotenie 5, 4, 4 a 6. K tvorbe novej generácie môžu byť náhodne vybraný napr. jedinci A, C a D. <br>
                  Na každý pár vybraných jedincov je potom s vopred danou (často vysokou) pravdepodobnosťou aplikovaný krížiaci mechanizmus. Kríženie spočíva v tom, že si dva reťazce vymenia nejaké časti reťazcov (genetický materiál), čím z nich vzniknú nové potenciálne riešenie. Naša populácia by napr. po skrížení jedincov A a C tak, že vymeníme ich hodnoty na posledných troch pozíciách vyzerala takto: <br>
                  E:    110100111    hodnotenie:    3 <br>
                  B:    100101110    hodnotenie:    4 <br>
                  F:    001100010    hodnotenie:    6 <br>
-                 D:    011000001    hodnotenie:    6 <br> <br>
-                 Nakoniec prebiehajú ešte mutácie niektorých jedincov. Tie sú potrebné k zachovaniu genetickej variability, aby sa riešenia nezačali približovať len nejakému lokálnemu ideálu. U Môže ísť napr. o prehodenie hodnôt na nejakých dvoch pozíciách reťazca. Povedzme, že v našej populácii sa mutáciou prehodia tretia a štvrtá pozícia v D. <br>
-                 Výsledná nová generácia: <br>
+                 D:    011000001    hodnotenie:    6 <br>
+                 Nakoniec prebiehajú ešte mutácie niektorých jedincov. Tie sú potrebné k zachovaniu genetickej variability, aby sa riešenia nezačali približovať len nejakému lokálnemu ideálu. U Môže ísť napr. o prehodenie hodnôt na nejakých dvoch pozíciách reťazca. Povedzme, že v našej populácii sa mutáciou prehodia tretia a štvrtá pozícia v D. Výsledná nová generácia: <br>
                  E:    110100111    hodnotenie:    3 <br>
                  B:    100101110    hodnotenie:    4 <br>
                  F:    001100010    hodnotenie:    6 <br> <br>
-                 D*:    010100001    hodnotenie:    6 <br> <br> <br>
+                 D*:    010100001    hodnotenie:    6 <br> <br>
                 Tento proces opakujeme, kým nenájdeme dostatočne dobré riešenie alebo kým nevytvoríme nejaký stanovený počet nových generácií. Výsledky genetických algoritmov bývajú veľmi dobré aj pri rozsiahlych vstupoch, zvyčajne ide o globálne riešenia a pri ich hľadaní nepotrebujeme prakticky žiadne vedomosti o cieľovom ideálnom riešení. Avšak presne to ideálne riešenie nájdeme málokedy a implementácia genetického algoritmu nie je vždy jednoduchá.
 
                </p> <br>
 
-               <span id="es"></span>
-               <h3>Expertné systémy</h3>
+               <span id="es"><h3>Expertné systémy</h3></span>
                <p>
                  Expertné systémy sú systémy, ktoré napodobňujú deduktívne / induktívne zdôvodnenie ľudského experta, i keď inak spracúvajú informácie. Odborné znalosti v konkrétnej oblasti zahŕňajú nielen publikované informácie a teórie, ale predovšetkým súkromné znalosti expertov, ktoré nie sú v literatúre ľahko dostupné. Zastupovanie a kódovanie takýchto vedomostí je hlavnou úlohou znalostného inžinierstva.
                </p> <br>
 
-               <span id="pr"></span>
-               <h3>Pravdepodobnosť</h3>
+               <span id="pr"><h3>Pravdepodobnosť</h3></span>
                <p>
-                 Doteraz sme rozoberali len prípady, keď inteligentný agent presne vie v akom je stave a čo sa stane po vykonaní určitých akcií. Avšak niekedy je prostredie len čiastočne pozorovateľné a / alebo tie isté akcie vedú k rôznym náhodným výsledkom. Za takýchto podmienok agent nemusí nikdy s istotou vedieť, v akom stave je alebo kde skončí po slede akcií. <br> <br>
-                 Neistota sa dá zvládnuť pomocou reprezentácie všetkých možných stavov sveta, v ktorých by mohol agent byť a generovania pohotovostného plánu, ktorý rieši každú možnú eventualitu. Avšak tento postup je dosť zložitý a pre príliš komplikované svety neprevediteľný. <br> <br>
+                 Doteraz sme rozoberali len prípady, keď inteligentný agent presne vie v akom je stave a čo sa stane po vykonaní určitých akcií. Avšak niekedy je prostredie len čiastočne pozorovateľné a / alebo tie isté akcie vedú k rôznym náhodným výsledkom. Za takýchto podmienok agent nemusí nikdy s istotou vedieť, v akom stave je alebo kde skončí po slede akcií. <br>
+                 Neistota sa dá zvládnuť pomocou reprezentácie všetkých možných stavov sveta, v ktorých by mohol agent byť a generovania pohotovostného plánu, ktorý rieši každú možnú eventualitu. Avšak tento postup je dosť zložitý a pre príliš komplikované svety neprevediteľný. <br>
                  Iný prístup vychádza z teórie pravdepodobnosti, teda z toho, že vedomosti agenta nám môžu poskytnúť určitý stupeň viery v pravdivosť nejakého výroku. Pravdepodobnosť sumarizuje presvedčenie agenta o pravdivosti výroku vzhľadom k dôkazom. Využívajú ju napr. Bayesovské siete (angl. “Bayesian Network”). <br>
 
                </p> <br>
 
-               <span id="zao"></span>
-               <h3>Zdroje, užitočné odkazy, literatúra</h3>
-               <p id="links">
+               <span id="zao"><h3>Zdroje, užitočné odkazy, literatúra</h3></span>
+               <p>
                  <a href="https://cgg.mff.cuni.cz/~pepca/prg022/luner.html">Genetické algoritmy</a> <br>
                  <a href="http://staff.utia.cas.cz/vomlel/slides/presentace-medic-info-new-1250.pdf">Bayesovské siete</a> <br>
                  RUSSELL, S. J. – NORVIG, P.: Artificial Intelligence: A Modern Approach (3nd ed.). Upper Saddle River, USA: Prentice Hall, 2003, s. 64-93. ISBN 0-13-790395-2 <br>

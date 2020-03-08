@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Umelá inteligencia</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="style.css" rel="stylesheet">
-    <script src="script.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-  </head>
+  <title>Umelá inteligencia</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="style.css" rel="stylesheet">
+  <script src="script.js"></script>
 
   <body>
 
@@ -67,9 +64,9 @@
 
 
     <!-- content -->
-         <div id="main">
+         <div class="w3-row-padding" id="main">
 
-           <div class="w3-sidebar w3-bar-block" id="nav">
+           <div class="w3-col m2 l2 w3-sidebar w3-bar-block">
              <div id="sideNav">
                <!-- Navbar (ntb/pc screen) -->
                <div class="w3-hide-small">
@@ -79,7 +76,7 @@
                  <a href="#ils" class="w3-bar-item w3-button">Iné logické systémy</a>
                  <a href="#pl" class="w3-bar-item w3-button podtema">Predikátová logika</a>
                  <a href="#fl" class="w3-bar-item w3-button podtema">Fuzzy logika</a>
-                 <a href="#zao" class="w3-bar-item w3-button">Zdroje, užitočné odkazy, literatúra</a> <br>
+                 <a href="#zao" class="w3-bar-item w3-button">Zdroje, užitočné odkazy, literatúra</a>
                </div>
                <!-- Hide right-floated links on small screens and replace them with a menu icon -->
                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
@@ -89,14 +86,13 @@
            </div>
 
            <!-- text -->
-           <div class="bgcol-2 w3-right" id="content">
+           <div class="bgcol-2 w3-col m10 l10 w3-right">
                <h2 class="w3-center">NÁSTROJE - LOGIKA</h2>
                <p>
                  Pre UI je veľmi dôležité vedieť operovať s nadobudnutými vedomosťami. Tieto vedomosti pozostávajú z výrokov v jazyku reprezentácie znalostí. Ten má svoju syntax a sémantiku, ktorá definuje pravdivosť každého výroku v každom možnom svete. Možným svetom rozumieme matematickú abstrakciu, model, ktorý určuje pravdivosť alebo nepravdivosť každého výroku v danej situácii. Ak nejaký výrok platí v určitom modeli, hovoríme, že model mu vyhovuje. Pri riešení problému môžeme pomocou logiky nájsť model odpovedajúci nášmu cieľu. Z tohto modelu potom extrahujeme tie premenné, ktoré predstavujú akcie a sú označené ako pravdivé. Spoločne tvoria plán na dosiahnutie cieľa.
                </p> <br>
 
-               <span id="vl"></span>
-               <h3>Výroková logika</h3>
+               <span id="vl"><h3>Výroková logika</h3></span>
                <p>
                  Asi tou najjednoduchšou logikou je výroková logika. Rozlišujeme v nej: <br>
                  <ul>
@@ -149,8 +145,7 @@
 
                </p><br>
 
-               <span id="mhphv"></span>
-               <h4>Metódy hľadania pravdivostných hodnôt výroku</h4>
+               <span id="mhphv"><h4>Metódy hľadania pravdivostných hodnôt výroku</h4></span>
                <p>
                  Ak výrok obsahuje n logických premenných, potom existuje 2n možností ako za ne dosadiť hodnoty 0, 1. K priradeniu pravdivostnej hodnoty výroku pre každú z týchto možností sa najčastejšie využívajú 3 známe metódy: <br>
                  <ol>
@@ -159,7 +154,7 @@
                      <b>Quineou algoritmus</b> využíva k určovaniu pravdivostných hodnôt výroku stromovú reprezentáciu (viz. Diagram A). <br>
                      <div class="w3-row-padding">
                        <div class="w3-col m8 l8">
-                         <b>Strom</b> sa skladá z uzlov vzájomne nejako prepojených vetvami (hranami). Dokazovaný výrok predstavuje koreň, teda počiatočný uzol stromu. Z tohto koreňa vyvedieme 2 vetvy. Vyberieme si nejakú premennú výroku a v jednej z vetiev ju označíme za pravdivú (dosadíme za ňu 1), zatiaľ čo v druhej za nepravdivú (dosadíme za ňu 0). Tieto vetvy označíme príslušnými symbolmi pre literály premennej (A a ¬A). Vzniknú tak 2 nové výroky, teda 2 nové uzly stromu. Výroky zjednodušíme, ak je to možné. Následne celý proces opakujeme: z niektorého uzlu, z ktorého sme ešte nevyviedli žiadne vetvy, vyvedieme 2 vetvy k 2 novým uzlom, predstavujúcich 2 možné hodnoty nejakej premennej daného výroku. Nové výroky zjednodušíme a opakujeme. <br> <br>
+                         <b>Strom</b> sa skladá z uzlov vzájomne nejako prepojených vetvami (hranami). Dokazovaný výrok predstavuje koreň, teda počiatočný uzol stromu. Z tohto koreňa vyvedieme 2 vetvy. Vyberieme si nejakú premennú výroku a v jednej z vetiev ju označíme za pravdivú (dosadíme za ňu 1), zatiaľ čo v druhej za nepravdivú (dosadíme za ňu 0). Tieto vetvy označíme príslušnými symbolmi pre literály premennej (A a ¬A). Vzniknú tak 2 nové výroky, teda 2 nové uzly stromu. Výroky zjednodušíme, ak je to možné. Následne celý proces opakujeme: z niektorého uzlu, z ktorého sme ešte nevyviedli žiadne vetvy, vyvedieme 2 vetvy k 2 novým uzlom, predstavujúcich 2 možné hodnoty nejakej premennej daného výroku. Nové výroky zjednodušíme a opakujeme. <br>
                          Postupným vetvením sa vždy nakoniec dostaneme k uzlu hodnoty 0 alebo 1, bez akýchkoľvek premenných. Z takéhoto uzlu už nemožno vyviesť nové vetvy a nazývame ho listový uzol (list). Celý proces skončí, až keď nám dôjdu uzly, z ktorých by sme mohli viesť nové vetvy. Súbor listových uzlov potom predstavuje pravdivostné hodnoty, ktoré pôvodný výrok nadobúda pre jednotlivé hodnoty jeho premenných.
                        </div>
                          <div class="w3-col m4 l4">
@@ -219,16 +214,15 @@
 
                </p> <br>
 
-               <span id="md"></span>
-               <h4>Metódy dedukcie</h4>
+               <span id="md"><h4>Metódy dedukcie</h4></span>
                <p>
-                 Dôležitou súčasťou logiky je schopnosť odvodiť zo súboru platných výrokov nejaké nové výroky, pomocou logicky správnych pravidiel. K dokazovaniu výroku môžeme pristupovať rôzne. Ak dedukciou dokážeme pravdivosť nejakého výroku, ide o priamy dôkaz. Ak dokážeme nepravdivosť jeho negácie ide o dôkaz nepriamy (dôkaz sporom). <br> <br>
+                 Dôležitou súčasťou logiky je schopnosť odvodiť zo súboru platných výrokov nejaké nové výroky, pomocou logicky správnych pravidiel. K dokazovaniu výroku môžeme pristupovať rôzne. Ak dedukciou dokážeme pravdivosť nejakého výroku, ide o priamy dôkaz. Ak dokážeme nepravdivosť jeho negácie ide o dôkaz nepriamy (dôkaz sporom). <br>
                  Jedným z najjednoduchších odvodzovacích systémov je prirodzená dedukcia, ktorá sa asi najviac podobá bežnému priebehu odvodzovania. Využíva 8 základných pravidiel (viz. Tabuľka C). Použitie prirodzenej dedukcie si ale často vyžaduje určitý stupeň predvídavosti a rôzne “fígle”, čo môže byť v praxi na príťaž.<br>
                  <div class="w3-center">
                    <img src="images/mdtab.png" alt="tabulka">
                  </div> <br>
-                 Iná známa metóda dedukcie je rezolučná metóda. Vystačí si len s jediným tzv. rezolučným pravidlom: Ak platí (A ∨ B) a zároveň (C ∨ ¬B), tak platí aj (A ∨ C). Pracuje s tzv. klauzulami. Klauzula je literál / disjunkcia literálov. Disjunkcia literálov rovnakej premennej je vždy pravdivá, teda ide o tautológiu. Špeciálnym prípadom je prázdna klauzula, ktorú označujeme ☐. <br> <br>
-                 Rezolučná metóda sa dá využiť napr. k určeniu splniteľnosti výroku. Tento výrok najprv prevedieme do konjunktívnej normálnej formy (KNF). Jednotlivé konjunktanty (disjunkcie) budú našimi klauzulami. Vynecháme jedine disjunkcie, ktoré sú tautológiami, pretože tie nám neposkytnú žiadne užitočné informácie (ak by boli všetky konjuktanty KNF nášho výroku tautológie, tak by aj výrok sám bol tautológiou). Množinu klauzulí následne rozširujeme opakovaným aplikovaním rezolučného pravidla. Ak narazíme na prázdnu klauzulu, tak je výrok nesplniteľný, teda nikdy nemôže byť pravdivý. Ak dôjdu výroky, na ktoré by bolo možné uplatniť rezolučné pravidlo, tak je výrok splniteľný. <br> <br>
+                 Iná známa metóda dedukcie je rezolučná metóda. Vystačí si len s jediným tzv. rezolučným pravidlom: Ak platí (A ∨ B) a zároveň (C ∨ ¬B), tak platí aj (A ∨ C). Pracuje s tzv. klauzulami. Klauzula je literál / disjunkcia literálov. Disjunkcia literálov rovnakej premennej je vždy pravdivá, teda ide o tautológiu. Špeciálnym prípadom je prázdna klauzula, ktorú označujeme ☐. <br>
+                 Rezolučná metóda sa dá využiť napr. k určeniu splniteľnosti výroku. Tento výrok najprv prevedieme do konjunktívnej normálnej formy (KNF). Jednotlivé konjunktanty (disjunkcie) budú našimi klauzulami. Vynecháme jedine disjunkcie, ktoré sú tautológiami, pretože tie nám neposkytnú žiadne užitočné informácie (ak by boli všetky konjuktanty KNF nášho výroku tautológie, tak by aj výrok sám bol tautológiou). Množinu klauzulí následne rozširujeme opakovaným aplikovaním rezolučného pravidla. Ak narazíme na prázdnu klauzulu, tak je výrok nesplniteľný, teda nikdy nemôže byť pravdivý. Ak dôjdu výroky, na ktoré by bolo možné uplatniť rezolučné pravidlo, tak je výrok splniteľný. <br>
 
                  <b>Príklad B:</b><br>
                  Určte či je splniteľný výrok: “Bude zima alebo teplo, ale zároveň nebude ani zima ani teplo.” <br><br>
@@ -242,24 +236,20 @@
                  Dostali sme prázdnu klauzulu, čo značí, že výrok je nesplniteľný, teda ide o kontradikciu.
                </p> <br>
 
-               <span id="ils"></span>
-               <h3>Iné logické systémy</h3> <br>
+               <span id="ils"><h3>Iné logické systémy</h3></span> <br>
 
-               <span id="pl"></span>
-               <h4>Predikátová logika</h4>
+               <span id="pl"><h4>Predikátová logika</h4></span>
                <p>
                  Zatiaľ čo výroková logika operuje len s faktami, predikátová logika operuje s objektmi, pre ktoré predikujeme nejaké vzťahy, vyplývajúce z faktov. Formálne modely sú teda zložitejšie ako tie pre výrokovú logiku, opisujú svet pomocou predmetov a vzťahov medzi nimi. Syntax stavia na syntaxi výrokovej logiky, ale pridáva výrazy, ktoré predstavujú objekty a tiež kvantifikátory. Kvantifikátory nám umožňujú vyjadriť vlastnosti nejakých kolekcií objektov. Univerzálny kvantifikátor (∀) robí vyhlásenie o všetkých objektoch a existenciálny kvantifikátor (∃) len o nejakom objekte. Ku kvantifikácii vlastností objektov sa využívajú premenné, ktoré na dané objekty odkazujú. Atomický výrok je pri tejto logike pravdivý len, ak medzi objektami menovanými vo výroku platí vzťah výrokom opísaný.
                </p> <br>
 
-               <span id="fl"></span>
-               <h4>Fuzzy logika</h4>
+               <span id="fl"><h4>Fuzzy logika</h4></span>
                <p>
                  Fuzzy logika je metóda rozmýšľania o logických výrokoch opisujúcich členstvo vo fuzzy množinách. Vychádza z teórie fuzzy množín, ktorá hovorí o tom, ako dobre objekt spĺňa nejaký neurčitý popis (napr. výška, hmotnosť). Pravdivostná hodnota výroku je teda číslo medzi 0 a 1, namiesto zvyčajného pravda / lož. Zložený výrok má hodnotu, ktorá je funkciou hodnôt jeho zložiek. V praxi sa využíva fuzzy riadenie, metodika zostavovania riadiacich systémov, v ktorých sú vstupy a výstupy reprezentované reálnymi číslami prepojenými fuzzy logikou.
                </p> <br>
 
-               <span id="zao"></span>
-               <h3>Zdroje, užitočné odkazy, literatúra</h3>
-               <p id="links">
+               <span id="zao"><h3>Zdroje, užitočné odkazy, literatúra</h3></span>
+               <p>
                  RUSSELL, S. J. – NORVIG, P.: Artificial Intelligence: A Modern Approach (3nd ed.). Upper Saddle River, USA: Prentice Hall, 2003. ISBN 0-13-790395-2 <br>
                  <a href=" https://www1.osu.cz/home/habibal/dedukce/">Diplomová práca o Logickej dedukcii (Libuše Pavlisková, 2003)</a> <br>
                  <a href="https://cs.wikipedia.org/wiki/Strom_(datov%C3%A1_struktura)#Hloubka,_v%C3%BD%C5%A1ka,_%C5%A1%C3%AD%C5%99ka,_%C3%BArove%C5%88_a_cesta">Niečo viac o stromovej štruktúre</a> <br>
