@@ -1,0 +1,16 @@
+{
+    "dir": "ltr",
+    "lang": "sk",
+    "name": "Umelá inteligencia",
+    "scope": "/",
+    "display": "browser",
+    "start_url": "https://katarinamarcincakova.github.io/AI-web/uvod.html",
+    "short_name": "Umelá inteligencia",
+    "theme_color": "transparent",
+    "description": "Aplikácia, vďaka ktorej sa naučíte základné veci o umelej inteligencii",
+    "orientation": "any",
+    "background_color": "transparent",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "icons": []
+}
