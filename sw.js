@@ -10,17 +10,11 @@ this.addEventListener('install', event => {
       return cache.addAll([
           offlineUrl,
           //obrazky
-          'img/aakoamen.jpg',
-          'img/abeceda.jpg',
-          'img/nocnyrybispev.png',
-          'img/slovnazasoba.png',
-          'img/komunikacny_retazec.jpg',
-          //scss
-          'scss/resume.scss',
+          'images/IPDH.gif',
           //js
-          'js/script.js',
+          'script.js',
           //css
-          'css/style.css'
+          'style.css'
       ]);
     })
   );
