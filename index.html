@@ -15,7 +15,7 @@
     <div class="w3-top">
       <div class="w3-bar bgcol-0 w3-card" id="myNavbar">
         <!-- Right-sided navbar links -->
-        <div class="w3-right w3-hide-small">
+        <div class="w3-right w3-hide-small w3-hide-medium">
         <a href="#home" class="w3-bar-item w3-button"><i class="fa fa-home"></i> DOMOV</a>
         <div class="w3-dropdown-hover w3-mobile">
           <button class="w3-button">UMELÁ INTELIGENCIA <i class="fa fa-caret-down"></i></button>
@@ -35,31 +35,31 @@
         </div>
         <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large" onclick="w3_open(mySidebar)">
           <i class="fa fa-bars"></i>
         </a>
       </div>
     </div>
 
     <!-- Sidebar on small screens when clicking the menu icon -->
-    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-      <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-      <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button">DOMOV</a>
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-large" style="display:none" id="mySidebar">
+      <a href="javascript:void(0)" onclick="w3_close(mySidebar)" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+      <a href="#home" onclick="w3_close(mySidebar)" class="w3-bar-item w3-button">DOMOV</a>
       <div class="w3-dropdown-hover w3-mobile">
         <button class="w3-button">UMELÁ INTELIGENCIA <i class="fa fa-caret-down"></i></button>
         <div class="w3-dropdown-content w3-bar-block scbr">
-          <a href="uvod.html" class="w3-bar-item w3-button w3-mobile">Úvod</a>
-          <a href="uav.html" class="w3-bar-item w3-button w3-mobile">Úlohy a výzvy</a>
-          <a href="sh.html" class="w3-bar-item w3-button w3-mobile">Stručná história</a>
-          <a href="nv.html" class="w3-bar-item w3-button w3-mobile">Nástroje - Vyhľadávanie</a>
-          <a href="ns.html" class="w3-bar-item w3-button w3-mobile">Nástroje - Strojové učenie a UNS</a>
-          <a href="nl.html" class="w3-bar-item w3-button w3-mobile">Nástroje - Logika</a>
-          <a href="in.html" class="w3-bar-item w3-button w3-mobile">Iné nástroje UI</a>
+          <a href="uvod.html" onclick="w3_close(mySidebar)" class="w3-bar-item w3-button w3-mobile">Úvod</a>
+          <a href="uav.html" onclick="w3_close(mySidebar)" class="w3-bar-item w3-button w3-mobile">Úlohy a výzvy</a>
+          <a href="sh.html" onclick="w3_close(mySidebar)" class="w3-bar-item w3-button w3-mobile">Stručná história</a>
+          <a href="nv.html" onclick="w3_close(mySidebar)" class="w3-bar-item w3-button w3-mobile">Nástroje - Vyhľadávanie</a>
+          <a href="ns.html" onclick="w3_close(mySidebar)" class="w3-bar-item w3-button w3-mobile">Nástroje - Strojové učenie a UNS</a>
+          <a href="nl.html" onclick="w3_close(mySidebar)" class="w3-bar-item w3-button w3-mobile">Nástroje - Logika</a>
+          <a href="in.html" onclick="w3_close(mySidebar)" class="w3-bar-item w3-button w3-mobile">Iné nástroje UI</a>
         </div>
       </div>
-      <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">O PROJEKTE</a>
-      <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">O NÁS</a>
-      <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">KONTAKT</a>
+      <a href="#work" onclick="w3_close(mySidebar)" class="w3-bar-item w3-button">O PROJEKTE</a>
+      <a href="#team" onclick="w3_close(mySidebarmySidebar)" class="w3-bar-item w3-button">O NÁS</a>
+      <a href="#contact" onclick="w3_close(mySidebar)" class="w3-bar-item w3-button">KONTAKT</a>
     </nav>
 
     <!-- Title image -->

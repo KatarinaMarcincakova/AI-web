@@ -176,6 +176,32 @@ span {
 
 /* ------------------------------------------------------ MEDIA ------------------------------------------------- */
 
+@media screen and (max-width: 992px) {
+
+  #Sidebar {
+    width: 100%;
+    position: fixed;
+    top: 40px;
+  }
+
+  #nav {
+    width: 100%;
+  }
+
+  #content {
+    width: 100%;
+    top: 80px;
+    z-index: 999;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #main {
+    padding-top: 65px;
+    padding-bottom: 50px;
+  }
+}
+
 @media screen and (max-width: 1120px) , screen and (max-height: 380px) {
   #name {
     font-size: 90%;
@@ -282,7 +308,7 @@ span {
   }
 }
 
-@media screen and (max-width: 505px) {
+@media screen and (max-width: 505px) , screen and (max-height: 165px) {
   #nav {
     width: 100%;
     float: left;
