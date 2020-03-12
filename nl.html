@@ -85,7 +85,7 @@
              <a href="#ils" class="w3-bar-item w3-button">Iné logické systémy</a> <br>
              <a href="#pl" class="w3-bar-item w3-button podtema">Predikátová logika</a> <br>
              <a href="#fl" class="w3-bar-item w3-button podtema">Fuzzy logika</a> <br>
-             <a href="#zao" class="w3-bar-item w3-button">Zdroje, užitočné odkazy, literatúra</a>
+             <a href="#zao" class="w3-bar-item w3-button">Zdroje, užitočné odkazy, literatúra</a> <br>
            </div>
            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large" onclick="w3_open()">
@@ -148,44 +148,38 @@
 
            </p><br>
 
-           <section>
            <span id="mhphv"><h4>Metódy hľadania pravdivostných hodnôt výroku</h4></span>
            <p>
              Ak výrok obsahuje n logických premenných, potom existuje 2n možností ako za ne dosadiť hodnoty 0, 1. K priradeniu pravdivostnej hodnoty výroku pre každú z týchto možností sa najčastejšie využívajú 3 známe metódy: <br>
-            </p>
              <ol>
-                <li>
-                 Asi najpriamejší spôsob ako zistiť, pravdivostné hodnoty výroku, je použiť <b>Tabuľkovú metódu</b>. To znamená vyplniť jeho pravdivostnú tabuľku pre všetky možné kombinácie hodnôt jeho logických premenných (viz. Tabuľka A).
-                </li>
-                <li>
-                  <div class="layout-T">
-                    <b>Quineou algoritmus</b> využíva k určovaniu pravdivostných hodnôt výroku stromovú reprezentáciu (viz. Diagram A). <br>
-                    <b>Strom</b> sa skladá z uzlov vzájomne nejako prepojených vetvami (hranami). Dokazovaný výrok predstavuje koreň, teda počiatočný uzol stromu. Z tohto koreňa vyvedieme 2 vetvy. Vyberieme si nejakú premennú výroku a v jednej z vetiev ju označíme za pravdivú (dosadíme za ňu 1), zatiaľ čo v druhej za nepravdivú (dosadíme za ňu 0). Tieto vetvy označíme príslušnými symbolmi pre literály premennej (A a ¬A). Vzniknú tak 2 nové výroky, teda 2 nové uzly stromu. Výroky zjednodušíme, ak je to možné. Následne celý proces opakujeme: z niektorého uzlu, z ktorého sme ešte nevyviedli žiadne vetvy, vyvedieme 2 vetvy k 2 novým uzlom, predstavujúcich 2 možné hodnoty nejakej premennej daného výroku. Nové výroky zjednodušíme a opakujeme. <br>
-                    Postupným vetvením sa vždy nakoniec dostaneme k uzlu hodnoty 0 alebo 1, bez akýchkoľvek premenných. Z takéhoto uzlu už nemožno vyviesť nové vetvy a nazývame ho listový uzol (list). Celý proces skončí, až keď nám dôjdu uzly, z ktorých by sme mohli viesť nové vetvy. Súbor listových uzlov potom predstavuje pravdivostné hodnoty, ktoré pôvodný výrok nadobúda pre jednotlivé hodnoty jeho premenných. <br>
-                  </div>
+               <li>Asi najpriamejší spôsob ako zistiť, pravdivostné hodnoty výroku, je použiť <b>Tabuľkovú metódu</b>. To znamená vyplniť jeho pravdivostnú tabuľku pre všetky možné kombinácie hodnôt jeho logických premenných (viz. Tabuľka A).</li>
+               <li>
+                 <div class="layout-T">
+                   <b>Quineou algoritmus</b> využíva k určovaniu pravdivostných hodnôt výroku stromovú reprezentáciu (viz. Diagram A). <br>
+                   <b>Strom</b> sa skladá z uzlov vzájomne nejako prepojených vetvami (hranami). Dokazovaný výrok predstavuje koreň, teda počiatočný uzol stromu. Z tohto koreňa vyvedieme 2 vetvy. Vyberieme si nejakú premennú výroku a v jednej z vetiev ju označíme za pravdivú (dosadíme za ňu 1), zatiaľ čo v druhej za nepravdivú (dosadíme za ňu 0). Tieto vetvy označíme príslušnými symbolmi pre literály premennej (A a ¬A). Vzniknú tak 2 nové výroky, teda 2 nové uzly stromu. Výroky zjednodušíme, ak je to možné. Následne celý proces opakujeme: z niektorého uzlu, z ktorého sme ešte nevyviedli žiadne vetvy, vyvedieme 2 vetvy k 2 novým uzlom, predstavujúcich 2 možné hodnoty nejakej premennej daného výroku. Nové výroky zjednodušíme a opakujeme. <br>
+                   Postupným vetvením sa vždy nakoniec dostaneme k uzlu hodnoty 0 alebo 1, bez akýchkoľvek premenných. Z takéhoto uzlu už nemožno vyviesť nové vetvy a nazývame ho listový uzol (list). Celý proces skončí, až keď nám dôjdu uzly, z ktorých by sme mohli viesť nové vetvy. Súbor listových uzlov potom predstavuje pravdivostné hodnoty, ktoré pôvodný výrok nadobúda pre jednotlivé hodnoty jeho premenných. <br>
+                 </div>
 
-                  <div class="layout-I">
-                    <img src="images/strom.png" alt="strom">
-                    <p class="center-T">Diagram A</p>
-                  </div>
-                </li>
+                 <div class="layout-I">
+                   <img src="images/strom.png" alt="strom">
+                   <p class="center-T">Diagram A</p>
+                 </div>
+              </li>
             </ol>
-          </section>
-           
-           
-       </div>
-       <div class="bgcol-2" id="content">
-        <section class="iaia"><div class="nadpis" id="iaia"><h3>Inteligencia a inteligentný agent</h3></div>
-          <p>
-            Pod pojmom agent rozumieme niečo, čo nejak pôsobí v prostredí. Inteligentný agent je systém, ktorý pracuje inteligentne. A čo je v tom prípade inteligencia? <br>
-            Všeobecná definícia inteligencie je predmetom mnohých sporov. Väčšina uznávaných definícií sa však zhoduje v tom, že inteligencia: <br>
-            <ul>
-              <li>je vlastnosť, ktorá podmieňuje interakciu jednotlivca s prostredím</li>
-              <li>súvisí so schopnosťou jednotlivca uspieť alebo profitovať s ohľadom na určité ciele</li>
-              <li>závisí od toho, ako je jedinec schopný sa prispôsobiť rôznym cieľom a prostrediam</li>
-            </ul>
-          </p>
-        </section>
+
+           </p> <br>
+
+           <span id="iaia"><h3>Inteligencia a inteligentný agent</h3></span>
+           <p>
+             Pod pojmom agent rozumieme niečo, čo nejak pôsobí v prostredí. Inteligentný agent je systém, ktorý pracuje inteligentne. A čo je v tom prípade inteligencia? <br>
+             Všeobecná definícia inteligencie je predmetom mnohých sporov. Väčšina uznávaných definícií sa však zhoduje v tom, že inteligencia: <br>
+             <ul>
+               <li>je vlastnosť, ktorá podmieňuje interakciu jednotlivca s prostredím</li>
+               <li>súvisí so schopnosťou jednotlivca uspieť alebo profitovať s ohľadom na určité ciele</li>
+               <li>závisí od toho, ako je jedinec schopný sa prispôsobiť rôznym cieľom a prostrediam</li>
+             </ul>
+           </p> <br>
+
 
        </div>
 

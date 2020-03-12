@@ -3,6 +3,7 @@
   <head>
     <title>Umelá inteligencia</title>
     <meta charset="UTF-8">
+    <link rel="icon" href="/images/icon9.png" type="image/png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
@@ -10,6 +11,14 @@
     <link href="style.css" rel="stylesheet">
     <script src="script.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+            navigator.serviceWorker.register("sw.js");
+        });
+      }
+    </script>
   </head>
 
   <body>
@@ -73,7 +82,7 @@
            <div class="w3-hide-small w3-hide-medium">
              <a href="#ctj" class="w3-bar-item w3-button">Čo to je?</a> <br>
              <a href="#iaia" class="w3-bar-item w3-button">Inteligencia a inteligentný agent</a> <br>
-             <a href="#zao" class="w3-bar-item w3-button">Zdroje, užitočné odkazy, literatúra</a>
+             <a href="#zao" class="w3-bar-item w3-button">Zdroje, užitočné odkazy, literatúra</a> <br>
            </div>
            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large" onclick="w3_open()">
@@ -96,14 +105,16 @@
            <h2 class="w3-center">UMELÁ INTELIGENCIA (UI)</h2>
            <h6 class="w3-center"><i>„Technika je spôsob, ako meniť zázraky na samozrejmosti.“ - Miroslav Holub, český básnik</i></h6> <br>
 
-           <span id="ctj"><h3>Čo to je?</h3></span>
+           <span id="ctj" class="spanPad"></span>
+           <h3>Čo to je?</h3>
            <p>
              Ako odbor informatiky sa UI zaoberá tvorbou inteligentných agentov. Hlavným cieľom je pritom porozumieť princípom umožňujúcim inteligentné správanie organických i umelých systémov a stanoviť metódy tvorby inteligentných strojov riešiacich komplexné problémy. <br>
              Podľa inej definície ide o schopnosť systému správne interpretovať externé údaje, poučiť sa z nich a pomocou týchto poznatkov sa prispôsobiť k dosiahnutiu určitých cieľov alebo splneniu určitých úloh. <br>
              Názov pochádza z anglického “artificial intelligence”. UI sa však niekedy nazýva aj strojová inteligencia (angl. “machine learning”), výpočtová inteligencia (angl. “computational intelligence”) alebo syntetická inteligencia (angl .“synthetic intelligence”). <br>
            </p> <br>
 
-           <span id="iaia"><h3>Inteligencia a inteligentný agent</h3></span>
+           <span id="iaia" class="spanPad"></span>
+           <h3>Inteligencia a inteligentný agent</h3>
            <p>
              Pod pojmom agent rozumieme niečo, čo nejak pôsobí v prostredí. Inteligentný agent je systém, ktorý pracuje inteligentne. A čo je v tom prípade inteligencia? <br>
              Všeobecná definícia inteligencie je predmetom mnohých sporov. Väčšina uznávaných definícií sa však zhoduje v tom, že inteligencia: <br>
@@ -114,7 +125,8 @@
              </ul>
            </p> <br>
 
-           <span id="zao"><h3>Zdroje, užitočné odkazy, literatúra</h3></span>
+           <span id="zao" class="spanPad"></span>
+           <h3>Zdroje, užitočné odkazy, literatúra</h3>
            <p>
              LEGG, S. – HUTTER, M.: A Collection of Definitions of Intelligence. In: Frontiers in Artificial Intelligence and Applications, roč. 157, 2007, s. 17-24. <br>
              POOLE, D. – MACKWORTH, A. – GOEBEL, R.: Computational Intelligence: A Logical Approach. New York: Oxford University Press, 1998. ISBN 978-0-19-510270-3 <br>

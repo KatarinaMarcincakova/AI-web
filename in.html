@@ -8,6 +8,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="style.css" rel="stylesheet">
   <script src="script.js"></script>
+  <link rel="manifest" href="manifest.json">
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", function () {
+          navigator.serviceWorker.register("sw.js");
+      });
+    }
+  </script>
 
   <body>
 
@@ -15,7 +23,7 @@
     <div class="w3-top">
       <div class="w3-bar bgcol-0 w3-card" id="myNavbar">
         <!-- Right-sided navbar links -->
-        <div class="w3-right w3-hide-small">
+        <div class="w3-right w3-hide-small w3-hide-medium">
         <a href="index.html#home" class="w3-bar-item w3-button"><i class="fa fa-home"></i> DOMOV</a>
         <div class="w3-dropdown-hover w3-mobile">
           <button class="w3-button">UMELÁ INTELIGENCIA <i class="fa fa-caret-down"></i></button>
@@ -35,14 +43,14 @@
         </div>
         <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large" onclick="w3_open()">
           <i class="fa fa-bars"></i>
         </a>
       </div>
     </div>
 
     <!-- Sidebar on small screens when clicking the menu icon -->
-    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-large" style="display:none" id="mySidebar">
       <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
       <a href="index.html#home" onclick="w3_close()" class="w3-bar-item w3-button">DOMOV</a>
       <div class="w3-dropdown-hover w3-mobile">
@@ -64,26 +72,26 @@
 
 
     <!-- content -->
-         <div class="w3-row-padding" id="main">
+         <div id="main">
 
-           <div class="w3-col m2 l2 w3-sidebar w3-bar-block">
+           <div class="w3-sidebar w3-bar-block" id="nav">
              <div id="sideNav">
                <!-- Navbar (ntb/pc screen) -->
-               <div class="w3-hide-small">
+               <div class="w3-hide-small w3-hide-medium">
                  <a href="#ga" class="w3-bar-item w3-button">Genetické algoritmy</a>
                  <a href="#es" class="w3-bar-item w3-button">Expertné systémy</a>
                  <a href="#pr" class="w3-bar-item w3-button">Pravdepodobnosť</a>
-                 <a href="#zao" class="w3-bar-item w3-button">Zdroje, užitočné odkazy, literatúra</a>
+                 <a href="#zao" class="w3-bar-item w3-button">Zdroje, užitočné odkazy, literatúra</a> <br>
                </div>
                <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-               <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+               <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large" onclick="w3_open()">
                  <i class="fa fa-bars"></i>
                </a>
              </div>
            </div>
 
            <!-- text -->
-           <div class="bgcol-2 w3-col m10 l10 w3-right">
+           <div class="bgcol-2 w3-right" id="content">
                <h2 class="w3-center">INÉ NÁSTROJE UI</h2>
                <p>
                  Na našej stránke sa bližšie venujeme tým najdôležitejším oblastiam UI. UI sa však ako odbor zaoberá veľkým množstvom rôznych problémov, ich možných riešení a implementácií. Spomeňme si ďalšie známe metódy a algoritmy.

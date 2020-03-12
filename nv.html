@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html>
-  <title>Umelá inteligencia</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="style.css" rel="stylesheet">
-  <script src="script.js"></script>
+  <head>
+    <title>Umelá inteligencia</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/images/icon9.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+            navigator.serviceWorker.register("sw.js");
+        });
+      }
+    </script>
+  </head>
 
   <body>
 
@@ -64,15 +76,15 @@
 
 
     <!-- content -->
-         <div class="w3-row-padding" id="main">
+         <div id="main">
 
-           <div class="w3-col m2 l2 w3-sidebar w3-bar-block">
+           <div class="w3-sidebar w3-bar-block" id="nav">
              <div id="sideNav">
                <!-- Navbar (ntb/pc screen) -->
                <div class="w3-hide-small">
                  <a href="#znva" class="w3-bar-item w3-button">Základné neinformované vyhľadávacie algoritmy</a>
                  <a href="#ziva" class="w3-bar-item w3-button">Základné informované vyhľadávacie algoritmy</a>
-                 <a href="#zao" class="w3-bar-item w3-button">Zdroje, užitočné odkazy, literatúra</a>
+                 <a href="#zao" class="w3-bar-item w3-button">Zdroje, užitočné odkazy, literatúra</a> <br>
                </div>
                <!-- Hide right-floated links on small screens and replace them with a menu icon -->
                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
@@ -82,7 +94,7 @@
            </div>
 
            <!-- text -->
-           <div class="bgcol-2 w3-col m10 l10 w3-right">
+           <div class="bgcol-2" id="content">
                <h2 class="w3-center">NÁSTROJE - VYHĽADÁVANIE</h2>
                <h6 class="w3-center"><i>(angl. “searching algorithms”)</i></h6> <br>
 

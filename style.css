@@ -110,8 +110,11 @@ p {
   opacity: 1;
 }
 
-span {
-  padding-top: 45px;
+.spanPad {
+  display: block;
+  position: relative;
+  top: -45px;
+  visibility: hidden;
 }
 
 .gif {
