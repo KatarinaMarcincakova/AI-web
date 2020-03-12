@@ -207,13 +207,25 @@ span {
     text-align: center;
   }
 
+  .center-I {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: auto;
+  }
+
   .layout-T {
     width: 100%;
     float: none;
   }
 
   .layout-I {
-    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: auto;
     float: none;
   }
 
