@@ -86,6 +86,7 @@
                  <a href="#rvr" class="w3-bar-item w3-button">Reprezentácia vedomostí, rozmýšľanie</a>
                  <a href="#u" class="w3-bar-item w3-button">Učenie</a>
                  <a href="#srj" class="w3-bar-item w3-button">Spracovanie reči a jazyka</a>
+                 <a href="#pm" class="w3-bar-item w3-button">Pohyb, manipulácia s predmetmi, vnímanie</a>
                  <a href="#si" class="w3-bar-item w3-button">Sociálna inteligencia</a>
                  <a href="#zao" class="w3-bar-item w3-button">Zdroje, užitočné odkazy, literatúra</a> <br>
                </div>
@@ -104,7 +105,7 @@
                  Tento hlavný problém môžeme rozložiť na množstvo menších problémov pozostávajúcich z jednotlivých schopností, ktoré by sme u inteligentného systému očakávali. Zvyšok tejto sekcie, teda bude venovaní priblíženiu najvýznamnejších z týchto problémov. <br>
                </p> <br>
 
-               <span id="rpp"><h3>Riešenie problémov, plánovanie</h3></span>
+               <span id="rpp" class="spanPad"></span><h3>Riešenie problémov, plánovanie</h3>
                <p>
                  <i>(angl. “problem-solving”, “planning”)</i> <br>
                  Každý inteligentný agent by mal byť pri plnení svojho cieľa schopný riešiť vzniknuté  problémy. Výkon inteligentných agentov je často lepší, ak sú schopní určiť si svoj cieľ a zamerať sa na jeho splnenie. Formulácia cieľov, založená na súčasnej situácii a výkonnosti agenta, je teda prvým krokom, ktorý musí agent vedieť vykonať pri riešení problémov. <br>
@@ -112,38 +113,41 @@
                  Po sformulovaní problémov ich samozrejme agent musí vyriešiť. Riešenie je nejaká postupnosť akcií. Plánovanie, teda navrhovanie plánu akcií vedúcich k dosiahnutiu cieľa je kritickou časťou UI. Optimálnym riešením je také, ktoré vyžaduje najmenej akcií alebo má najmenšiu celkovú cenu akcií. Voľba metódy hľadania možných riešení už závisí od toho, koľko informácií máme o danom prostredí, o možných stavoch a o probléme samotnom. <br>
                </p> <br>
 
-               <span id="rvr"><h3>Reprezentácia vedomostí, rozmýšľanie </h3></span>
+               <span id="rvr" class="spanPad"></span><h3>Reprezentácia vedomostí, rozmýšľanie </h3>
                <p>
                  <i>(angl. “knowledge representation”, “reasoning”)</i> <br>
                  Ľuďom pri plnení cieľov pomáhajú ich vedomosti. Ľudská inteligencia, teda nie je dôsledkom čisto reflexívnych mechanizmov, ale dosahujeme ju pomocou procesov myslenia operujúcich s našimi internými vedomosťami. Niečo podobné by sme očakávali aj od UI. K rozmýšľaniu je však nutné vedomosti nejako reprezentovať (napr. náš jazyk je vlastne spôsob akým reprezentujeme svoje myšlienky). Reprezentácia nejakej veci je v zásade náhrada za samotnú vec, ktorá sa používa na to, aby umožnila entite rozmýšľať o nej.<br>
                  Uvedomme si, že rozmýšľanie je vnútorný proces, ale väčšina vecí, o ktorých rozmýšľame existuje len navonok. Teda aj keď formálne objekty je možné reprezentovať s úplnou presnosťou, tak pri fyzických objektoch je prakticky nemožné presne zachytiť všetky atribúty daného objektu. Takže všetky úvahy o fyzickom svete vždy nakoniec dospejú k záverom, ktoré sú nepresné / nesprávne, nezávisle od použitých reprezentácií a procesov myslenia. Veľa z umenia výberu dobrej reprezentácie spočíva v hľadaní takej, ktorá minimalizuje (alebo dokonca eliminuje) chyby pre konkrétnu úlohu.<br>
                </p> <br>
 
-               <span id="u"><h3>Učenie</h3></span>
+               <span id="u" class="spanPad"></span><h3>Učenie</h3>
                <p>
                  <i>(angl. “learning”)</i> <br>
                  Hovoríme, že agent sa učí, ak sa pozorovaním sveta zlepší jeho výkon pri budúcich úlohách. Takéto strojové učenie je veľmi užitočné, niekedy priam nevyhnutné k vyriešeniu úlohy, keďže dizajnéri často nemôžu predvídať všetky možné situácie ani všetky zmeny v prostredí, ktoré môžu nastať v priebehu času. <br>
                  Akákoľvek zložka agenta môže byť vylepšená učením sa z dát. Vylepšenia a techniky použité na vylepšovanie závisia od toho, ktorý komponent sa má zlepšiť, aké predchádzajúce vedomosti agent má, aká reprezentácia sa používa pre údaje a vylepšovaný komponent a z akej spätnej väzby je možné sa učiť. <br>
                </p><br>
 
-               <span id="srj"><h3>Spracovanie reči a jazyka</h3></span>
+               <span id="srj" class="spanPad"></span><h3>Spracovanie reči a jazyka</h3>
                <p>
                  <i>(angl. “speech and language processing”)</i> <br>
                  Inteligentný systém by samozrejme mal byť schopný interagovať s ľuďmi pomocou jazyka. To znamená, že by mal vedieť ľuďom porozumieť prostredníctvom rozpoznávania reči a pochopenia prirodzeného jazyka, ako aj komunikovať s ľuďmi generovaním prirodzeného jazyka a syntézou reči. Takýto agent by tiež musel byť schopný zistiť, kde sú potrebné textové zdroje informácií, extrahovať príslušné fakty z týchto textových zdrojov a vyvodiť závery na základe známych skutočností. Riešením týchto a podobných problémov (ako napr. kontrola pravopisu, kontrola gramatiky, získavanie informácií, strojový preklad, atď.) sa zaoberajú oblasti známe ako spracovanie prirodzeného jazyka (angl. “natural language processing”), počítačová lingvistika (angl. “computational linguistics”) a rozpoznávanie a syntéza reči (angl. “speech recognition and synthesis”), ktoré spoločne nazývame spracovanie reči a jazyka. <br>
-                 Pohyb, manipulácia s predmetmi, vnímanie <br>
-                 (angl. “motion”,“manipulation”,“perception”) <br>
-                 UI sa vo veľkej miere využíva aj v robotike. Roboty sú fyzickí agenti, ktorí vykonávajú úlohy spojené s manipuláciou fyzickým svetom. Na tento účel ich je potrebné vybaviť zariadeniami ako nohy, kĺby alebo kolesá, ktoré im umožňujú pohyb. <br>
-                 Pre činnosť robotov je tiež nutná schopnosť vnímať svoje okolie, teda získavať informácie o svete. To je možné dosiahnuť interpretáciou odoziev zo senzorov. Senzor je zariadenie, ktoré meria niektoré aspekty prostredia vo forme, ktorú je možné použiť ako vstup programu robota. Senzory zastupujú ľudské zmysly ako zrak, sluch alebo hmat, ale dokážu snímať aj veci, ktoré sú pre ľudí neviditeľné ako rádiové vlny, infračervené žiarenie alebo bezdrôtové signály. Niektoré roboty sú schopný aktívneho snímania, čo znamená, že vysielajú signál ako napr. ultrazvuk, a snímajú odraz tohto signálu z okolitého prostredia. <br>
-                 Najbežnejším typom robotov sú takzvané manipulátory (angl. “manipulators”) alebo tiež robotické ramená, ktoré sú fyzicky ukotvené na svojom pracovisku.  Roboty, ktoré sú schopné pohybu po svojom prostredí nazývame mobilné roboty (angl. “mobile robots”)  a roboty kombinujúce pohyb po prostredí a manipuláciu s predmetmi sa často nazývajú mobilné manipulátory (angl. “mobile manipulators”) . Medzi mobilné manipulátory spadajú napr. aj humanoidné roboty napodobňujúce ľudské telo. <br>
                </p> <br>
 
-               <span id="si"><h3>Sociálna inteligencia</h3></span>
+               <span id="pm" class="spanPad"></span><h3>Pohyb, manipulácia s predmetmi, vnímanie</h3>
+               <p>
+                 <i>(angl. “motion”,“manipulation”,“perception”)</i><br>
+                 UI sa vo veľkej miere využíva aj v robotike. Roboty sú fyzickí agenti, ktorí vykonávajú úlohy spojené s manipuláciou fyzickým svetom. Na tento účel ich je potrebné vybaviť zariadeniami ako nohy, kĺby alebo kolesá, ktoré im umožňujú pohyb. <br>
+                 Pre činnosť robotov je tiež nutná schopnosť vnímať svoje okolie, teda získavať informácie o svete. To je možné dosiahnuť interpretáciou odoziev zo senzorov. Senzor je zariadenie, ktoré meria niektoré aspekty prostredia vo forme, ktorú je možné použiť ako vstup programu robota. Senzory zastupujú ľudské zmysly ako zrak, sluch alebo hmat, ale dokážu snímať aj veci, ktoré sú pre ľudí neviditeľné ako rádiové vlny, infračervené žiarenie alebo bezdrôtové signály. Niektoré roboty sú schopný aktívneho snímania, čo znamená, že vysielajú signál ako napr. ultrazvuk, a snímajú odraz tohto signálu z okolitého prostredia. <br>
+                 Najbežnejším typom robotov sú takzvané manipulátory (angl. “manipulators”) alebo tiež robotické ramená, ktoré sú fyzicky ukotvené na svojom pracovisku.  Roboty, ktoré sú schopné pohybu po svojom prostredí nazývame mobilné roboty (angl. “mobile robots”)  a roboty kombinujúce pohyb po prostredí a manipuláciu s predmetmi sa často nazývajú mobilné manipulátory (angl. “mobile manipulators”) . Medzi mobilné manipulátory spadajú napr. aj humanoidné roboty napodobňujúce ľudské telo.
+               </p> <br>
+
+               <span id="si" class="spanPad"></span><h3>Sociálna inteligencia</h3>
                <p>
                  <i>(angl. “social intelligence”)</i><br>
                  Aplikácia techník UI na spoločenské fenomény vyžaduje takzvanú sociálnu inteligenciu. Ak máme stavať stroje, ktoré prirodzene interagujú s ľuďmi, tak tieto stroje musia vedieť správne interpretovať správanie ľudí a tiež vytvárať sociálne podnety, ktoré ľuďom umožnia prirodzene interpretovať správanie stroja. Súbor schopností, ktoré umožňujú jednotlivcovi odvodiť skryté duševné stavy iných (ich domnienky, zámery, a pod.) na základe pozorovaných činov a správania, označujeme teória mysle. Základom týchto komplexnejších kognitívnych schopností sú sociálne zručnosti ako detekcia očného kontaktu alebo priradenie zámeru pohybujúcim sa objektom.
                </p> <br>
 
-               <span id="zao"><h3>Zdroje, užitočné odkazy, literatúra</h3></span>
+               <span id="zao" class="spanPad"></span><h3>Zdroje, užitočné odkazy, literatúra</h3>
                <p>
                  DAVIS, R. – SHROBE, H. – SZOLOVITS, P.: What Is a Knowledge Representation? In: AI Magazine, roč. 14, č. 1, 1993, s. 17-33. <br>
                  JURAFSKY D. – MARTIN, H. J.: Speech and Language Processing: An Introduction to Natural Language Processing, Computational Linguistics, and Speech Recognition. Upper Saddle River, USA: Prentice Hall PTR, 2000. ISBN 978-0-13-095069-7 <br>
