@@ -174,14 +174,59 @@ span {
   float: right;
 }
 
+.center-I {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  height: auto;
+}
+
+.center-T {
+  text-align: center;
+  width: 100%;
+}
+
+.layout-T {
+  width: 70%;
+  float: left;
+}
+
+.layout-I {
+  width: 29%;
+  float: right;
+}
+
 /* ------------------------------------------------------ MEDIA ------------------------------------------------- */
 
 @media screen and (max-width: 992px) {
 
-  #Sidebar {
+  h3 {
+    padding: 5px;
+    font-size: 1.12em;
+    text-align: center;
+  }
+
+  .layout-T {
+    width: 100%;
+    float: none;
+  }
+
+  .layout-I {
+    width: 100%;
+    float: none;
+  }
+
+  #myNavbar {
+    height: 55px;
+  }
+
+  #sideNav {
     width: 100%;
     position: fixed;
-    top: 40px;
+    top: 55px;
+    z-index: 1;
+    padding-top: 0px
   }
 
   #nav {
@@ -200,6 +245,12 @@ span {
   #main {
     padding-top: 65px;
     padding-bottom: 50px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .w3-sidebar {
+    background-color: transparent;
   }
 }
 
