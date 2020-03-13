@@ -11,9 +11,9 @@ this.addEventListener('install', event => {
           offlineUrl,
           //obrazky
           'images/IPDH.gif',
-          /*'images/cyklus.gif',
+          'images/cyklus.gif',
           'images/OPDH.gif',
-          'images/OV.gif',
+          /*'images/OV.gif',
           'images/PDH.gif',
           'images/PDS.gif',
           'images/PPC.gif',
