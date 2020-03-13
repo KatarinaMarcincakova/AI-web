@@ -32,10 +32,10 @@ this.addEventListener('install', event => {
           'images/pr3.png',
           'images/pr4.png',
           'images/quina.png',
-          /*'images/strom.png',
+          'images/strom.png',
           'images/table1.png',
           'images/table2.png',
-          'images/tablova.png',*/
+          'images/tablova.png',
           //js
           'script.js',
           //css
