@@ -282,6 +282,14 @@ p {
     top: -110px;
     visibility: hidden;
   }
+
+  #Sidebar {
+    z-index: 999;
+  }
+
+  #mySidebar {
+    z-index: 999;
+  }
 }
 
 @media screen and (max-width: 1120px) , screen and (max-height: 380px) {
@@ -293,6 +301,14 @@ p {
 
   #Quo {
     font-size: 110%;
+  }
+
+  #Sidebar {
+    z-index: 999;
+  }
+
+  #mySidebar {
+    z-index: 999;
   }
 
   #moreAI {
@@ -321,6 +337,14 @@ p {
     font-size: 70%;
     float: right;
     padding-bottom: 10%;
+  }
+
+  #Sidebar {
+    z-index: 999;
+  }
+
+  #mySidebar {
+    z-index: 999;
   }
 
   #Quo {
@@ -353,6 +377,14 @@ p {
     font-size: 50%;
     float: right;
     padding-bottom: 10%;
+  }
+
+  #Sidebar {
+    z-index: 999;
+  }
+
+  #mySidebar {
+    z-index: 999;
   }
 
   #Quo {
@@ -394,6 +426,14 @@ p {
   #nav {
     width: 100%;
     float: left;
+  }
+
+  #Sidebar {
+    z-index: 999;
+  }
+
+  #mySidebar {
+    z-index: 999;
   }
 
   #content {
