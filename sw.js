@@ -42,8 +42,8 @@ this.addEventListener('install', event => {
           'style.css',
           //html
           'in.html',
-          /* 'index.html',
-          'nl.html',*/
+          /* 'index.html',*/
+          'nl.html',
           //'nv.html',
           //'ns.html',
           'sh.html',
