@@ -27,7 +27,7 @@
     <div class="w3-top">
       <div class="w3-bar bgcol-0 w3-card" id="myNavbar">
         <!-- Right-sided navbar links -->
-        <div class="w3-right w3-hide-small">
+        <div class="w3-right w3-hide-small w3-hide-medium">
         <a href="index.html#home" class="w3-bar-item w3-button"><i class="fa fa-home"></i> DOMOV</a>
         <div class="w3-dropdown-hover w3-mobile">
           <button class="w3-button">UMELÁ INTELIGENCIA <i class="fa fa-caret-down"></i></button>
@@ -47,14 +47,14 @@
         </div>
         <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large" onclick="w3_open()">
           <i class="fa fa-bars"></i>
         </a>
       </div>
     </div>
 
     <!-- Sidebar on small screens when clicking the menu icon -->
-    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-large" style="display:none" id="mySidebar">
       <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
       <a href="index.html#home" onclick="w3_close()" class="w3-bar-item w3-button">DOMOV</a>
       <div class="w3-dropdown-hover w3-mobile">
@@ -81,20 +81,35 @@
            <div class="w3-sidebar w3-bar-block" id="nav">
              <div id="sideNav">
                <!-- Navbar (ntb/pc screen) -->
-               <div class="w3-hide-small">
+               <div class="w3-hide-small w3-hide-medium">
                  <a href="#su" class="w3-bar-item w3-button">Strojové učenie</a>
                  <a href="#irs" class="w3-bar-item w3-button">Indukcia rozhodovacieho stromu</a>
                  <a href="#reg" class="w3-bar-item w3-button">Regresia</a>
                  <a href="#klasif" class="w3-bar-item w3-button">Klasifikácia</a>
+                 <a href="#lo" class="w3-bar-item w3-button podtema">Lineárne oddeliteľné</a>
+                 <a href="#ln" class="w3-bar-item w3-button podtema">Lineárne neoddeliteľné</a>
                  <a href="#uns" class="w3-bar-item w3-button">Umelé neurónové siete</a>
                  <a href="#zao" class="w3-bar-item w3-button">Zdroje, užitočné odkazy, literatúra</a> <br>
                </div>
                <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-               <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+               <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large" onclick="s_open()">
                  <i class="fa fa-bars"></i>
                </a>
              </div>
            </div>
+
+           <!-- Sidebar on small screens when clicking the menu icon -->
+           <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-large" style="display:none" id="Sidebar">
+             <a href="javascript:void(0)" onclick="s_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+             <a href="#su" onclick="s_close()" class="w3-bar-item w3-button">Strojové učenie</a> <br>
+             <a href="#irs" onclick="s_close()" class="w3-bar-item w3-button">Indukcia rozhodovacieho stromu</a> <br>
+             <a href="#reg" onclick="s_close()" class="w3-bar-item w3-button">Regresia</a> <br>
+             <a href="#klasif" onclick="s_close()" class="w3-bar-item w3-button">Klasifikácia</a> <br>
+             <a href="#lo" onclick="s_close()" class="w3-bar-item w3-button podtema">Lineárne oddeliteľné</a> <br>
+             <a href="#ln" onclick="s_close()" class="w3-bar-item w3-button podtema">Lineárne neoddeliteľné</a> <br>
+             <a href="#uns" onclick="s_close()" class="w3-bar-item w3-button">Umelé neurónové siete</a> <br>
+             <a href="#zao" onclick="s_close()" class="w3-bar-item w3-button">Zdroje, užitočné odkazy, literatúra</a>
+           </nav>
 
            <!-- text -->
            <div class="bgcol-2" id="content">
@@ -147,23 +162,15 @@
                </p>
                <div class="w3-row-padding">
                  <div class="w3-col m4 l4">
-                   <h5 class="w3-center">Príklad lineárnej regresie: f(x) = 0.872x + 10, R2 = 0.666</h5>
-                 </div>
-                 <div class="w3-col m4 l4">
-                   <h5 class="w3-center">Príklad exponenciálnej regresie: f(x) = 23 * e0.0161x, R2 = 0.667</h5>
-                 </div>
-                 <div class="w3-col m4 l4">
-                   <h5 class="w3-center">Príklad polynomickej regresie 2. stupňa: f(x) = 17.8 +​ 0.364​x + ​0.0053​x2, R2 = 0.684</h5>
-                 </div>
-               </div>
-               <div class="w3-row-padding">
-                 <div class="w3-col m4 l4">
+                   <p class="center-T">Príklad lineárnej regresie: <br> f(x) = 0.872x + 10, R<sup>2</sup> = 0.666</p>
                    <img src="images/lr.png" alt="obr1" width="95%" height="auto">
                  </div>
                  <div class="w3-col m4 l4">
+                   <p class="center-T">Príklad exponenciálnej regresie: <br> f(x) = 23 * e<sup>0.0161x</sup>, R<sup>2</sup> = 0.667</p>
                    <img src="images/er.png" alt="obr2" width="95%" height="auto">
                  </div>
                  <div class="w3-col m4 l4">
+                   <p class="center-T">Príklad polynomickej regresie 2. stupňa: <br> f(x) = 17.8 +​ 0.364​x + ​0.0053​x<sup>2</sup>, R<sup>2</sup> = 0.684</p>
                    <img src="images/pr.png" alt="obr3" width="95%" height="auto">
                  </div>
                </div> <br>
@@ -173,29 +180,14 @@
                    <p> </p>
                  </div>
                  <div class="w3-col m4 l4">
-                   <h5 class="w3-center">Príklad polynomickej regresie 3. stupňa: f(x) = 19.8 + ​0.084x + ​0.0126​x​2 - ​0.0000497x​3, R2 = 0.685</h5>
-                 </div>
-                 <div class="w3-col m2 l2">
-                   <p> </p>
-                 </div>
-                 <div class="w3-col m4 l4">
-                   <h5 class="w3-center">Príklad polynomickej regresie 4. stupňa: f(x) = 16.6 + ​0.744x - ​0.0167​x​2 + ​0.000403x​3 - 0.00000226x4, R2 = 0.687</h5>
-                 </div>
-                 <div class="w3-col m1 l1">
-                   <p> </p>
-                 </div>
-               </div>
-               <div class="w3-row-padding">
-                 <div class="w3-col m1 l1">
-                   <p> </p>
-                 </div>
-                 <div class="w3-col m4 l4">
+                   <p class="center-T">Príklad polynomickej regresie 3. stupňa: <br> f(x) = 19.8 + ​0.084x + ​0.0126​x<sup>2</sup> - ​0.0000497x​<sup>3</sup>, R<sup>2</sup> = 0.685</p>
                    <img src="images/pr3.png" alt="obr1" width="95%" height="auto">
                  </div>
                  <div class="w3-col m2 l2">
                    <p> </p>
                  </div>
                  <div class="w3-col m4 l4">
+                   <p class="center-T">Príklad polynomickej regresie 4. stupňa: <br> f(x) = 16.6 + ​0.744x - ​0.0167​x​<sup>2</sup> + ​0.000403x​<sup>3</sup> - 0.00000226x<sup>4</sup>, R<sup>2</sup> = 0.687</p>
                    <img src="images/pr4.png" alt="obr3" width="95%" height="auto">
                  </div>
                  <div class="w3-col m1 l1">
@@ -205,7 +197,9 @@
 
                <span id="klasif" class="spanPad"></span><h3>Klasifikácia</h3>
                <p>
-                 Fitovanie môže byť použité aj na klasifikáciu, čiže rozdelenie vstupov do tried (skupín vstupov s podobnými vlastnosťami). Čiara, ktorá v grafe oddeľuje triedy sa nazýva hranica rozhodnutia. <br></p>
+                 Fitovanie môže byť použité aj na klasifikáciu, čiže rozdelenie vstupov do tried (skupín vstupov s podobnými vlastnosťami). Čiara, ktorá v grafe oddeľuje triedy sa nazýva hranica rozhodnutia. <br>
+                 Spôsobilosť výučbového algoritmu vyjadruje výučbová krivka znázorňujúca presnosť predpovedí vytrénovaného programu ako funkciu veľkosti tréningového setu. Pritom výpočtová teória učenia hovorí, že je nepravdepodobné, aby hypotéza vytvorená programom, ktorá je v súlade s dostatočne veľkým setom, bola príliš nesprávna.<br>
+               </p>
                  <div class="w3-row-padding">
                    <div class="w3-col m4 l4">
                      <p> </p>
@@ -217,17 +211,135 @@
                      <p> </p>
                    </div>
                  </div> <br>
-                <p>
+               <p>
                   Ak je hranicou rozhodnutia priamka, hovoríme jej lineárny separátor. Klasifikátor využívajúcí lineárny separátor názývame aj lineárny klasifikátor a údaje, ktoré pripúšťajú takýto separátor zas nazývame lineárne oddeliteľné. Tento typ klasifikátoru môže byť vytrénovaný jednoduchým pravidlom aktualizácie koeficientov definujúcich jeho hranicu rozhodnutia, k fitovaniu lineárne oddeliteľných údajov. Medzi iné prístupy patrí napr. logistická regresia, ktorá využíva separátor definovaným logistickou funkciou a funguje aj pre lineárne neoddeliteľné údaje. <br>
                   Spôsobilosť výučbového algoritmu vyjadruje výučbová krivka znázorňujúca presnosť predpovedí vytrénovaného programu ako funkciu veľkosti tréningového setu. Pritom výpočtová teória učenia hovorí, že je nepravdepodobné, aby hypotéza vytvorená programom, ktorá je v súlade s dostatočne veľkým setom, bola príliš nesprávna.
-
                </p> <br>
+
+               <span id="lo" class="spanPad"></span> <h4>Lineárne oddeliteľné</h4>
+               <p>
+                 Tento typ klasifikátoru môže byť vytrénovaný jednoduchým pravidlom aktualizácie koeficientov definujúcich jeho hranicu rozhodnutia, k fitovaniu lineárne oddeliteľných údajov. Medzi iné prístupy patrí napr. logistická regresia, ktorá využíva separátor definovaným logistickou funkciou a funguje aj pre lineárne neoddeliteľné údaje:
+               </p>
+
+               <div class="w3-row-padding">
+                 <div class="w3-col m4 l4">
+                   <p> </p>
+                 </div>
+                 <div class="w3-col m4 l4">
+                   <img src="images/klasiflo.png" alt="klasifikacia linearne oddelitelna graf" width="100%" height="auto">
+                 </div>
+                 <div class="w3-col m4 l4">
+                   <p> </p>
+                 </div>
+               </div> <br>
+
+               <span id="ln" class="spanPad"></span> <h4>Lineárne neoddeliteľné</h4>
+               <p>
+                 Tento typ klasifikátoru môže byť vytrénovaný jednoduchým pravidlom aktualizácie koeficientov definujúcich jeho hranicu rozhodnutia, k fitovaniu lineárne oddeliteľných údajov. Medzi iné prístupy patrí napr. logistická regresia, ktorá využíva separátor definovaným logistickou funkciou a funguje aj pre lineárne neoddeliteľné údaje:
+               </p>
+
+               <div class="w3-row-padding">
+                 <div class="w3-col m4 l4">
+                   <p> </p>
+                 </div>
+                 <div class="w3-col m4 l4">
+                   <img src="images/klasifln.png" alt="klasifikacia linearne neoddelitelna graf" width="100%" height="auto">
+                 </div>
+                 <div class="w3-col m4 l4">
+                   <p> </p>
+                 </div>
+               </div> <br>
 
                <span id="uns" class="spanPad"></span><h3>Umelé neurónové siete</h3>
                <p>
-                 V súčasnosti je veľmi populárny pomerne nový koncept, umelé neurónové siete. Ide o zjednodušené modely sietí neurónov v mozgoch živočíchov. Najjednoduchším umelým neurónom je prahová logická jednotka. Jeho základnou operáciou je vypočítať vážený súčet jeho vstupov a potom vrátiť 1, ak tento súčet prekročí prahovú hodnotu, inak vrátiť 0. Používané váhy sa aktualizujú počas procesu učenia, ktorý môže prebiehať s aj bez učiteľa. <br>
-                 Častou technikov učenia neurónových sietí je hlboké učenie, ktoré využíva mnoho vrstiev nelineárneho spracovania informácií na extrakciu a transformáciu vlastností a na analýzu a klasifikáciu vzorov. K trénovaniu neurónový sietí sa využíva aj tzv. dolovanie dát, teda automatizované (pohodlné) získavanie vzorov predstavujúcich vedomosti implicitne uložených vo veľkých databázach  alebo iných rozsiahlych archívoch informácií.
-               </p><br>
+                 V súčasnosti je veľmi populárny pomerne nový koncept, umelé neurónové siete. Ide o zjednodušené modely sietí neurónov v mozgoch živočíchov. Základnou funkciou umelého neurónu je vypočítať vážený súčet jeho vstupov a vrátiť hodnotu z určitého rozsahu (často od 0 do 1) na základe nejakej aktivačnej(prenosovej) funkcie. Na úpravu výstupu neurónu sa zvyčajne používa aj tzv. predsudok, konštanta, ktorú neurón pričíta k váženému súčtu vstupov pred aplikovaním aktivačnej funkcie. Vďaka existencii tejto konštanty je model neurónovej siete flexibilnejší a dokáže sa lepšie prispôsobovať vstupným dátam. Používané hmotnosti vstupov a hodnota predsudku sa aktualizujú počas procesu učenia, ktorý môže prebiehať s aj bez učiteľa. Skladá sa z 3 základných krokov:<br>
+               </p>
+
+               <ol>
+                 <li>
+                   <b>Inicializácia hmotností</b> – Hmotnosti majú na začiatku náhodné hodnoty, rovné nejakým malým číslam (napr. -1 až 1). Podobne aj hodnota predsudku každého neurónu je na začiatku nejaké veľmi malé číslo.
+                 </li>
+                 <li>
+                   <b>Výpočet výstupu</b> – Vypočíta sa vážený súčet vstupných hodnôt a pridá sa hodnota predsudku. Výsledok sa odovzdá aktivačnej funkcii, ktorá stlačí jeho hodnotu do určitého rozsahu (napr. od 0 do 1). Voľba aktivačnej funkcie závisí od povahy očakávaných dát. Napr. pri lineárnej klasifikácii môžeme ako model neurónu použiť tzv. prahovú logickú jednotku. Jej základnou operáciou je vypočítať vážený súčet vstupov a potom vrátiť 1, ak tento súčet prekročí istú prahovú hodnotu, inak vrátiť 0.
+                 </li>
+                 <li>
+                   <b>Výpočet chyby a úprava hmotností</b> – Najskôr vypočítame chybu, t.j. rozdiel medzi výstupom, ktorý vrátil model a očakávaným výstupom. Ďalej sa hmotnosti siete a hodnoty predsudkov upravia tak, aby bol výstup modelu z nasledujúcej iterácie (opakovania) bližší očakávanému výstupu a znížila sa chyba. To, ako výrazné majú byť zmeny v hodnotách môže byť vopred stanovené s pomocou konštanty určujúcej mieru učenia z jednotlivých iterácií (typicky číslo od 0 do 1).
+                 </li>
+               </ol>
+
+               <p>
+                 Kroky 2 a 3 sa opakujú, až kým nie je chyba minimalizovaná na najmenšiu možnú hodnotu alebo už neexistuje spôsob ako chybu zmenšiť. Prípadne môže byť tréning ukončený aj po dosiahnutí istého maximálneho počtu iterácií.
+               </p><br> <br>
+
+               <p> <b>Implementácia v Pythone:</b> </p> <br>
+               <div class="code">
+                 # Import používaných modulov <br>
+                 import random, numpy <br>
+
+                 def inicializuj_hmotnosti(): <br>
+                &nbsp;&nbsp;# Nastavenie "seedu" pre náhodný generátor <br>
+                &nbsp;&nbsp;random.seed(1) <br> <br>
+
+                &nbsp;&nbsp;# Vygenerovanie náhodných počiatočných hmotností <br>
+                &nbsp;&nbsp;# (priradenie náhodných čísel z intervalu [-1,1) do matice 3x1) <br>
+                &nbsp;&nbsp;hmotnosti = numpy.random.uniform(low=-1, high=1, size=(3, 1)) <br>
+                &nbsp;&nbsp;return hmotnosti <br> <br>
+
+                 # Aktivačná funkcia (v tomto prípade ide o sigmoidnu funkciu)  <br>
+                 def sigmoid(x): <br>
+                &nbsp;&nbsp;return 1 / (1 + numpy.exp(-x)) <br>
+                 # Ďalšia pomocná funkcia (derivácia sigmoidnej funkcie) <br>
+                 def derivacia_sigmoid(x): <br>
+                &nbsp;&nbsp;return x * (1 - x) <br>
+                 # Funkcia pre výpočet výstupu s pomocou váženého súčtu, predsudku a aktivačnej funkcie <br>
+                 def najdi_vystup(vstupy, hmotnosti, predsudok): <br>
+                &nbsp;&nbsp;return sigmoid(numpy.dot(vstupy, hmotnosti) + predsudok) <br> <br>
+
+                 # Tréning neurónovej siete <br>
+                 def trening(vstupy, ocakavany_vystup, hmotnosti, predsudok, miera_ucenia, pocet_iteracii): <br>
+                &nbsp;&nbsp;for iteracia in range(pocet_iteracii): <br> <br>
+
+                  &nbsp;&nbsp;&nbsp;&nbsp;# Nájdenie výstupu z tréningových vstupov <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;vypocitany_vystup = najdi_vystup(vstupy, hmotnosti, predsudok) <br> <br>
+
+                  &nbsp;&nbsp;&nbsp;&nbsp;# Výpočet chyby <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;chyba = derivacia_sigmoid(vypocitany_vystup) * (ocakavany_vystup - vypocitany_vystup) <br> <br>
+
+                  &nbsp;&nbsp;&nbsp;&nbsp;# Faktory úpravy hmotností a hodnoty predsudku <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;faktorH = numpy.dot(vstupy.T, chyba) * miera_ucenia <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;faktorP = chyba * miera_ucenia <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;# Úprava hmotností a hodnoty predsudku <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;hmotnosti += faktorH <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;predsudok += faktorP <br> <br>
+
+                  &nbsp;&nbsp;&nbsp;&nbsp;# Priebežný výpis postupu <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;if ((iteracia % 1000) == 0): <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("Iterácia", iteracia) <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("Vypočítaný výsledok: ", vypocitany_vystup.T) <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("Očakávaný výsledok: ", ocakavany_vystup.T) <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print() <br> <br>
+
+                 &nbsp;&nbsp;return hmotnosti <br> <br>
+
+                 # Náhodné počiatočné hmotnosti pre sieť <br>
+                 hmotnosti = inicializuj_hmotnosti() <br> <br>
+
+                 # Tréningový set <br>
+                 vstupy = numpy.array([[1, 1, 1], <br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1, 0, 0], <br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[0, 0, 1]]) <br> <br>
+
+                 # Cieľový a testovací set <br>
+                 ocakavany_vystup = numpy.array([[1, 0, 1]]).T <br>
+                 test = numpy.array([1, 0, 1]) <br> <br>
+
+                 # Tréning neurónovej siete <br>
+                 naucene_hmotnosti = trening(vstupy, ocakavany_vystup, hmotnosti, predsudok=0.001, miera_ucenia=0.98, pocet_iteracii=100000) <br> <br>
+
+                 # Otestovanie siete na testovacom sete <br>
+                 presnost = (najdi_vystup(test, naucene_hmotnosti, predsudok=0.01)) * 100 <br>
+                 print("Presnosť modelu: ", presnost[0], "%") <br>
+               </div> <br><br>
 
                <span id="zao" class="spanPad"></span><h3>Zdroje, užitočné odkazy, literatúra</h3>
                <p>
@@ -253,5 +365,40 @@
           </div> -->
         </footer>
 
-  </body>
+        <script>
+
+        // Toggle between showing and hiding the sidebar when clicking the menu icon
+        var mySidebar = document.getElementById("mySidebar");
+
+        function w3_open() {
+          if (mySidebar.style.display === 'block') {
+            mySidebar.style.display = 'none';
+          } else {
+            mySidebar.style.display = 'block';
+          }
+        }
+
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+        }
+
+        var sidebar = document.getElementById("Sidebar");
+
+        function s_open() {
+          if (sidebar.style.display === 'block') {
+            sidebar.style.display = 'none';
+          } else {
+            sidebar.style.display = 'block';
+          }
+        }
+
+        // Close the sidebar with the close button
+        function s_close() {
+            sidebar.style.display = "none";
+        }
+
+        </script>
+
+      </body>
 </html>
