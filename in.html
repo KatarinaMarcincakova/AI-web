@@ -84,11 +84,20 @@
                  <a href="#zao" class="w3-bar-item w3-button">Zdroje, užitočné odkazy, literatúra</a> <br>
                </div>
                <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-               <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large" onclick="w3_open()">
+               <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large" onclick="s_open()">
                  <i class="fa fa-bars"></i>
                </a>
              </div>
            </div>
+
+           <!-- Sidebar on small screens when clicking the menu icon -->
+           <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-large" style="display:none" id="Sidebar">
+             <a href="javascript:void(0)" onclick="s_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+             <a href="#ga" onclick="s_close()" class="w3-bar-item w3-button">Genetické algoritmy</a> <br>
+             <a href="#es" onclick="s_close()" class="w3-bar-item w3-button">Expertné systémy</a> <br>
+             <a href="#pr" onclick="s_close()" class="w3-bar-item w3-button">Pravdepodobnosť</a> <br>
+             <a href="#zao" onclick="s_close()" class="w3-bar-item w3-button">Zdroje, užitočné odkazy, literatúra</a>
+           </nav>
 
            <!-- text -->
            <div class="bgcol-2 w3-right" id="content">
@@ -164,5 +173,40 @@
           </div> -->
         </footer>
 
-  </body>
+        <script>
+
+        // Toggle between showing and hiding the sidebar when clicking the menu icon
+        var mySidebar = document.getElementById("mySidebar");
+
+        function w3_open() {
+          if (mySidebar.style.display === 'block') {
+            mySidebar.style.display = 'none';
+          } else {
+            mySidebar.style.display = 'block';
+          }
+        }
+
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+        }
+
+        var sidebar = document.getElementById("Sidebar");
+
+        function s_open() {
+          if (sidebar.style.display === 'block') {
+            sidebar.style.display = 'none';
+          } else {
+            sidebar.style.display = 'block';
+          }
+        }
+
+        // Close the sidebar with the close button
+        function s_close() {
+            sidebar.style.display = "none";
+        }
+
+        </script>
+
+    </body>
 </html>
