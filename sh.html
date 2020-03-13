@@ -27,7 +27,7 @@
     <div class="w3-top">
       <div class="w3-bar bgcol-0 w3-card" id="myNavbar">
         <!-- Right-sided navbar links -->
-        <div class="w3-right w3-hide-small">
+        <div class="w3-right w3-hide-small w3-hide-medium">
         <a href="index.html#home" class="w3-bar-item w3-button"><i class="fa fa-home"></i> DOMOV</a>
         <div class="w3-dropdown-hover w3-mobile">
           <button class="w3-button">UMELÁ INTELIGENCIA <i class="fa fa-caret-down"></i></button>
@@ -47,14 +47,14 @@
         </div>
         <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large" onclick="w3_open()">
           <i class="fa fa-bars"></i>
         </a>
       </div>
     </div>
 
     <!-- Sidebar on small screens when clicking the menu icon -->
-    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-large" style="display:none" id="mySidebar">
       <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
       <a href="index.html#home" onclick="w3_close()" class="w3-bar-item w3-button">DOMOV</a>
       <div class="w3-dropdown-hover w3-mobile">
@@ -81,7 +81,7 @@
            <div class="w3-sidebar w3-bar-block" id="nav">
              <div id="sideNav">
                <!-- Navbar (ntb/pc screen) -->
-               <div class="w3-hide-small">
+               <div class="w3-hide-small w3-hide-medium">
                  <a href="#17" class="w3-bar-item w3-button">17. storočie - Predzvesti UI</a>
                  <a href="#18" class="w3-bar-item w3-button">18. a 19. storočie - Šachové automaty</a>
                  <a href="#ww2" class="w3-bar-item w3-button">2. svetová vojna - Technologický pokrok</a>
@@ -94,11 +94,27 @@
                  <a href="#zao" class="w3-bar-item w3-button">Zdroje, užitočné odkazy, literatúra</a> <br>
                </div>
                <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-               <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+               <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large" onclick="s_open()">
                  <i class="fa fa-bars"></i>
                </a>
              </div>
            </div>
+
+           <!-- Sidebar on small screens when clicking the menu icon -->
+           <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-large" style="display:none" id="Sidebar">
+             <a href="javascript:void(0)" onclick="s_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+               <a href="#17" onclick="s_close()" class="w3-bar-item w3-button">17. storočie - Predzvesti UI</a>
+               <a href="#18" onclick="s_close()" class="w3-bar-item w3-button">18. a 19. storočie - Šachové automaty</a>
+               <a href="#ww2" onclick="s_close()" class="w3-bar-item w3-button">2. svetová vojna - Technologický pokrok</a>
+               <a href="#p20" onclick="s_close()" class="w3-bar-item w3-button">Polovica 20. storočia - Počiatky UI</a>
+               <a href="#62"  onclick="s_close()"class="w3-bar-item w3-button">Prelomový rok 1962</a>
+               <a href="#6070" onclick="s_close()" class="w3-bar-item w3-button">60. - 70. roky 20. storočia -  Rozmach UI</a>
+               <a href="#nv" onclick="s_close()" class="w3-bar-item w3-button">Nedávny vývoj UI</a>
+               <a href="#fb" onclick="s_close()" class="w3-bar-item w3-button">UI vo filozofii a beletrii</a>
+               <a href="#ivo" onclick="s_close()" class="w3-bar-item w3-button">UI a iné vedné odbory</a>
+             <a href="#zao" onclick="s_close()" class="w3-bar-item w3-button">Zdroje, užitočné odkazy, literatúra</a>
+           </nav>
+
 
            <!-- text -->
            <div class="bgcol-2" id="content">
@@ -183,5 +199,40 @@
           </div> -->
         </footer>
 
-  </body>
+        <script>
+
+        // Toggle between showing and hiding the sidebar when clicking the menu icon
+        var mySidebar = document.getElementById("mySidebar");
+
+        function w3_open() {
+          if (mySidebar.style.display === 'block') {
+            mySidebar.style.display = 'none';
+          } else {
+            mySidebar.style.display = 'block';
+          }
+        }
+
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+        }
+
+        var sidebar = document.getElementById("Sidebar");
+
+        function s_open() {
+          if (sidebar.style.display === 'block') {
+            sidebar.style.display = 'none';
+          } else {
+            sidebar.style.display = 'block';
+          }
+        }
+
+        // Close the sidebar with the close button
+        function s_close() {
+            sidebar.style.display = "none";
+        }
+
+        </script>
+
+      </body>
 </html>
