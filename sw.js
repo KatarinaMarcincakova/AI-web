@@ -45,7 +45,7 @@ this.addEventListener('install', event => {
           'index.html',
           'nl.html',
           //'nv.html',
-          'ns.html',
+          //'ns.html',
           /*'sh.html',
           'uav.html',
           'uvod.html'     */   
