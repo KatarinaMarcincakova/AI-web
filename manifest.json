@@ -1,21 +1,16 @@
 {
-  "short_name": "Ai web",
-  "name": "Ai web",
-  "background_color": "#ffffff",
-  "Theme_color": "#ffffff",
-  "display": "fullscreen",
-  "theme_color": "#ffffff",
-  "icons": [
-    {
-      "src":"images/icon9.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src":"images/icon5.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }
-  ],
-  "start_url": "./"
+    "dir": "ltr",
+    "lang": "sk",
+    "name": "Umelá inteligencia",
+    "scope": "/",
+    "display": "browser",
+    "start_url": "https://katarinamarcincakova.github.io/AI-web/uvod.html",
+    "short_name": "Umelá inteligencia",
+    "theme_color": "transparent",
+    "description": "Aplikácia, vďaka ktorej sa naučíte základné veci o umelej inteligencii",
+    "orientation": "any",
+    "background_color": "transparent",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "icons": []
 }
