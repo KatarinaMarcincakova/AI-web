@@ -55,7 +55,7 @@
     <!-- Sidebar on small screens when clicking the menu icon -->
     <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-large" style="display:none" id="mySidebar">
       <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-      <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button">DOMOV</a>
+      <a href="index.html#home" onclick="w3_close()" class="w3-bar-item w3-button">DOMOV</a>
       <div class="w3-dropdown-hover w3-mobile">
         <button class="w3-button">UMELÁ INTELIGENCIA <i class="fa fa-caret-down"></i></button>
         <div class="w3-dropdown-content w3-bar-block scbr">
@@ -68,9 +68,9 @@
           <a href="in.html" class="w3-bar-item w3-button w3-mobile">Iné nástroje UI</a>
         </div>
       </div>
-      <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">O PROJEKTE</a>
-      <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">O NÁS</a>
-      <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">KONTAKT</a>
+      <a href="index.html#work" onclick="w3_close()" class="w3-bar-item w3-button">O PROJEKTE</a>
+      <a href="index.html#team" onclick="w3_close()" class="w3-bar-item w3-button">O NÁS</a>
+      <a href="index.html#contact" onclick="w3_close()" class="w3-bar-item w3-button">KONTAKT</a>
     </nav>
 
 <!-- content -->
@@ -85,7 +85,7 @@
              <a href="#zao" class="w3-bar-item w3-button">Zdroje, užitočné odkazy, literatúra</a> <br>
            </div>
            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-           <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large" onclick="w3_open()">
+           <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large" onclick="s_open()">
              <i class="fa fa-bars"></i>
            </a>
          </div>
@@ -93,10 +93,10 @@
 
        <!-- Sidebar on small screens when clicking the menu icon -->
        <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-large" style="display:none" id="Sidebar">
-         <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-         <a href="#ctj" onclick="w3_close()" class="w3-bar-item w3-button">Čo to je?</a> <br>
-         <a href="#iaia" onclick="w3_close()" class="w3-bar-item w3-button">Inteligencia a inteligentný agent</a> <br>
-         <a href="#zao" onclick="w3_close()" class="w3-bar-item w3-button">Zdroje, užitočné odkazy, literatúra</a>
+         <a href="javascript:void(0)" onclick="s_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+         <a href="#ctj" onclick="s_close()" class="w3-bar-item w3-button">Čo to je?</a> <br>
+         <a href="#iaia" onclick="s_close()" class="w3-bar-item w3-button">Inteligencia a inteligentný agent</a> <br>
+         <a href="#zao" onclick="s_close()" class="w3-bar-item w3-button">Zdroje, užitočné odkazy, literatúra</a>
        </nav>
 
 
@@ -153,6 +153,41 @@
         <i class="fa fa-linkedin w3-hover-opacity"></i>
       </div> -->
     </footer>
+
+    <script>
+
+    // Toggle between showing and hiding the sidebar when clicking the menu icon
+    var mySidebar = document.getElementById("mySidebar");
+
+    function w3_open() {
+      if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+      } else {
+        mySidebar.style.display = 'block';
+      }
+    }
+
+    // Close the sidebar with the close button
+    function w3_close() {
+        mySidebar.style.display = "none";
+    }
+
+    var sidebar = document.getElementById("Sidebar");
+
+    function s_open() {
+      if (sidebar.style.display === 'block') {
+        sidebar.style.display = 'none';
+      } else {
+        sidebar.style.display = 'block';
+      }
+    }
+
+    // Close the sidebar with the close button
+    function s_close() {
+        sidebar.style.display = "none";
+    }
+
+    </script>
 
   </body>
 </html>
