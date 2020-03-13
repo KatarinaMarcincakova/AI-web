@@ -208,6 +208,17 @@ p {
   float: right;
 }
 
+.code {
+  background-color: #f2f2f2;
+  font-family: "Courier New", Courier, monospace;
+  padding-left: 10px;
+}
+
+.comment {
+  color: #077692;
+  padding: 0px;
+}
+
 /* ------------------------------------------------------ MEDIA ------------------------------------------------- */
 
 @media screen and (max-width: 992px) {
