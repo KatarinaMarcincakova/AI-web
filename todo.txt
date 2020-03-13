@@ -4,12 +4,6 @@ MOBILNU VERZIU
 #upravit v CSS veci aby to na mobile dobre ukazovalo
 #doplnit vytvorenie app do mobilu (ako sjl web)
 
-VŠEOBECNE
-
-# Pridať názvy diagramom, tabuľkám, grafom,...
-Tak ako to mám v texte by malo byť jasné, čo sa ako volá, keby dačo nie, tak mi napíš. 
-Resp. ak by to bolo veľmi pracné alebo nemáš na to čas, tak stačí z textu poodstraňovať zátvorky typu (viz. Graf A).
-To môžem kľudne spraviť aj sama, len daj vedieť.
 
 NÁSTROJE - VYHĽADÁVANIE
 
@@ -18,10 +12,6 @@ V docu je obrázok, len na stránke nejak nie :D
 
 # Pridať gif pre zacyklenie - TO JE KTORY?
 Keď ho máme, tak by som ho tam dala. Patrí k "Prehľadávanie do hĺbky s obmedzením"
-
-# Upraviť gify
-"Iteratívne prehľadávanie do hĺbky" a "Obojsmerné vyhľadávanie" by som trocha zmenšila, aby boli približne také veľké krúžky ako ostatné.
-"Obojsmerné vyhľadávanie" je aj retardovane otočené :D Dala by som ho pod ten text, namiesto vedľa, keďže je to skôr našírku.
 
 NÁSTROJE - STROJOVÉ UČENIE A UNS
 
