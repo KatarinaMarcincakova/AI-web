@@ -128,6 +128,7 @@
                    </div>
                    <div class="w3-col m6 l6">
                      <img src="images/table1.png" alt="tabulka 1" width="100%" height="auto">
+                     <p class="center-T">Tabuľka A</p>
                    </div>
                    <div class="w3-col m3 l3">
                      <p> </p>
@@ -142,6 +143,7 @@
                    </div>
                    <div class="w3-col m4 l4">
                      <img src="images/table2.png" alt="tabulka 2" width="100%" height="auto">
+                     <p class="center-T">Tabuľka B</p>
                    </div>
                    <div class="w3-col m4 l4">
                      <p> </p>
@@ -170,7 +172,7 @@
                <p>
                  Ak výrok obsahuje n logických premenných, potom existuje 2n možností ako za ne dosadiť hodnoty 0, 1. K priradeniu pravdivostnej hodnoty výroku pre každú z týchto možností sa najčastejšie využívajú 3 známe metódy: <br>
                  <ol>
-                   <li>Asi najpriamejší spôsob ako zistiť, pravdivostné hodnoty výroku, je použiť <b>Tabuľkovú metódu</b>. To znamená vyplniť jeho pravdivostnú tabuľku pre všetky možné kombinácie hodnôt jeho logických premenných (viz. Tabuľka A).</li>
+                   <li>Asi najpriamejší spôsob ako zistiť, pravdivostné hodnoty výroku, je použiť <b>Tabuľkovú metódu</b>. To znamená vyplniť jeho pravdivostnú tabuľku pre všetky možné kombinácie hodnôt jeho logických premenných (viz. Tabuľka A).</li> <br>
                    <li>
                      <b>Quineou algoritmus</b> využíva k určovaniu pravdivostných hodnôt výroku stromovú reprezentáciu (viz. Diagram A). <br>
                      <div class="w3-row-padding">
@@ -180,9 +182,10 @@
                        </div>
                          <div class="w3-col m4 l4">
                            <img src="images/strom.png" alt="strom" width="100%" height="auto">
+                           <p class="center-T">Diagram A</p>
                          </div>
                      </div>
-                   </li>
+                   </li> <br>
                    <li>
                      <div class="w3-row-padding">
                        <div class="w3-col m8 l8">
@@ -190,6 +193,7 @@
                        </div>
                        <div class="w3-col m4 l4">
                          <img src="images/tablova.png" alt="tablova metoda" width="100%" height="auto">
+                         <p class="center-T">Diagram B</p>
                        </div>
                      </div>
                      Vždy keď z uzlu vyvádzame vetvy do nových uzlov, robíme to jedným z nasledovných spôsobov:<br>
@@ -212,24 +216,16 @@
 
                  <div class="w3-row-padding">
                    <div class="w3-col m6 l6 w3-center">
-                     Tabuľková metóda
-                   </div>
-                   <div class="w3-col m6 l6 w3-center">
-                     Tablová metóda
-                   </div>
-                 </div>
-                 <div class="w3-row-padding">
-                   <div class="w3-col m6 l6 w3-center">
+                     <p class="center-T">Tabuľková metóda</p>
                      <img src="images/nltabm.png" alt="tabulka">
                    </div>
                    <div class="w3-col m6 l6 w3-center">
+                     <p class="center-T">Tablová metóda</p>
                      <img src="images/nltablm.png" alt="tabulka">
                    </div>
                  </div>
                  <div class="w3-center">
-                   Quineov algoritmus
-                 </div>
-                 <div class="w3-center">
+                   <p class="center-T">Quineov algoritmus</p>
                    <img src="images/quina.png" alt="Quineov algoritmus">
                  </div>
 
@@ -241,6 +237,7 @@
                  Jedným z najjednoduchších odvodzovacích systémov je prirodzená dedukcia, ktorá sa asi najviac podobá bežnému priebehu odvodzovania. Využíva 8 základných pravidiel (viz. Tabuľka C). Použitie prirodzenej dedukcie si ale často vyžaduje určitý stupeň predvídavosti a rôzne “fígle”, čo môže byť v praxi na príťaž.<br>
                  <div class="w3-center">
                    <img src="images/mdtab.png" alt="tabulka">
+                     <p class="center-T">Tabuľka C</p>
                  </div> <br>
                  Iná známa metóda dedukcie je rezolučná metóda. Vystačí si len s jediným tzv. rezolučným pravidlom: Ak platí (A ∨ B) a zároveň (C ∨ ¬B), tak platí aj (A ∨ C). Pracuje s tzv. klauzulami. Klauzula je literál / disjunkcia literálov. Disjunkcia literálov rovnakej premennej je vždy pravdivá, teda ide o tautológiu. Špeciálnym prípadom je prázdna klauzula, ktorú označujeme ☐. <br>
                  Rezolučná metóda sa dá využiť napr. k určeniu splniteľnosti výroku. Tento výrok najprv prevedieme do konjunktívnej normálnej formy (KNF). Jednotlivé konjunktanty (disjunkcie) budú našimi klauzulami. Vynecháme jedine disjunkcie, ktoré sú tautológiami, pretože tie nám neposkytnú žiadne užitočné informácie (ak by boli všetky konjuktanty KNF nášho výroku tautológie, tak by aj výrok sám bol tautológiou). Množinu klauzulí následne rozširujeme opakovaným aplikovaním rezolučného pravidla. Ak narazíme na prázdnu klauzulu, tak je výrok nesplniteľný, teda nikdy nemôže byť pravdivý. Ak dôjdu výroky, na ktoré by bolo možné uplatniť rezolučné pravidlo, tak je výrok splniteľný. <br>
