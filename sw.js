@@ -41,12 +41,12 @@ this.addEventListener('install', event => {
           //css
           'style.css',
           //html
-          'in.html',
+         /* 'in.html',
           'index.html',
           'nl.html',
           //'nv.html',
           //'ns.html',
-          /*'sh.html',
+          'sh.html',
           'uav.html',
           'uvod.html'     */   
       ]);
