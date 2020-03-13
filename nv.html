@@ -27,7 +27,7 @@
     <div class="w3-top">
       <div class="w3-bar bgcol-0 w3-card" id="myNavbar">
         <!-- Right-sided navbar links -->
-        <div class="w3-right w3-hide-small">
+        <div class="w3-right w3-hide-small w3-hide-medium">
         <a href="index.html#home" class="w3-bar-item w3-button"><i class="fa fa-home"></i> DOMOV</a>
         <div class="w3-dropdown-hover w3-mobile">
           <button class="w3-button">UMELÁ INTELIGENCIA <i class="fa fa-caret-down"></i></button>
@@ -47,7 +47,7 @@
         </div>
         <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large" onclick="w3_open()">
           <i class="fa fa-bars"></i>
         </a>
       </div>
@@ -81,17 +81,44 @@
            <div class="w3-sidebar w3-bar-block" id="nav">
              <div id="sideNav">
                <!-- Navbar (ntb/pc screen) -->
-               <div class="w3-hide-small">
+               <div class="w3-hide-small w3-hide-medium">
+                 <a href="#main" class="w3-bar-item w3-button">Úvod</a>
                  <a href="#znva" class="w3-bar-item w3-button">Základné neinformované vyhľadávacie algoritmy</a>
+                 <a href="#pds" class="w3-bar-item w3-button podtema">Prehľadávanie do šírky</a>
+                 <a href="#ppc" class="w3-bar-item w3-button podtema">Prehľadávanie podľa ceny</a>
+                 <a href="#pdh" class="w3-bar-item w3-button podtema">Prehľadávanie do hĺbky</a>
+                 <a href="#pdho" class="w3-bar-item w3-button podtema">Prehľadávanie do hĺbky s obmedzením</a>
+                 <a href="#ipdh" class="w3-bar-item w3-button podtema">Iteratívne prehľadávanie do hĺbky</a>
+                 <a href="#ov" class="w3-bar-item w3-button podtema">Obojsmerné vyhľadávania</a>
                  <a href="#ziva" class="w3-bar-item w3-button">Základné informované vyhľadávacie algoritmy</a>
+                 <a href="#up" class="w3-bar-item w3-button podtema">Usporiadané prehľadávanie</a>
+                 <a href="#lp" class="w3-bar-item w3-button podtema">Lokálne prehľadávanie</a>
                  <a href="#zao" class="w3-bar-item w3-button">Zdroje, užitočné odkazy, literatúra</a> <br>
                </div>
                <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-               <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+               <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large" onclick="s_open()">
                  <i class="fa fa-bars"></i>
                </a>
              </div>
            </div>
+
+           <!-- Sidebar on small screens when clicking the menu icon -->
+           <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-large" style="display:none" id="Sidebar">
+             <a href="javascript:void(0)" onclick="s_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+             <a href="#main" onclick="s_close()" class="w3-bar-item w3-button">Úvod</a> <br>
+             <a href="#znva" onclick="s_close()" class="w3-bar-item w3-button">Základné neinformované vyhľadávacie algoritmy</a> <br>
+             <a href="#pds" onclick="s_close()" class="w3-bar-item w3-button podtema">Prehľadávanie do šírky</a> <br>
+             <a href="#ppc" onclick="s_close()" class="w3-bar-item w3-button podtema">Prehľadávanie podľa ceny</a> <br>
+             <a href="#pdh" onclick="s_close()" class="w3-bar-item w3-button podtema">Prehľadávanie do hĺbky</a> <br>
+             <a href="#pdho" onclick="s_close()" class="w3-bar-item w3-button podtema">Prehľadávanie do hĺbky s obmedzením</a> <br>
+             <a href="#ipdh" onclick="s_close()" class="w3-bar-item w3-button podtema">Iteratívne prehľadávanie do hĺbky</a> <br>
+             <a href="#ov" onclick="s_close()" class="w3-bar-item w3-button podtema">Obojsmerné vyhľadávania</a> <br>
+             <a href="#ziva" onclick="s_close()" class="w3-bar-item w3-button">Základné informované vyhľadávacie algoritmy</a> <br>
+             <a href="#up" onclick="s_close()" class="w3-bar-item w3-button podtema">Usporiadané prehľadávanie</a> <br>
+             <a href="#lp" onclick="s_close()" class="w3-bar-item w3-button podtema">Lokálne prehľadávanie</a> <br>
+             <a href="#zao" onclick="s_close()" class="w3-bar-item w3-button">Zdroje, užitočné odkazy, literatúra</a>
+           </nav>
+
 
            <!-- text -->
            <div class="bgcol-2" id="content">
@@ -108,7 +135,7 @@
                <span id="znva" class="spanPad"></span><h3>Základné neinformované vyhľadávacie algoritmy</h3>
                <div class="w3-row-padding">
                  <div class="w3-col m8 l8">
-                   <h5>Prehľadávanie do šírky</h5>
+                   <span id="pds" class="spanPad"></span><h4>Prehľadávanie do šírky</h4>
                    <p>
                      Táto metóda nám umožňuje nájsť ideálne riešenie, ak sú ceny všetkých akcií rovnaké. Jednoducho vždy rozširuje uzol najbližší ku koreňu: Najskôr sa rozšíri koreňový uzol, potom sa rozšíria všetky jeho deti, potom ich deti atď. Za každým sa najprv rozšíria všetky uzly na danej úrovni, než sa začnú rozširovať uzly na ďalšej úrovni (viz. Ukážka A). Prvé nájdené riešenie bude určite ideálne.
                    </p> <br>
@@ -119,7 +146,7 @@
                </div> <br> <br>
                <div class="w3-row-padding">
                  <div class="w3-col m8 l8">
-                   <h5>Prehľadávanie podľa ceny</h5>
+                   <span id="ppc" class="spanPad"></span><h4>Prehľadávanie podľa ceny</h4>
                    <p>
                      V prípade, že ceny jednotlivých akcií nie sú rovnaké, tak ideálnym riešením je postupnosť akcií s najnižšou možnou celkovou cenou. Takže pri prehľadávaní podľa ceny vždy využívame k rozšíreniu stromu akciu s aktuálne najnižšou cenou, teda rozširujeme uzol s najnižšími nákladmi na rozšírenie (viz. Ukážka B). Prvé nájdené riešenie bude určite ideálne.
                    </p> <br>
@@ -130,7 +157,7 @@
                </div> <br> <br>
                <div class="w3-row-padding">
                  <div class="w3-col m8 l8">
-                   <h5>Prehľadávanie do hĺbky</h5>
+                   <span id="pdh" class="spanPad"></span><h4>Prehľadávanie do hĺbky</h4>
                    <p>
                      Pri tejto metóde sa rozširuje vždy najhlbší uzol na aktuálnej hranici, teda uzol vzdialený o najviac vetiev od koreňa. Vyhľadávanie smeruje rovno do najhlbšej úrovne stromu a potom sa presunie na najhlbší uzol, ktorý ešte možno rozšíriť, atď (viz. Ukážka C). <br>
                      Tento spôsob sa môže oproti predchádzajúcim dvom zdať zbytočne zdĺhavý. Hľadáme predsa riešenie s čo najmenšou hĺbkou (resp. najlacnejšie riešenie), a takto budeme musieť prehľadať celý strom, aby sme mali istotu, že sme našli ideálne riešenie. Výhodou je však nízka pamäťová zložitosť. Pri prehľadávaní stromu si tento strom musíme nejako uchovávať v pamäti. Predchádzajúce riešenia nemajú veľmi na výber a musia si pamätať celkovú podobu stromu. Avšak prehľadávanie do hĺbky naraz preskúmava len jednu nerozvetvenú cestu, ktorá môže byť po jej plnom preskúmaní z pamäte odstránená.
@@ -142,7 +169,7 @@
                </div> <br> <br>
                <div class="w3-row-padding">
                  <div class="w3-col m8 l8">
-                   <h5>Prehľadávanie do hĺbky s obmedzením</h5>
+                   <span id="pdho" class="spanPad"></span><h4>Prehľadávanie do hĺbky s obmedzením</h4>
                    <p>
                      Pri prehľadávaní do hĺbky môže nastať problém, ak z nejakého uzla vedie hrana späť do uzla v niektorej z predchádzajúcich úrovní (do uzla s menšou hĺbkou). Program by sa nám z tohto dôvodu mohol zacykliť (viz. Ukážka D). Zacykleniu sa môžeme vyhnúť napr. obmedzením hĺbky, do ktorej sa má strom prehľadávať. Takto sa bude vždy rozširovať najhlbší uzol, ktorého hĺbka však neprekračuje určitý stanovený limit (viz. Ukážka E). V ideálnom prípade poznáme hĺbku stromu, čiže hĺbku najhlbšieho uzla stromu, ktorú môžeme použiť ako náš limit.
                    </p> <br>
@@ -153,7 +180,7 @@
                </div> <br> <br>
                <div class="w3-row-padding">
                  <div class="w3-col m8 l8">
-                   <h5>Iteratívne prehľadávanie do hĺbky</h5>
+                   <span id="ipdh" class="spanPad"></span><h4>Iteratívne prehľadávanie do hĺbky</h4>
                    <p>
                      Ak chceme prehľadávať do hĺbky bez hrozby zacyklenia, ale nepoznáme hĺbku stromu, môžeme hľadať najlepšie obmedzenie pre hĺbku napr. postupným zvyšovaním limitu od 0. Najprv prehľadáme celý strom do hĺbky 0, potom do hĺbky 1, potom 2, atď (viz. Ukážka F). Môžeme si všimnúť určitú podobnosť s Prehľadávaním do šírky. Už prvé nájdené riešenie bude určite ideálne. Tento spôsob je pomalší, ale má len skromnú pamäťovú zložitosť.
                    </p> <br>
@@ -164,7 +191,7 @@
                </div> <br> <br>
                <div class="w3-row-padding">
                  <div class="w3-col m8 l8">
-                   <h5>Obojsmerné vyhľadávania</h5>
+                   <span id="ov" class="spanPad"></span><h4>Obojsmerné vyhľadávania</h4>
                    <p>
                      Myšlienkou Obojsmerného vyhľadávania je spustiť jedno vyhľadávanie od pôvodného stavu a druhé od cieľového stavu v nádeji, že sa obe vyhľadávania stretnú v strede. Výhodou tohto spôsobu je nízka časová zložitosť. Prvé nájdené riešenie však nemusí byť nutne ideálne, takže je potrebné implementovať na koniec ešte dodatočnú kontrolu.
                    </p> <br>
@@ -176,7 +203,7 @@
 
                <span id="ziva" class="spanPad"></span><h3>Základné informované vyhľadávacie algoritmy</h3>
                <div>
-                 <h5>Usporiadané prehľadávanie</h5>
+                 <span id="up" class="spanPad"></span><h4>Usporiadané prehľadávanie</h4>
                  <p>
                    Ide o stratégiu využívajúcu istú hodnotiacu funkciu, ktorá priradí každému uzlu hodnotu na základe našich znalostí o strome vyhľadávania. Následne sa vždy rozširuje uzol s najmenšou hodnotou. Patrí sem napr.:<br>
                    <ul>
@@ -184,7 +211,7 @@
                      <li>algoritmus A* = Usporiadané prehľadávanie, ktoré využíva ako hodnotiacu funkciu uzlov kombináciu ceny cesty do daného uzla z počiatku a odhadovanej ceny najlacnejšej cesty z daného uzla do cieľa. Nájdené riešenie je optimálne.</li>
                    </ul>
                  </p> <br>
-                 <h5>Lokálne prehľadávanie</h5>
+                 <span id="lp" class="spanPad"></span><h4>Lokálne prehľadávanie</h4>
                  <p>
                    Niektoré algoritmy sú stavané len pre problémy, pri ktorých nie je dôležitá cena cesty do cieľa. Fungujú tak, že sledujú vždy len jeden aktuálny uzol a vo všeobecnosti sa pohybujú iba k jeho susedom. Využívajú veľmi malú pamäť a často nájdu rozumné riešenia aj vo veľkých / nekonečných stavových priestoroch, pre ktoré sú systematické algoritmy nevhodné. Takéto algoritmi prideľujú každému z uzlov hodnotu podľa nejakej hodnotiacej funkcie a snažia sa nájsť globálne minimum / maximum. Patrí sem napr.: <br>
                    <ul>
@@ -221,5 +248,40 @@
           </div> -->
         </footer>
 
-  </body>
+        <script>
+
+        // Toggle between showing and hiding the sidebar when clicking the menu icon
+        var mySidebar = document.getElementById("mySidebar");
+
+        function w3_open() {
+          if (mySidebar.style.display === 'block') {
+            mySidebar.style.display = 'none';
+          } else {
+            mySidebar.style.display = 'block';
+          }
+        }
+
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+        }
+
+        var sidebar = document.getElementById("Sidebar");
+
+        function s_open() {
+          if (sidebar.style.display === 'block') {
+            sidebar.style.display = 'none';
+          } else {
+            sidebar.style.display = 'block';
+          }
+        }
+
+        // Close the sidebar with the close button
+        function s_close() {
+            sidebar.style.display = "none";
+        }
+
+        </script>
+
+      </body>
 </html>
