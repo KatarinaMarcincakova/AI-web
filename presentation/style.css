@@ -3,7 +3,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 body, html {
   height: 100%;
   line-height: 1.8;
-  font-size: 2em;
+  font-size: 1.8em;
   color: White;
   background-color: #118594; 
   background-image: linear-gradient(to bottom right, #043d49, #044758, #118594, #1e9eaf, #4ec9d1);
@@ -13,13 +13,28 @@ body, html {
   width: 100%;
   text-align: center !important;
   justify-content: center;
-  display: flex;
+  display: grid;
   height: 100%;
   align-items: center;
 }
 
 .titleText {
-    font-size: 2.3em;
+    font-size: 2em;
+}
+
+hr {
+    width: 50%;
+    align-self: center;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#titleSlide {
+    background-image: url("../images/ai-bg.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
 }
 
 .hidden{
