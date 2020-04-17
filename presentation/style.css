@@ -3,8 +3,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 body, html {
   height: 100%;
   line-height: 1.8;
+  font-size: 2em;
   color: White;
-  background-color: #118594; /* For browsers that do not support gradients */
+  background-color: #118594; 
   background-image: linear-gradient(to bottom right, #043d49, #044758, #118594, #1e9eaf, #4ec9d1);
 }
 
@@ -15,7 +16,10 @@ body, html {
   display: flex;
   height: 100%;
   align-items: center;
+}
 
+.titleText {
+    font-size: 2.3em;
 }
 
 .hidden{
