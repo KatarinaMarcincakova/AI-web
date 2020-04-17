@@ -10,13 +10,16 @@ body, html {
 }
 
 .text_box {
-  width: 100%;
-  text-align: center !important;
-  justify-content: center;
-  display: block;
-  height: 100%;
-  align-items: center;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+hr{
+  margin-bottom: -1rem; 
+}
+
 
 .titleText {
     font-size: 2em;
