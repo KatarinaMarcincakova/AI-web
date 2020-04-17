@@ -18,12 +18,12 @@ body, html {
 }
 hr{
   margin-bottom: -1rem;
-  margin-top: -1rem;
 }
 
 
 .titleText {
     font-size: 2em;
+    line-height: 0;
 }
 
 hr {
