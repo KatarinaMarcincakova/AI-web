@@ -13,7 +13,7 @@ body, html {
   width: 100%;
   text-align: center !important;
   justify-content: center;
-  display: grid;
+  display: block;
   height: 100%;
   align-items: center;
 }
