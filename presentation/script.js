@@ -1,21 +1,30 @@
-var slideN;
-slideN = 1;
+slideN = 0
 
-var i;
-for (i = 0; i <= 5; i++){
-    document.getElementById(i.toString()).style.display = "none";
-}
-            
+
+for (i = 1; i < 6; i++) {
+	$('p').eq(i).addClass('hidden');
+  }
 function myFunction(event) {
-    var x = event.which;
-    if (x == 39 && slideN < 5){
-    document.getElementById(slideN.toString()).style.display = "none";
-    slideN = slideN + 1;
-    document.getElementById(slideN.toString()).style.display = "contents";
-    }
-    if (x == 37 && slideN > 1){
-    document.getElementById(slideN.toString()).style.display = "none";
-    slideN = slideN - 1;
-    document.getElementById(slideN.toString()).style.display = "contents";
-    }
+  var x = event.which;
+  
+  
+  if (x == 39){
+	for (i = 0; i < 6; i++) {
+		$('p').eq(i).removeClass('shown');
+		$('p').eq(i).addClass('hidden');
+		console.log("for");
+	}
+	slideN = slideN + 1;
+    $('p').eq(slideN).addClass('shown');
+  }
+  if (x == 37){
+	for (i = 0; i < 6; i++) {
+		$('p').eq(i).removeClass('shown');
+		$('p').eq(i).addClass('hidden');
+		console.log("for");
+	}
+	slideN = slideN - 1;
+    $('p').eq(slideN).addClass('shown');
+  }
+  console.log(slideN);
 }
