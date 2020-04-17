@@ -12,22 +12,30 @@
 
         <p id="1">slide 1</p>
         <p id="2">slide 2</p>
+        <p id="3">slide 3</p>
+        <p id="4">slide 4</p>
+        <p id="5">slide 5</p>
 
         <script>
-            slideN = 1
-            document.getElementById(2).style.display = "none";
+            var slideN;
+            slideN = 1;
 
+            var i;
+            for (i = 0; i <= 5; i++){
+                document.getElementById(i.toString()).style.display = "none";
+            }
+            
             function myFunction(event) {
               var x = event.which;
               if (x == 39){
                 document.getElementById(slideN.toString()).style.display = "none";
                 slideN = slideN + 1;
-                document.getElementById(slideN.toString()).style.display = "display";
+                document.getElementById(slideN.toString()).style.display = "contents";
               }
               if (x == 37){
                 document.getElementById(slideN.toString()).style.display = "none";
                 slideN = slideN - 1;
-                document.getElementById(slideN.toString()).style.display = "display";
+                document.getElementById(slideN.toString()).style.display = "contents";
               }
             }
             </script>
