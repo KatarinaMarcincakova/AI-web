@@ -15,15 +15,15 @@ body, html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
 }
 hr{
-  margin-bottom: -1rem; 
+  margin-bottom: -1rem;
 }
 
 
 .titleText {
     font-size: 2em;
+    line-height: 0;
 }
 
 hr {
