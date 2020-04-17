@@ -17,7 +17,8 @@ body, html {
   transform: translate(-50%, -50%);
 }
 hr{
-  margin: -1rem !important; 
+  margin-bottom: -1rem;
+  margin-top: -1rem;
 }
 
 
