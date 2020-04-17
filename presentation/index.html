@@ -1,0 +1,29 @@
+<html>
+    <head>
+
+    </head>
+    <body   onkeydown="myFunction(event)">
+
+        <p id="1">slide 1</p>
+        <p id="2">slide 2</p>
+
+        <script>
+            slideN = 1
+            document.getElementById(2).style.display = "none";
+
+            function myFunction(event) {
+              var x = event.which;
+              if (x == 39){
+                document.getElementById(slideN).style.display = "none";
+                slideN = slideN + 1
+                document.getElementById(slideN).style.display = "display"
+              }
+              if (x == 37){
+                document.getElementById(slideN).style.display = "none";
+                slideN = slideN - 1
+                document.getElementById(slideN).style.display = "display"
+              }
+            }
+            </script>
+    </body>
+</html>
