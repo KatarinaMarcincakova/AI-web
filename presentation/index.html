@@ -1,6 +1,12 @@
 <html>
-    <head>
-
+    <head>    
+        <title>AI - prezentacia</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="style.css" rel="stylesheet">
     </head>
     <body   onkeydown="myFunction(event)">
 
@@ -14,14 +20,14 @@
             function myFunction(event) {
               var x = event.which;
               if (x == 39){
-                document.getElementById(slideN).style.display = "none";
-                slideN = slideN + 1
-                document.getElementById(slideN).style.display = "display"
+                document.getElementById(slideN.toString()).style.display = "none";
+                slideN = slideN + 1;
+                document.getElementById(slideN.toString()).style.display = "display";
               }
               if (x == 37){
-                document.getElementById(slideN).style.display = "none";
-                slideN = slideN - 1
-                document.getElementById(slideN).style.display = "display"
+                document.getElementById(slideN.toString()).style.display = "none";
+                slideN = slideN - 1;
+                document.getElementById(slideN.toString()).style.display = "display";
               }
             }
             </script>
