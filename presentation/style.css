@@ -8,9 +8,14 @@ body, html {
   background-image: linear-gradient(to bottom right, #043d49, #044758, #118594, #1e9eaf, #4ec9d1);
 }
 
-p {
-    text-align: center;
-    width: 100%;
+.text_box {
+  width: 100%;
+  text-align: center !important;
+  justify-content: center;
+  display: flex;
+  height: 100%;
+  align-items: center;
+
 }
 
 .hidden{
