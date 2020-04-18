@@ -43,6 +43,23 @@ hr{
     font-size: 1.8em;
 }
 
+.navbar {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  color: white;
+}
+
+.navArrow {
+  opacity: 0.7;
+  float: right;
+  margin: 5px;
+}
+
+.navArrow:hover {
+  opacity: 1;
+}
+
 hr {
     width: 50%;
     align-self: center;

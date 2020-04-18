@@ -28,3 +28,26 @@ function myFunction(event) {
   }
   console.log(slideN);
 }
+
+function changeSlide(s) {
+
+	if (s == 0){
+		for (i = 0; i < 6; i++) {
+			$('.content').eq(i).removeClass('shown');
+			$('.content').eq(i).addClass('hidden');
+			console.log("for");
+		}
+		slideN = slideN + 1;
+		$('.content').eq(slideN).addClass('shown');
+	  }
+	  if (s == 1){
+		for (i = 0; i < 6; i++) {
+			$('.content').eq(i).removeClass('shown');
+			$('.content').eq(i).addClass('hidden');
+			console.log("for");
+		}
+		slideN = slideN - 1;
+		$('.content').eq(slideN).addClass('shown');
+	  }
+	  console.log(slideN);
+}
