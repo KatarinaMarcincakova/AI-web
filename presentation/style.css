@@ -12,9 +12,9 @@ body, html {
 
 .text_box {
   margin-top: 5%;
-  line-height: 0.5;
+  line-height: 0.75;
   position: absolute;
-  top: 40%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
