@@ -1,7 +1,8 @@
 slideN = 0
+numOfS = 7
 
 
-for (i = 1; i < 7; i++) {
+for (i = 1; i < numOfS; i++) {
 	$('..content').eq(i).addClass('hidden');
   }
 function myFunction(event) {
@@ -9,7 +10,7 @@ function myFunction(event) {
   
   
   if (x == 39){
-	for (i = 0; i < 7; i++) {
+	for (i = 0; i < numOfS; i++) {
 		$('.content').eq(i).removeClass('shown');
 		$('.content').eq(i).addClass('hidden');
 		console.log("for");
@@ -18,7 +19,7 @@ function myFunction(event) {
     $('.content').eq(slideN).addClass('shown');
   }
   if (x == 37){
-	for (i = 0; i < 7; i++) {
+	for (i = 0; i < numOfS; i++) {
 		$('.content').eq(i).removeClass('shown');
 		$('.content').eq(i).addClass('hidden');
 		console.log("for");
@@ -32,7 +33,7 @@ function myFunction(event) {
 function changeSlide(s) {
 
 	if (s == 0){
-		for (i = 0; i < 7; i++) {
+		for (i = 0; i < numOfS; i++) {
 			$('.content').eq(i).removeClass('shown');
 			$('.content').eq(i).addClass('hidden');
 			console.log("for");
@@ -41,7 +42,7 @@ function changeSlide(s) {
 		$('.content').eq(slideN).addClass('shown');
 	  }
 	  if (s == 1){
-		for (i = 0; i < 7; i++) {
+		for (i = 0; i < numOfS; i++) {
 			$('.content').eq(i).removeClass('shown');
 			$('.content').eq(i).addClass('hidden');
 			console.log("for");
