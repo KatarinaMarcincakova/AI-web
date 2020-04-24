@@ -67,6 +67,10 @@ hr {
     opacity: 1;
 }
 
+.text {
+    /*padding-top: 20%;*/
+}
+
 .hidden{
 	display: none;
 }
