@@ -80,8 +80,18 @@ hr {
     padding-top: 5%;
 }
 
+.text3 {
+    padding-top: 3%;
+}
+
 .padText {
     color: transparent;
+}
+
+video {
+    width: 80%;
+    height: 70%;
+    padding-left: 20%;
 }
 
 .hidden{
