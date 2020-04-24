@@ -9,8 +9,16 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    
+    <link rel="manifest" href="manifest.json">
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+            navigator.serviceWorker.register("sw.js");
+        });
+      }
+    </script>
   </head>
 
   <body>
@@ -263,7 +271,10 @@
                  Kroky 2 a 3 sa opakujú, až kým nie je chyba minimalizovaná na najmenšiu možnú hodnotu alebo už neexistuje spôsob ako chybu zmenšiť. Prípadne môže byť tréning ukončený aj po dosiahnutí istého maximálneho počtu iterácií.
                </p><br> <br>
 
-               <p> <b>Implementácia v Pythone:</b> </p> <br>
+               <p> 
+                 <b>Implementácia v Pythone:</b> <br>
+                 <a href="python/neuronka.py" download="neuronka.py">Stiahnuť <i class="fa fa-download" aria-hidden="true"></i></a>
+               </p> <br>
                <div class="code">
                  # Import používaných modulov <br>
                  import random, numpy <br>
@@ -335,7 +346,7 @@
 
                <span id="zao" class="spanPad"></span><h3>Zdroje, užitočné odkazy, literatúra</h3>
                <p>
-                 <b> <i>Doplnit</i> </b>
+                  RUSSELL, S. J. – NORVIG, P.: Artificial Intelligence: A Modern Approach (3nd ed.). Upper Saddle River, USA: Prentice Hall, 2003. ISBN 0-13-790395-2
                </p>
 
            </div>
