@@ -3,74 +3,452 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 body, html {
   height: 100%;
   line-height: 1.8;
-  font-size: 1.5em;
   color: White;
-  background-color: #118594; 
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+footer {
+  background-color: transparent;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/ai-bg.jpg");
+  height: 100%;
   background-repeat: no-repeat;
-  background-image: linear-gradient(to bottom right, #043d49, #044758, #118594, #1e9eaf, #4ec9d1);
+  background-position: center;
 }
 
-.title { 
-    line-height: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
+.bgcol-0 {
+  background-color: #044758;
+}
+
+.bgcol-1 {
+  background-color: #076579;
+}
+
+.bgcol-2 {
+  background-color: white;
+  color: #044758;
+  padding: 52px;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+.buttons {
+  background-color: #39bfc8
+}
+
+.n3 {
+  display: block;
+  font-size: 1.17em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+h2 {
+  color: #043d49;
+}
+
+h3 {
+  color: white;
+  border-radius: 25px;
+  background: #1e9eaf;
+  padding: 20px;
+}
+
+p {
+  font-size: 1em;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#sideNav {
+  background-color: #118594;
+  padding-top: 20px;
+  border-radius: 10px;
+}
+
+#main {
+  padding-top: 65px;
+  padding-bottom: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.arrow {
+  background-color: transparent;
+  opacity: 0.7;
+  color: #044758;
+}
+
+.arrow:hover {
+  background-color: transparent;
+  color: #044758;
+  opacity: 1;
+}
+
+.arrowM {
+  background-color: transparent;
+  opacity: 0.7;
+  color: #ffffff;
+}
+
+.arrowM:hover {
+  background-color: transparent;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.spanPad {
+  display: block;
+  position: relative;
+  top: -65px;
+  visibility: hidden;
+}
+
+.gif {
+  width: 98%;
+  height: auto;
+}
+
+.podtema {
+  font-size: 0.8em;
+}
+
+#quote {
+  color: white;
+  background-color: transparent;
+  text-align: center;
+  width: 25%;
+  float: left;
+  padding-top: 10%;
+  padding-left: 2%;
+}
+
+#Sidebar {
+  z-index: 999;
+}
+
+#mySidebar {
+  z-index: 999;
+}
+
+#name {
+  font-size: 130%;
+  float: right;
+  padding-bottom: 10%;
+}
+
+#Quo {
+  font-size: 180%;
+}
+
+#moreAI {
+  color: white;
+  background-color: transparent;
+  border-style: solid;
+  border-color: white;
+  border-width: medium;
+  font-size: 130%;
+  padding-top: 4px;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-bottom: 4px;
+  z-index: 999;
+}
+
+#moreAI:hover {
+  background-color: #043d49;
+  border-color: #043d49;
+  cursor: pointer;
+}
+
+
+#nav {
+  width: 15%;
+  float: left;
+}
+
+#content {
+  width: 84%;
+  float: right;
+}
+
+.center-I {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  height: auto;
+}
+
+.center-T {
+  text-align: center;
+  width: 100%;
+}
+
+.layout-T {
+  width: 70%;
+  float: left;
+}
+
+.layout-I {
+  width: 29%;
+  float: right;
+}
+
+.code {
+  background-color: #f2f2f2;
+  font-family: "Courier New", Courier, monospace;
+  padding-left: 10px;
+}
+
+.comment {
+  color: #077692;
+  padding: 0px;
+}
+
+/* ------------------------------------------------------ MEDIA ------------------------------------------------- */
+
+@media screen and (max-width: 992px) {
+
+  h3 {
+    padding: 5px;
+    font-size: 1.12em;
     text-align: center;
-    word-break: break-all;
-}
+  }
 
-.titleText {
-    font-size: 1.8em;
-    line-height: 0;
-}
+  .center-I {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: auto;
+  }
 
-.ttContent {
-    margin-bottom: 0%;
-    padding: 0%;
-}
-
-.author {
-    position: fixed;
+  .layout-T {
     width: 100%;
-    bottom: 0;
-    line-height: 1.2em;
-    padding-left: 2%;
-}
+    float: none;
+  }
 
-hr {
-    width: 50%;
-    align-self: center;
-    border: 2px solid white;
-    border-radius: 5px;
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-top: 0%;
-    margin-bottom: 0%;
-}
+  .layout-I {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: auto;
+    float: none;
+  }
 
-.navbar {
-    position: fixed;
+  #myNavbar {
+    height: 55px;
+  }
+
+  #sideNav {
     width: 100%;
-    bottom: 0;
-    color: white;
+    position: fixed;
+    top: 55px;
+    z-index: 1;
+    padding-top: 0px
+  }
+
+  #nav {
+    width: 100%;
+    z-index: 1;
+  }
+
+  #content {
+    width: 100%;
+    top: 80px;
+    z-index: 999;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #main {
+    padding-top: 65px;
+    padding-bottom: 50px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .w3-sidebar {
+    background-color: transparent;
+  }
+
+  .spanPad {
+    display: block;
+    position: relative;
+    top: -110px;
+    visibility: hidden;
+  }
+
+  #Sidebar {
+    z-index: 999;
+  }
+
+  #mySidebar {
+    z-index: 999;
+  }
 }
-  
-.navArrow {
-    opacity: 0.7;
+
+@media screen and (max-width: 1120px) , screen and (max-height: 380px) {
+  #name {
+    font-size: 90%;
     float: right;
-    margin: 5px;
-}
-  
-.navArrow:hover {
-    opacity: 1;
+    padding-bottom: 10%;
+  }
+
+  #Quo {
+    font-size: 110%;
+  }
+
+  #Sidebar {
+    z-index: 999;
+  }
+
+  #mySidebar {
+    z-index: 999;
+  }
+
+  #moreAI {
+    font-size: 110%;
+    color: white;
+    background-color: transparent;
+    border-style: solid;
+    border-color: white;
+    border-width: medium;
+    padding-top: 4px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 4px;
+    z-index: 999;
+  }
+
+  #moreAI:hover {
+    background-color: #043d49;
+    border-color: #043d49;
+    cursor: pointer;
+  }
 }
 
-.hidden{
-	display: none;
+@media screen and (max-width: 825px) , screen and (max-height: 165px) {
+  #name {
+    font-size: 70%;
+    float: right;
+    padding-bottom: 10%;
+  }
+
+  #Sidebar {
+    z-index: 999;
+  }
+
+  #mySidebar {
+    z-index: 999;
+  }
+
+  #Quo {
+    font-size: 90%;
+  }
+
+  #moreAI {
+    font-size: 90%;
+    color: white;
+    background-color: transparent;
+    border-style: solid;
+    border-color: white;
+    border-width: medium;
+    padding-top: 4px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 4px;
+    z-index: 999;
+  }
+
+  #moreAI:hover {
+    background-color: #043d49;
+    border-color: #043d49;
+    cursor: pointer;
+  }
 }
 
-.shown{
-	display: contents;
+@media screen and (max-width: 615px) , screen and (max-height: 165px) {
+  #name {
+    font-size: 50%;
+    float: right;
+    padding-bottom: 10%;
+  }
+
+  #Sidebar {
+    z-index: 999;
+  }
+
+  #mySidebar {
+    z-index: 999;
+  }
+
+  #Quo {
+    font-size: 70%;
+  }
+
+  #moreAI {
+    font-size: 70%;
+    color: white;
+    background-color: transparent;
+    border-style: solid;
+    border-color: white;
+    border-width: medium;
+    padding-top: 4px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 4px;
+    z-index: 999;
+  }
+
+  #moreAI:hover {
+    background-color: #043d49;
+    border-color: #043d49;
+    cursor: pointer;
+  }
+
+  #quote {
+    color: white;
+    background-color: transparent;
+    text-align: center;
+    width: 25%;
+    float: left;
+    padding-top: 15%;
+    padding-left: 2%;
+  }
+}
+
+@media screen and (max-width: 505px) , screen and (max-height: 165px) {
+  #nav {
+    width: 100%;
+    float: left;
+  }
+
+  #Sidebar {
+    z-index: 999;
+  }
+
+  #mySidebar {
+    z-index: 999;
+  }
+
+  #content {
+    width: 100%;
+    float: right;
+  }
 }

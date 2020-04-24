@@ -1,54 +1,30 @@
-slideN = 0
-numOfS = 7
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
 
-
-for (i = 1; i < numOfS; i++) {
-	$('..content').eq(i).addClass('hidden');
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
   }
-function myFunction(event) {
-  var x = event.which;
-  
-  
-  if (x == 39){
-	for (i = 0; i < numOfS; i++) {
-		$('.content').eq(i).removeClass('shown');
-		$('.content').eq(i).addClass('hidden');
-		console.log("for");
-	}
-	slideN = slideN + 1;
-    $('.content').eq(slideN).addClass('shown');
-  }
-  if (x == 37){
-	for (i = 0; i < numOfS; i++) {
-		$('.content').eq(i).removeClass('shown');
-		$('.content').eq(i).addClass('hidden');
-		console.log("for");
-	}
-	slideN = slideN - 1;
-    $('.content').eq(slideN).addClass('shown');
-  }
-  console.log(slideN);
 }
 
-function changeSlide(s) {
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
 
-	if (s == 0){
-		for (i = 0; i < numOfS; i++) {
-			$('.content').eq(i).removeClass('shown');
-			$('.content').eq(i).addClass('hidden');
-			console.log("for");
-		}
-		slideN = slideN + 1;
-		$('.content').eq(slideN).addClass('shown');
-	  }
-	  if (s == 1){
-		for (i = 0; i < numOfS; i++) {
-			$('.content').eq(i).removeClass('shown');
-			$('.content').eq(i).addClass('hidden');
-			console.log("for");
-		}
-		slideN = slideN - 1;
-		$('.content').eq(slideN).addClass('shown');
-	  }
-	  console.log(slideN);
+var sidebar = document.getElementById("Sidebar");
+
+function s_open() {
+  if (sidebar.style.display === 'block') {
+    sidebar.style.display = 'none';
+  } else {
+    sidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function s_close() {
+    sidebar.style.display = "none";
 }
