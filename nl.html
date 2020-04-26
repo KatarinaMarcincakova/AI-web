@@ -8,8 +8,16 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    
+    <link rel="manifest" href="manifest.json">
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+            navigator.serviceWorker.register("sw.js");
+        });
+      }
+    </script>
   </head>
 
   <body>
@@ -293,42 +301,7 @@
           </div> -->
         </footer>
 
-        <script>
-
-        // Toggle between showing and hiding the sidebar when clicking the menu icon
-        var mySidebar = document.getElementById("mySidebar");
-
-        function w3_open() {
-          if (mySidebar.style.display === 'block') {
-            mySidebar.style.display = 'none';
-          } else {
-            mySidebar.style.display = 'block';
-            sidebar.style.display = "none";
-          }
-        }
-
-        // Close the sidebar with the close button
-        function w3_close() {
-            mySidebar.style.display = "none";
-        }
-
-        var sidebar = document.getElementById("Sidebar");
-
-        function s_open() {
-          if (sidebar.style.display === 'block') {
-            sidebar.style.display = 'none';
-          } else {
-            sidebar.style.display = 'block';
-            mySidebar.style.display = "none";
-          }
-        }
-
-        // Close the sidebar with the close button
-        function s_close() {
-            sidebar.style.display = "none";
-        }
-
-        </script>
+        <script src="script.js"></script>
 
       </body>
 </html>

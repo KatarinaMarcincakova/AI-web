@@ -6,12 +6,13 @@ function w3_open() {
     mySidebar.style.display = 'none';
   } else {
     mySidebar.style.display = 'block';
+    sidebar.style.display = "none";
   }
 }
 
 // Close the sidebar with the close button
 function w3_close() {
-    mySidebar.style.display = "none";
+  mySidebar.style.display = "none";
 }
 
 var sidebar = document.getElementById("Sidebar");
@@ -21,10 +22,13 @@ function s_open() {
     sidebar.style.display = 'none';
   } else {
     sidebar.style.display = 'block';
+    mySidebar.style.display = "none";
   }
 }
 
 // Close the sidebar with the close button
 function s_close() {
-    sidebar.style.display = "none";
+  sidebar.style.display = "none";
 }
+
+        
